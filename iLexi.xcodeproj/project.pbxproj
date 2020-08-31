@@ -11,8 +11,6 @@
 		563AFC9C24FC316200EB6F53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */; };
 		563AFCA324FC316400EB6F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA224FC316400EB6F53 /* Assets.xcassets */; };
 		563AFCA624FC316400EB6F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA424FC316400EB6F53 /* LaunchScreen.storyboard */; };
-		563AFCB124FC316400EB6F53 /* iLexiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFCB024FC316400EB6F53 /* iLexiTests.swift */; };
-		563AFCBC24FC316400EB6F53 /* iLexiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFCBB24FC316400EB6F53 /* iLexiUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +38,7 @@
 		563AFCA524FC316400EB6F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563AFCA724FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563AFCAC24FC316400EB6F53 /* iLexiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLexiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		563AFCB024FC316400EB6F53 /* iLexiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLexiTests.swift; sourceTree = "<group>"; };
-		563AFCB224FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563AFCB724FC316400EB6F53 /* iLexiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLexiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		563AFCBB24FC316400EB6F53 /* iLexiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLexiUITests.swift; sourceTree = "<group>"; };
-		563AFCBD24FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				563AFC9824FC316200EB6F53 /* iLexi */,
-				563AFCAF24FC316400EB6F53 /* iLexiTests */,
-				563AFCBA24FC316400EB6F53 /* iLexiUITests */,
 				563AFC9724FC316200EB6F53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,24 +94,6 @@
 				563AFCA724FC316400EB6F53 /* Info.plist */,
 			);
 			path = iLexi;
-			sourceTree = "<group>";
-		};
-		563AFCAF24FC316400EB6F53 /* iLexiTests */ = {
-			isa = PBXGroup;
-			children = (
-				563AFCB024FC316400EB6F53 /* iLexiTests.swift */,
-				563AFCB224FC316400EB6F53 /* Info.plist */,
-			);
-			path = iLexiTests;
-			sourceTree = "<group>";
-		};
-		563AFCBA24FC316400EB6F53 /* iLexiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				563AFCBB24FC316400EB6F53 /* iLexiUITests.swift */,
-				563AFCBD24FC316400EB6F53 /* Info.plist */,
-			);
-			path = iLexiUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				563AFCB124FC316400EB6F53 /* iLexiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				563AFCBC24FC316400EB6F53 /* iLexiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
