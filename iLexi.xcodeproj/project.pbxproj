@@ -11,15 +11,19 @@
 		563AFC9C24FC316200EB6F53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */; };
 		563AFCA324FC316400EB6F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA224FC316400EB6F53 /* Assets.xcassets */; };
 		563AFCA624FC316400EB6F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA424FC316400EB6F53 /* LaunchScreen.storyboard */; };
+		B27627F877AF7EFC11029216 /* Pods_iLexi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE91C439856608727DCC08 /* Pods_iLexi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26EE91C439856608727DCC08 /* Pods_iLexi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLexi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AFC9624FC316200EB6F53 /* iLexi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLexi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AFC9924FC316200EB6F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		563AFCA224FC316400EB6F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563AFCA524FC316400EB6F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563AFCA724FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.debug.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.debug.xcconfig"; sourceTree = "<group>"; };
+		DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.release.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27627F877AF7EFC11029216 /* Pods_iLexi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				563AFC9824FC316200EB6F53 /* iLexi */,
 				563AFC9724FC316200EB6F53 /* Products */,
+				DDFD32316CB9E444F9E2EC12 /* Pods */,
+				7856CCE145B3B673487D6911 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,24 @@
 			path = iLexi;
 			sourceTree = "<group>";
 		};
+		7856CCE145B3B673487D6911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26EE91C439856608727DCC08 /* Pods_iLexi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDFD32316CB9E444F9E2EC12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */,
+				DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 563AFCC024FC316400EB6F53 /* Build configuration list for PBXNativeTarget "iLexi" */;
 			buildPhases = (
+				B482D596ABDB17F2BBE9C326 /* [CP] Check Pods Manifest.lock */,
 				563AFC9224FC316200EB6F53 /* Sources */,
 				563AFC9324FC316200EB6F53 /* Frameworks */,
 				563AFC9424FC316200EB6F53 /* Resources */,
+				0022434D1FCE833E0E85F264 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0022434D1FCE833E0E85F264 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iLexi/Pods-iLexi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iLexi/Pods-iLexi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iLexi/Pods-iLexi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B482D596ABDB17F2BBE9C326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iLexi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		563AFC9224FC316200EB6F53 /* Sources */ = {
@@ -266,6 +335,7 @@
 		};
 		563AFCC124FC316400EB6F53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -284,6 +354,7 @@
 		};
 		563AFCC224FC316400EB6F53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
