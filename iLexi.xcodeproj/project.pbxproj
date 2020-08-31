@@ -13,23 +13,6 @@
 		563AFCA624FC316400EB6F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA424FC316400EB6F53 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		563AFCAD24FC316400EB6F53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 563AFC8E24FC316200EB6F53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 563AFC9524FC316200EB6F53;
-			remoteInfo = iLexi;
-		};
-		563AFCB824FC316400EB6F53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 563AFC8E24FC316200EB6F53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 563AFC9524FC316200EB6F53;
-			remoteInfo = iLexi;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		563AFC9624FC316200EB6F53 /* iLexi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLexi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AFC9924FC316200EB6F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,26 +20,10 @@
 		563AFCA224FC316400EB6F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563AFCA524FC316400EB6F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563AFCA724FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		563AFCAC24FC316400EB6F53 /* iLexiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLexiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		563AFCB724FC316400EB6F53 /* iLexiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLexiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		563AFC9324FC316200EB6F53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		563AFCA924FC316400EB6F53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		563AFCB424FC316400EB6F53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				563AFC9624FC316200EB6F53 /* iLexi.app */,
-				563AFCAC24FC316400EB6F53 /* iLexiTests.xctest */,
-				563AFCB724FC316400EB6F53 /* iLexiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,42 +81,6 @@
 			productReference = 563AFC9624FC316200EB6F53 /* iLexi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		563AFCAB24FC316400EB6F53 /* iLexiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 563AFCC324FC316400EB6F53 /* Build configuration list for PBXNativeTarget "iLexiTests" */;
-			buildPhases = (
-				563AFCA824FC316400EB6F53 /* Sources */,
-				563AFCA924FC316400EB6F53 /* Frameworks */,
-				563AFCAA24FC316400EB6F53 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				563AFCAE24FC316400EB6F53 /* PBXTargetDependency */,
-			);
-			name = iLexiTests;
-			productName = iLexiTests;
-			productReference = 563AFCAC24FC316400EB6F53 /* iLexiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		563AFCB624FC316400EB6F53 /* iLexiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 563AFCC624FC316400EB6F53 /* Build configuration list for PBXNativeTarget "iLexiUITests" */;
-			buildPhases = (
-				563AFCB324FC316400EB6F53 /* Sources */,
-				563AFCB424FC316400EB6F53 /* Frameworks */,
-				563AFCB524FC316400EB6F53 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				563AFCB924FC316400EB6F53 /* PBXTargetDependency */,
-			);
-			name = iLexiUITests;
-			productName = iLexiUITests;
-			productReference = 563AFCB724FC316400EB6F53 /* iLexiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,14 +93,6 @@
 				TargetAttributes = {
 					563AFC9524FC316200EB6F53 = {
 						CreatedOnToolsVersion = 11.6;
-					};
-					563AFCAB24FC316400EB6F53 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 563AFC9524FC316200EB6F53;
-					};
-					563AFCB624FC316400EB6F53 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 563AFC9524FC316200EB6F53;
 					};
 				};
 			};
@@ -189,8 +110,6 @@
 			projectRoot = "";
 			targets = (
 				563AFC9524FC316200EB6F53 /* iLexi */,
-				563AFCAB24FC316400EB6F53 /* iLexiTests */,
-				563AFCB624FC316400EB6F53 /* iLexiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,20 +121,6 @@
 			files = (
 				563AFCA624FC316400EB6F53 /* LaunchScreen.storyboard in Resources */,
 				563AFCA324FC316400EB6F53 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		563AFCAA24FC316400EB6F53 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		563AFCB524FC316400EB6F53 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,34 +136,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		563AFCA824FC316400EB6F53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		563AFCB324FC316400EB6F53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		563AFCAE24FC316400EB6F53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 563AFC9524FC316200EB6F53 /* iLexi */;
-			targetProxy = 563AFCAD24FC316400EB6F53 /* PBXContainerItemProxy */;
-		};
-		563AFCB924FC316400EB6F53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 563AFC9524FC316200EB6F53 /* iLexi */;
-			targetProxy = 563AFCB824FC316400EB6F53 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		563AFCA424FC316400EB6F53 /* LaunchScreen.storyboard */ = {
@@ -422,90 +300,6 @@
 			};
 			name = Release;
 		};
-		563AFCC424FC316400EB6F53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ALSMTU8N9R;
-				INFOPLIST_FILE = iLexiTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.napoleon.iLexiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLexi.app/iLexi";
-			};
-			name = Debug;
-		};
-		563AFCC524FC316400EB6F53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ALSMTU8N9R;
-				INFOPLIST_FILE = iLexiTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.napoleon.iLexiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLexi.app/iLexi";
-			};
-			name = Release;
-		};
-		563AFCC724FC316400EB6F53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ALSMTU8N9R;
-				INFOPLIST_FILE = iLexiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.napoleon.iLexiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iLexi;
-			};
-			name = Debug;
-		};
-		563AFCC824FC316400EB6F53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ALSMTU8N9R;
-				INFOPLIST_FILE = iLexiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.napoleon.iLexiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iLexi;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,24 +317,6 @@
 			buildConfigurations = (
 				563AFCC124FC316400EB6F53 /* Debug */,
 				563AFCC224FC316400EB6F53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		563AFCC324FC316400EB6F53 /* Build configuration list for PBXNativeTarget "iLexiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				563AFCC424FC316400EB6F53 /* Debug */,
-				563AFCC524FC316400EB6F53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		563AFCC624FC316400EB6F53 /* Build configuration list for PBXNativeTarget "iLexiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				563AFCC724FC316400EB6F53 /* Debug */,
-				563AFCC824FC316400EB6F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
