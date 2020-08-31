@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,33 @@
 		563AFC9C24FC316200EB6F53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */; };
 		563AFCA324FC316400EB6F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA224FC316400EB6F53 /* Assets.xcassets */; };
 		563AFCA624FC316400EB6F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA424FC316400EB6F53 /* LaunchScreen.storyboard */; };
+		563AFD1524FD2D3B00EB6F53 /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 563AFD1324FD2CF800EB6F53 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B27627F877AF7EFC11029216 /* Pods_iLexi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE91C439856608727DCC08 /* Pods_iLexi.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		563AFD1224FD2CF800EB6F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 563AFD0E24FD2CF800EB6F53 /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 563AFD0024FD28F600EB6F53;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		563AFD1424FD2D1000EB6F53 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				563AFD1524FD2D3B00EB6F53 /* Core.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		26EE91C439856608727DCC08 /* Pods_iLexi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLexi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +47,7 @@
 		563AFCA224FC316400EB6F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563AFCA524FC316400EB6F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563AFCA724FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563AFD0E24FD2CF800EB6F53 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.debug.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.release.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +67,7 @@
 		563AFC8D24FC316200EB6F53 = {
 			isa = PBXGroup;
 			children = (
+				563AFD0D24FD2CB800EB6F53 /* Dependencies */,
 				563AFC9824FC316200EB6F53 /* iLexi */,
 				563AFC9724FC316200EB6F53 /* Products */,
 				DDFD32316CB9E444F9E2EC12 /* Pods */,
@@ -68,6 +95,22 @@
 			path = iLexi;
 			sourceTree = "<group>";
 		};
+		563AFD0D24FD2CB800EB6F53 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				563AFD0E24FD2CF800EB6F53 /* Core.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		563AFD0F24FD2CF800EB6F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				563AFD1324FD2CF800EB6F53 /* Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7856CCE145B3B673487D6911 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +125,6 @@
 				9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */,
 				DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,6 +140,7 @@
 				563AFC9324FC316200EB6F53 /* Frameworks */,
 				563AFC9424FC316200EB6F53 /* Resources */,
 				0022434D1FCE833E0E85F264 /* [CP] Embed Pods Frameworks */,
+				563AFD1424FD2D1000EB6F53 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +177,28 @@
 			mainGroup = 563AFC8D24FC316200EB6F53;
 			productRefGroup = 563AFC9724FC316200EB6F53 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 563AFD0F24FD2CF800EB6F53 /* Products */;
+					ProjectRef = 563AFD0E24FD2CF800EB6F53 /* Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				563AFC9524FC316200EB6F53 /* iLexi */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		563AFD1324FD2CF800EB6F53 /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = 563AFD1224FD2CF800EB6F53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		563AFC9424FC316200EB6F53 /* Resources */ = {
@@ -341,6 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ALSMTU8N9R;
 				INFOPLIST_FILE = iLexi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ALSMTU8N9R;
 				INFOPLIST_FILE = iLexi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
