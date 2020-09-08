@@ -7,16 +7,10 @@ workspace 'iLexi'
 def core_pods
     # Rx
     pod 'RxSwift', '~> 5'
-    pod 'RxCocoa', '~> 5'
 end
 
 def iLexi_pods
     core_pods
-end
-
-target 'Core' do
-  project 'Core/Core.project'
-  core_pods
 end
 
 target 'iLexi' do
