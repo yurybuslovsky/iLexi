@@ -1,0 +1,14 @@
+output_dir: iLexi/
+
+strings:
+  inputs: iLexi/en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: L10n.swift
+xcassets:
+  inputs: iLexi/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Assets.swift
+    params:
+      enumName: Assets
