@@ -10,6 +10,18 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+
+  internal enum TabBarItem {
+    /// Profile
+    internal static let userProfile = L10n.tr("Localizable", "TabBarItem.userProfile")
+    /// Words
+    internal static let wordList = L10n.tr("Localizable", "TabBarItem.wordList")
+  }
+
+  internal enum XcodeMessage {
+    /// Loading this view controller from a nib is unsupported in favor of initializer dependency injection
+    internal static let niblessControllersDescription = L10n.tr("Localizable", "XcodeMessage.niblessControllersDescription")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

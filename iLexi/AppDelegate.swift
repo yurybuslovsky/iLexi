@@ -8,12 +8,22 @@
 
 import UIKit
 
+// MARK: - Declaration
+
 @UIApplicationMain
 final class AppDelegate: UIResponder {
 
+    // MARK: • Window
+
     var window: UIWindow?
 
+    // MARK: • DI container
+
+    private let diContainer: RootDIContainer = makeRootDIContainer()
+
 }
+
+// MARK: - UIApplicationDelegate
 
 extension AppDelegate: UIApplicationDelegate {
 
@@ -21,7 +31,21 @@ extension AppDelegate: UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        setUpWindow()
+
         return true
+    }
+
+}
+
+// MARK: - Private API
+
+extension AppDelegate {
+
+    private func setUpWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = diContainer.makeRootViewController()
+        window?.makeKeyAndVisible()
     }
 
 }

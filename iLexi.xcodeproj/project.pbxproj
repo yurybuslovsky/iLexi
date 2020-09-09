@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		563AFC9A24FC316200EB6F53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFC9924FC316200EB6F53 /* AppDelegate.swift */; };
-		563AFC9C24FC316200EB6F53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */; };
 		563AFCA324FC316400EB6F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA224FC316400EB6F53 /* Assets.xcassets */; };
 		563B688B2508FC0100E9B282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563B688A2508FC0100E9B282 /* LaunchScreen.storyboard */; };
 		563B68942508FCBF00E9B282 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563B68962508FCBF00E9B282 /* Localizable.strings */; };
 		563B68A22509016700E9B282 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A02509016700E9B282 /* Assets.swift */; };
 		563B68A32509016700E9B282 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A12509016700E9B282 /* L10n.swift */; };
+		563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A525090B9A00E9B282 /* RootDIContainer.swift */; };
+		563B68A825090F7D00E9B282 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A725090F7D00E9B282 /* RootViewController.swift */; };
+		563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A92509108200E9B282 /* NiblessTabBarController.swift */; };
+		567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD817250942580073DCA5 /* NiblessNavigationController.swift */; };
+		56BE8F3A2509196500140B82 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F392509196500140B82 /* WordListViewController.swift */; };
+		56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F3F25091A8300140B82 /* NiblessViewController.swift */; };
+		56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4325091DA100140B82 /* UserProfileViewController.swift */; };
+		56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4525091DD500140B82 /* NewWordViewController.swift */; };
+		56BE8F4825091DF100140B82 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4725091DF100140B82 /* LogInViewController.swift */; };
+		56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */; };
+		56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */; };
+		56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */; };
 		B27627F877AF7EFC11029216 /* Pods_iLexi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE91C439856608727DCC08 /* Pods_iLexi.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +45,6 @@
 		26EE91C439856608727DCC08 /* Pods_iLexi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLexi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AFC9624FC316200EB6F53 /* iLexi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLexi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AFC9924FC316200EB6F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		563AFCA224FC316400EB6F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563AFCA724FC316400EB6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563B688A2508FC0100E9B282 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +52,18 @@
 		563B68972508FCC000E9B282 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		563B68A02509016700E9B282 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		563B68A12509016700E9B282 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		563B68A525090B9A00E9B282 /* RootDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDIContainer.swift; sourceTree = "<group>"; };
+		563B68A725090F7D00E9B282 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		563B68A92509108200E9B282 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
+		567AD817250942580073DCA5 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
+		56BE8F392509196500140B82 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		56BE8F3F25091A8300140B82 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		56BE8F4325091DA100140B82 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		56BE8F4525091DD500140B82 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
+		56BE8F4725091DF100140B82 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDIContainer.swift; sourceTree = "<group>"; };
+		56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListDIContainer.swift; sourceTree = "<group>"; };
 		9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.debug.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.release.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		562AEFA0250934C600CC77AB /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F502509211300140B82 /* WordListViewController */,
+				56BE8F512509212300140B82 /* UserProfileViewController */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		562AEFA1250934D700CC77AB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F542509214A00140B82 /* FavoritesViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		563AFC8D24FC316200EB6F53 = {
 			isa = PBXGroup;
 			children = (
@@ -80,15 +119,105 @@
 			isa = PBXGroup;
 			children = (
 				563AFC9924FC316200EB6F53 /* AppDelegate.swift */,
-				563AFC9B24FC316200EB6F53 /* SceneDelegate.swift */,
 				563B68962508FCBF00E9B282 /* Localizable.strings */,
 				563AFCA224FC316400EB6F53 /* Assets.xcassets */,
 				563B688A2508FC0100E9B282 /* LaunchScreen.storyboard */,
 				563B68A02509016700E9B282 /* Assets.swift */,
 				563B68A12509016700E9B282 /* L10n.swift */,
 				563AFCA724FC316400EB6F53 /* Info.plist */,
+				563B68A425090B7500E9B282 /* DIContainers */,
+				56BE8F4225091AE600140B82 /* ViewControllers */,
+				563B68AB250913B300E9B282 /* UI */,
 			);
 			path = iLexi;
+			sourceTree = "<group>";
+		};
+		563B68A425090B7500E9B282 /* DIContainers */ = {
+			isa = PBXGroup;
+			children = (
+				563B68A525090B9A00E9B282 /* RootDIContainer.swift */,
+				56BE8F4F2509204200140B82 /* WordListDIContainer */,
+				56BE8F572509239D00140B82 /* UserProfileDIContainer */,
+			);
+			path = DIContainers;
+			sourceTree = "<group>";
+		};
+		563B68AB250913B300E9B282 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F3F25091A8300140B82 /* NiblessViewController.swift */,
+				567AD817250942580073DCA5 /* NiblessNavigationController.swift */,
+				563B68A92509108200E9B282 /* NiblessTabBarController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		56BE8F4225091AE600140B82 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				563B68A725090F7D00E9B282 /* RootViewController.swift */,
+				562AEFA0250934C600CC77AB /* Tabs */,
+				562AEFA1250934D700CC77AB /* Common */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56BE8F4F2509204200140B82 /* WordListDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */,
+			);
+			path = WordListDIContainer;
+			sourceTree = "<group>";
+		};
+		56BE8F502509211300140B82 /* WordListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F392509196500140B82 /* WordListViewController.swift */,
+				56BE8F522509213700140B82 /* NewWordViewController */,
+			);
+			path = WordListViewController;
+			sourceTree = "<group>";
+		};
+		56BE8F512509212300140B82 /* UserProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4325091DA100140B82 /* UserProfileViewController.swift */,
+				56BE8F532509214100140B82 /* LogInViewController */,
+			);
+			path = UserProfileViewController;
+			sourceTree = "<group>";
+		};
+		56BE8F522509213700140B82 /* NewWordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4525091DD500140B82 /* NewWordViewController.swift */,
+			);
+			path = NewWordViewController;
+			sourceTree = "<group>";
+		};
+		56BE8F532509214100140B82 /* LogInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4725091DF100140B82 /* LogInViewController.swift */,
+			);
+			path = LogInViewController;
+			sourceTree = "<group>";
+		};
+		56BE8F542509214A00140B82 /* FavoritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */,
+			);
+			path = FavoritesViewController;
+			sourceTree = "<group>";
+		};
+		56BE8F572509239D00140B82 /* UserProfileDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */,
+			);
+			path = UserProfileDIContainer;
 			sourceTree = "<group>";
 		};
 		7856CCE145B3B673487D6911 /* Frameworks */ = {
@@ -156,6 +285,7 @@
 			knownRegions = (
 				en,
 				ru,
+				Base,
 			);
 			mainGroup = 563AFC8D24FC316200EB6F53;
 			productRefGroup = 563AFC9724FC316200EB6F53 /* Products */;
@@ -282,9 +412,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				563B68A32509016700E9B282 /* L10n.swift in Sources */,
+				56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */,
+				56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */,
+				56BE8F4825091DF100140B82 /* LogInViewController.swift in Sources */,
 				563AFC9A24FC316200EB6F53 /* AppDelegate.swift in Sources */,
-				563AFC9C24FC316200EB6F53 /* SceneDelegate.swift in Sources */,
+				563B68A825090F7D00E9B282 /* RootViewController.swift in Sources */,
+				567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */,
+				56BE8F3A2509196500140B82 /* WordListViewController.swift in Sources */,
+				563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */,
 				563B68A22509016700E9B282 /* Assets.swift in Sources */,
+				56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */,
+				56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */,
+				56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */,
+				56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */,
+				563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +576,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.napoleon.iLexi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.napoleon.iLexi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
