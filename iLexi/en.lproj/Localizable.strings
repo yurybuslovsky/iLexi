@@ -14,3 +14,11 @@
 
 "TabBarItem.wordList" = "Words";
 "TabBarItem.userProfile" = "Profile";
+
+// MARK: - Navigation Bar Titles
+
+"NavBarTitle.wordList" = "Words";
+"NavBarTitle.userProfile" = "Profile";
+"NavBarTitle.logIn" = "Log In";
+"NavBarTitle.newWord" = "New Word";
+"NavBarTitle.favorites" = "Favorites";

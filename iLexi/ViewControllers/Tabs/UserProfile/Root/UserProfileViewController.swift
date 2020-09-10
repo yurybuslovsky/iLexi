@@ -18,20 +18,9 @@ protocol UserProfileViewControllerProducing {
 
 final class UserProfileViewController: NiblessViewController {
 
-    // MARK: • View controller factories
-
-    private unowned let logInVCFactory: LogInViewControllerProducing
-    private unowned let favoritesVCFactory: FavoritesViewControllerProducing
-
     // MARK: • Initialization
 
-    init(
-        logInVCFactory: LogInViewControllerProducing,
-        favoritesVCFactory: FavoritesViewControllerProducing
-    ) {
-        self.logInVCFactory = logInVCFactory
-        self.favoritesVCFactory = favoritesVCFactory
-
+    override init() {
         super.init()
 
         setUpUI()
@@ -44,7 +33,7 @@ final class UserProfileViewController: NiblessViewController {
 extension UserProfileViewController {
 
     private func setUpUI() {
-        tabBarItem = UITabBarItem(title: L10n.TabBarItem.userProfile, image: nil, selectedImage: nil)
+        title = L10n.NavBarTitle.userProfile
     }
 
 }

@@ -14,21 +14,21 @@ final class RootViewController: NiblessTabBarController {
 
     // MARK: • Tabs
 
-    private let wordListVC: WordListViewController
-    private let userProfileVC: UserProfileViewController
+    private let wordListNC: WordListNavigationController
+    private let userProfileNC: UserProfileNavigationController
 
     // MARK: • Initialization
 
     init(
-        wordListVC: WordListViewController,
-        userProfileVC: UserProfileViewController
+        wordListNC: WordListNavigationController,
+        userProfileNC: UserProfileNavigationController
     ) {
-        self.wordListVC = wordListVC
-        self.userProfileVC = userProfileVC
+        self.wordListNC = wordListNC
+        self.userProfileNC = userProfileNC
 
         super.init()
 
-        setUpTabs()
+        setUpUI()
     }
 
 }
@@ -37,11 +37,11 @@ final class RootViewController: NiblessTabBarController {
 
 extension RootViewController {
 
-    private func setUpTabs() {
+    private func setUpUI() {
         setViewControllers(
             [
-                wordListVC,
-                userProfileVC,
+                wordListNC,
+                userProfileNC,
             ],
             animated: false
         )

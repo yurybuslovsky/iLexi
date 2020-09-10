@@ -17,7 +17,10 @@
 		563B68A825090F7D00E9B282 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A725090F7D00E9B282 /* RootViewController.swift */; };
 		563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A92509108200E9B282 /* NiblessTabBarController.swift */; };
 		567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD817250942580073DCA5 /* NiblessNavigationController.swift */; };
-		56BE8F3A2509196500140B82 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F392509196500140B82 /* WordListViewController.swift */; };
+		567AD81B250A38350073DCA5 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD81A250A38350073DCA5 /* RootState.swift */; };
+		567AD827250A394C0073DCA5 /* WordListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD826250A394C0073DCA5 /* WordListState.swift */; };
+		567AD829250A395B0073DCA5 /* UserProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD828250A395B0073DCA5 /* UserProfileState.swift */; };
+		56BE8F3A2509196500140B82 /* WordListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F392509196500140B82 /* WordListNavigationController.swift */; };
 		56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F3F25091A8300140B82 /* NiblessViewController.swift */; };
 		56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4325091DA100140B82 /* UserProfileViewController.swift */; };
 		56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4525091DD500140B82 /* NewWordViewController.swift */; };
@@ -25,6 +28,13 @@
 		56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */; };
 		56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */; };
 		56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */; };
+		56D44160250A50D90049E5E1 /* UserProfileViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4415F250A50D90049E5E1 /* UserProfileViewControllerState.swift */; };
+		56E676C5250A3E7400BCE932 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C4250A3E7400BCE932 /* WordListViewController.swift */; };
+		56E676C7250A481200BCE932 /* LogInViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C6250A481200BCE932 /* LogInViewControllerState.swift */; };
+		56E676C9250A48CF00BCE932 /* NewWordViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C8250A48CF00BCE932 /* NewWordViewControllerState.swift */; };
+		56E676CB250A493A00BCE932 /* FavoritesViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */; };
+		56E676CF250A4B5600BCE932 /* WordListViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */; };
+		56E676D3250A4E8200BCE932 /* UserProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */; };
 		B27627F877AF7EFC11029216 /* Pods_iLexi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE91C439856608727DCC08 /* Pods_iLexi.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +66,10 @@
 		563B68A725090F7D00E9B282 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		563B68A92509108200E9B282 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
 		567AD817250942580073DCA5 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
-		56BE8F392509196500140B82 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		567AD81A250A38350073DCA5 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		567AD826250A394C0073DCA5 /* WordListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListState.swift; sourceTree = "<group>"; };
+		567AD828250A395B0073DCA5 /* UserProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileState.swift; sourceTree = "<group>"; };
+		56BE8F392509196500140B82 /* WordListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationController.swift; sourceTree = "<group>"; };
 		56BE8F3F25091A8300140B82 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		56BE8F4325091DA100140B82 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		56BE8F4525091DD500140B82 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +77,13 @@
 		56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDIContainer.swift; sourceTree = "<group>"; };
 		56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListDIContainer.swift; sourceTree = "<group>"; };
+		56D4415F250A50D90049E5E1 /* UserProfileViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewControllerState.swift; sourceTree = "<group>"; };
+		56E676C4250A3E7400BCE932 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		56E676C6250A481200BCE932 /* LogInViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewControllerState.swift; sourceTree = "<group>"; };
+		56E676C8250A48CF00BCE932 /* NewWordViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewControllerState.swift; sourceTree = "<group>"; };
+		56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerState.swift; sourceTree = "<group>"; };
+		56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerState.swift; sourceTree = "<group>"; };
+		56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationController.swift; sourceTree = "<group>"; };
 		9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.debug.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.release.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +103,8 @@
 		562AEFA0250934C600CC77AB /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				56BE8F502509211300140B82 /* WordListViewController */,
-				56BE8F512509212300140B82 /* UserProfileViewController */,
+				56BE8F502509211300140B82 /* WordList */,
+				56BE8F512509212300140B82 /* UserProfile */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -92,7 +112,8 @@
 		562AEFA1250934D700CC77AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				56BE8F542509214A00140B82 /* FavoritesViewController */,
+				56BE8F522509213700140B82 /* NewWord */,
+				56BE8F542509214A00140B82 /* Favorites */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -126,6 +147,7 @@
 				563B68A12509016700E9B282 /* L10n.swift */,
 				563AFCA724FC316400EB6F53 /* Info.plist */,
 				563B68A425090B7500E9B282 /* DIContainers */,
+				567AD819250A38090073DCA5 /* State */,
 				56BE8F4225091AE600140B82 /* ViewControllers */,
 				563B68AB250913B300E9B282 /* UI */,
 			);
@@ -152,6 +174,77 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		567AD819250A38090073DCA5 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				567AD81A250A38350073DCA5 /* RootState.swift */,
+				567AD82A250A3B360073DCA5 /* Tabs */,
+				567AD82B250A3B500073DCA5 /* Common */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		567AD824250A39120073DCA5 /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				567AD826250A394C0073DCA5 /* WordListState.swift */,
+				56E676CD250A4B1C00BCE932 /* Root */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		567AD825250A391B0073DCA5 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				567AD828250A395B0073DCA5 /* UserProfileState.swift */,
+				56D4415E250A50CB0049E5E1 /* Root */,
+				567AD82E250A3C6A0073DCA5 /* LogIn */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		567AD82A250A3B360073DCA5 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				567AD824250A39120073DCA5 /* WordList */,
+				567AD825250A391B0073DCA5 /* UserProfile */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		567AD82B250A3B500073DCA5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				567AD82D250A3B970073DCA5 /* NewWord */,
+				567AD82C250A3B860073DCA5 /* Favorites */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		567AD82C250A3B860073DCA5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		567AD82D250A3B970073DCA5 /* NewWord */ = {
+			isa = PBXGroup;
+			children = (
+				56E676C8250A48CF00BCE932 /* NewWordViewControllerState.swift */,
+			);
+			path = NewWord;
+			sourceTree = "<group>";
+		};
+		567AD82E250A3C6A0073DCA5 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				56E676C6250A481200BCE932 /* LogInViewControllerState.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
 		56BE8F4225091AE600140B82 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,46 +263,47 @@
 			path = WordListDIContainer;
 			sourceTree = "<group>";
 		};
-		56BE8F502509211300140B82 /* WordListViewController */ = {
+		56BE8F502509211300140B82 /* WordList */ = {
 			isa = PBXGroup;
 			children = (
-				56BE8F392509196500140B82 /* WordListViewController.swift */,
-				56BE8F522509213700140B82 /* NewWordViewController */,
+				56BE8F392509196500140B82 /* WordListNavigationController.swift */,
+				56E676CC250A4AEB00BCE932 /* Root */,
 			);
-			path = WordListViewController;
+			path = WordList;
 			sourceTree = "<group>";
 		};
-		56BE8F512509212300140B82 /* UserProfileViewController */ = {
+		56BE8F512509212300140B82 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				56BE8F4325091DA100140B82 /* UserProfileViewController.swift */,
-				56BE8F532509214100140B82 /* LogInViewController */,
+				56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */,
+				56E676D1250A4BFF00BCE932 /* Root */,
+				56BE8F532509214100140B82 /* LogIn */,
 			);
-			path = UserProfileViewController;
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
-		56BE8F522509213700140B82 /* NewWordViewController */ = {
+		56BE8F522509213700140B82 /* NewWord */ = {
 			isa = PBXGroup;
 			children = (
 				56BE8F4525091DD500140B82 /* NewWordViewController.swift */,
 			);
-			path = NewWordViewController;
+			path = NewWord;
 			sourceTree = "<group>";
 		};
-		56BE8F532509214100140B82 /* LogInViewController */ = {
+		56BE8F532509214100140B82 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
 				56BE8F4725091DF100140B82 /* LogInViewController.swift */,
 			);
-			path = LogInViewController;
+			path = LogIn;
 			sourceTree = "<group>";
 		};
-		56BE8F542509214A00140B82 /* FavoritesViewController */ = {
+		56BE8F542509214A00140B82 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 				56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */,
 			);
-			path = FavoritesViewController;
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		56BE8F572509239D00140B82 /* UserProfileDIContainer */ = {
@@ -218,6 +312,38 @@
 				56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */,
 			);
 			path = UserProfileDIContainer;
+			sourceTree = "<group>";
+		};
+		56D4415E250A50CB0049E5E1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				56D4415F250A50D90049E5E1 /* UserProfileViewControllerState.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		56E676CC250A4AEB00BCE932 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				56E676C4250A3E7400BCE932 /* WordListViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		56E676CD250A4B1C00BCE932 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		56E676D1250A4BFF00BCE932 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				56BE8F4325091DA100140B82 /* UserProfileViewController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		7856CCE145B3B673487D6911 /* Frameworks */ = {
@@ -411,21 +537,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E676CB250A493A00BCE932 /* FavoritesViewControllerState.swift in Sources */,
 				563B68A32509016700E9B282 /* L10n.swift in Sources */,
+				56E676C7250A481200BCE932 /* LogInViewControllerState.swift in Sources */,
+				567AD827250A394C0073DCA5 /* WordListState.swift in Sources */,
+				56E676D3250A4E8200BCE932 /* UserProfileNavigationController.swift in Sources */,
 				56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */,
 				56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */,
 				56BE8F4825091DF100140B82 /* LogInViewController.swift in Sources */,
+				56E676C5250A3E7400BCE932 /* WordListViewController.swift in Sources */,
 				563AFC9A24FC316200EB6F53 /* AppDelegate.swift in Sources */,
 				563B68A825090F7D00E9B282 /* RootViewController.swift in Sources */,
 				567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */,
-				56BE8F3A2509196500140B82 /* WordListViewController.swift in Sources */,
+				56BE8F3A2509196500140B82 /* WordListNavigationController.swift in Sources */,
 				563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */,
+				567AD829250A395B0073DCA5 /* UserProfileState.swift in Sources */,
 				563B68A22509016700E9B282 /* Assets.swift in Sources */,
+				56E676CF250A4B5600BCE932 /* WordListViewControllerState.swift in Sources */,
 				56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */,
+				56D44160250A50D90049E5E1 /* UserProfileViewControllerState.swift in Sources */,
 				56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */,
+				56E676C9250A48CF00BCE932 /* NewWordViewControllerState.swift in Sources */,
 				56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */,
 				56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */,
 				563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */,
+				567AD81B250A38350073DCA5 /* RootState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

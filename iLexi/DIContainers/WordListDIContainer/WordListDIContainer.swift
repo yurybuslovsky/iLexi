@@ -32,24 +32,25 @@ final class WordListDIContainer {
 
 }
 
-// MARK: - Word List
+// MARK: - Navigation Controller
 
-extension WordListDIContainer: WordListViewControllerProducing {
+extension WordListDIContainer: WordListNavigationControllerProducing {
 
-    func makeWordListViewController() -> WordListViewController {
-        let wordListVC = WordListViewController(newWordVCFactory: self, favoritesVCFactory: rootContainer)
-        return wordListVC
+    func makeWordListNavigationController() -> WordListNavigationController {
+        let wordListVC = makeWordListViewController()
+        let wordListNC = WordListNavigationController(wordListVC: wordListVC, favoritesVCFactory: rootContainer)
+        return wordListNC
     }
 
 }
 
-// MARK: - New Word
+// MARK: - Root
 
-extension WordListDIContainer: NewWordViewControllerProducing {
+extension WordListDIContainer: WordListViewControllerProducing {
 
-    func makeNewWordViewController() -> NewWordViewController {
-        let newWordVC = NewWordViewController()
-        return newWordVC
+    func makeWordListViewController() -> WordListViewController {
+        let wordListVC = WordListViewController()
+        return wordListVC
     }
 
 }

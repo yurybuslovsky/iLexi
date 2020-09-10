@@ -11,6 +11,19 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum NavBarTitle {
+    /// Favorites
+    internal static let favorites = L10n.tr("Localizable", "NavBarTitle.favorites")
+    /// Log In
+    internal static let logIn = L10n.tr("Localizable", "NavBarTitle.logIn")
+    /// New Word
+    internal static let newWord = L10n.tr("Localizable", "NavBarTitle.newWord")
+    /// Profile
+    internal static let userProfile = L10n.tr("Localizable", "NavBarTitle.userProfile")
+    /// Words
+    internal static let wordList = L10n.tr("Localizable", "NavBarTitle.wordList")
+  }
+
   internal enum TabBarItem {
     /// Profile
     internal static let userProfile = L10n.tr("Localizable", "TabBarItem.userProfile")

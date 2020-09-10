@@ -6,8 +6,6 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
-import UIKit
-
 // MARK: - Factory Protocol
 
 protocol NewWordViewControllerProducing: class {

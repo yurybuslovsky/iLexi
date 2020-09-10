@@ -32,12 +32,30 @@ final class UserProfileDIContainer {
 
 }
 
-// MARK: - User Profile
+// MARK: - Navigation Controller
+
+extension UserProfileDIContainer: UserProfileNavigationControllerProducing {
+
+    func makeUserProfileNavigationController() -> UserProfileNavigationController {
+        let userProfileVC = makeUserProfileViewController()
+
+        let userProfileNC = UserProfileNavigationController(
+            userProfileVC: userProfileVC,
+            logInVCFactory: self,
+            favoritesVCFactory: rootContainer
+        )
+
+        return userProfileNC
+    }
+
+}
+
+// MARK: - Root
 
 extension UserProfileDIContainer: UserProfileViewControllerProducing {
 
     func makeUserProfileViewController() -> UserProfileViewController {
-        let userProfileVC = UserProfileViewController(logInVCFactory: self, favoritesVCFactory: rootContainer)
+        let userProfileVC = UserProfileViewController()
         return userProfileVC
     }
 

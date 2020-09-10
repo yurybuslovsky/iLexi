@@ -20,11 +20,11 @@ final class RootDIContainer {
 
     // MARK: • Subcontainers
 
-    private lazy var wordListFactory: WordListViewControllerProducing = {
+    private lazy var wordListFactory: WordListNavigationControllerProducing = {
         RootDIContainer.makeWordListDIContainer(rootContainer: self)
     }()
 
-    private lazy var userProfileFactory: UserProfileViewControllerProducing = {
+    private lazy var userProfileFactory: UserProfileNavigationControllerProducing = {
         RootDIContainer.makeUserProfileDIContainer(rootContainer: self)
     }()
 
@@ -39,12 +39,12 @@ final class RootDIContainer {
 extension RootDIContainer {
 
     func makeRootViewController() -> RootViewController {
-        let wordListVC = makeWordListViewController()
-        let userProfileVC = makeUserProfileViewController()
+        let wordListNC = makeWordListNavigationController()
+        let userProfileNC = makeUserProfileNavigationController()
 
         let rootVC = RootViewController(
-            wordListVC: wordListVC,
-            userProfileVC: userProfileVC
+            wordListNC: wordListNC,
+            userProfileNC: userProfileNC
         )
 
         return rootVC
@@ -56,19 +56,30 @@ extension RootDIContainer {
 
 extension RootDIContainer {
 
-    private func makeWordListViewController() -> WordListViewController {
-        let wordListVC = wordListFactory.makeWordListViewController()
-        return wordListVC
+    private func makeWordListNavigationController() -> WordListNavigationController {
+        let wordListNC = wordListFactory.makeWordListNavigationController()
+        return wordListNC
     }
 
-    private func makeUserProfileViewController() -> UserProfileViewController {
-        let userProfileVC = userProfileFactory.makeUserProfileViewController()
-        return userProfileVC
+    private func makeUserProfileNavigationController() -> UserProfileNavigationController {
+        let userProfileNC = userProfileFactory.makeUserProfileNavigationController()
+        return userProfileNC
     }
 
 }
 
-// MARK: - Common
+// MARK: - New Word
+
+extension RootDIContainer: NewWordViewControllerProducing {
+
+    func makeNewWordViewController() -> NewWordViewController {
+        let newWordVC = NewWordViewController()
+        return newWordVC
+    }
+
+}
+
+// MARK: - Favorites
 
 extension RootDIContainer: FavoritesViewControllerProducing {
 

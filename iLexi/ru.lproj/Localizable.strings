@@ -14,3 +14,11 @@
 
 "TabBarItem.wordList" = "Слова";
 "TabBarItem.userProfile" = "Профиль";
+
+// MARK: - Navigation Bar Titles
+
+"NavBarTitle.wordList" = "Слова";
+"NavBarTitle.userProfile" = "Профиль";
+"NavBarTitle.logIn" = "Войти";
+"NavBarTitle.newWord" = "Новое слово";
+"NavBarTitle.favorites" = "Избранное";
