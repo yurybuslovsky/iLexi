@@ -6,6 +6,14 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+// MARK: - Declaration
+
 struct FavoritesViewControllerState: Equatable {
 
+}
+
+// MARK: - Default
+
+extension FavoritesViewControllerState {
+    static var `default`: FavoritesViewControllerState { .init() }
 }

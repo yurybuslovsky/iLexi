@@ -6,6 +6,14 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
-struct UserProfileViewControllerState: Equatable {
+// MARK: - Declaration
 
+struct UserProfileViewControllerState: Equatable {
+    let authState: AuthState
+}
+
+// MARK: - Default
+
+extension UserProfileViewControllerState {
+    static var `default`: UserProfileViewControllerState { .init(authState: .unauthorized) }
 }

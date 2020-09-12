@@ -6,6 +6,15 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
-struct WordListViewControllerState: Equatable {
+// MARK: - Declaration
 
+struct WordListViewControllerState: Equatable {
+    let authState: AuthState
 }
+
+// MARK: - Default
+
+extension WordListViewControllerState {
+    static var `default`: WordListViewControllerState { .init(authState: .default) }
+}
+

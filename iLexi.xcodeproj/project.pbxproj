@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56372157250A69E5004F616E /* UserRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372156250A69E5004F616E /* UserRaw.swift */; };
+		5637215D250A6AFA004F616E /* EntryRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637215C250A6AFA004F616E /* EntryRaw.swift */; };
+		56372161250A7792004F616E /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372160250A7792004F616E /* UseCase.swift */; };
+		56372163250A77DB004F616E /* CancelableUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372162250A77DB004F616E /* CancelableUseCase.swift */; };
+		56372165250A78D3004F616E /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372164250A78D3004F616E /* Dispatcher.swift */; };
+		56372168250A7A88004F616E /* TopViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372167250A7A88004F616E /* TopViewControllerReducer.swift */; };
+		5637216D250A7CB9004F616E /* WordListNavigationControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637216C250A7CB9004F616E /* WordListNavigationControllerReducer.swift */; };
+		56372172250A82E8004F616E /* WordListViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372171250A82E8004F616E /* WordListViewControllerReducer.swift */; };
+		56372176250A8390004F616E /* FavoritesViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372175250A8390004F616E /* FavoritesViewControllerReducer.swift */; };
+		56372179250A841C004F616E /* NewWordViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372178250A841C004F616E /* NewWordViewControllerReducer.swift */; };
+		5637217B250A84B7004F616E /* UserProfileNavigationControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637217A250A84B7004F616E /* UserProfileNavigationControllerReducer.swift */; };
+		5637217F250A84D1004F616E /* UserProfileViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637217E250A84D1004F616E /* UserProfileViewControllerReducer.swift */; };
+		56372181250A84E1004F616E /* LogInViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372180250A84E1004F616E /* LogInViewControllerReducer.swift */; };
+		5637218D250A8942004F616E /* LogInViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637218C250A8942004F616E /* LogInViewControllerActions.swift */; };
+		5637218F250A90B9004F616E /* UserProfileViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637218E250A90B9004F616E /* UserProfileViewControllerActions.swift */; };
+		5637219A250CC42C004F616E /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372199250CC42C004F616E /* Vertex.swift */; };
+		5637219C250CC513004F616E /* Unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637219B250CC513004F616E /* Unowned.swift */; };
+		5637219F250CC676004F616E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637219E250CC676004F616E /* Graph.swift */; };
+		563721A1250CCB5C004F616E /* Neigboring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563721A0250CCB5C004F616E /* Neigboring.swift */; };
+		563721A4250CF34A004F616E /* UserFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563721A3250CF34A004F616E /* UserFormatted.swift */; };
+		563721A7250CF3B2004F616E /* EntryFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563721A6250CF3B2004F616E /* EntryFormatted.swift */; };
+		563721AB250D017C004F616E /* FavoritesViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563721AA250D017C004F616E /* FavoritesViewControllerActions.swift */; };
+		563721AE250D0B44004F616E /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563721AD250D0B44004F616E /* AuthState.swift */; };
 		563AFC9A24FC316200EB6F53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AFC9924FC316200EB6F53 /* AppDelegate.swift */; };
 		563AFCA324FC316400EB6F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AFCA224FC316400EB6F53 /* Assets.xcassets */; };
 		563B688B2508FC0100E9B282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563B688A2508FC0100E9B282 /* LaunchScreen.storyboard */; };
@@ -14,12 +37,24 @@
 		563B68A22509016700E9B282 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A02509016700E9B282 /* Assets.swift */; };
 		563B68A32509016700E9B282 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A12509016700E9B282 /* L10n.swift */; };
 		563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A525090B9A00E9B282 /* RootDIContainer.swift */; };
-		563B68A825090F7D00E9B282 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A725090F7D00E9B282 /* RootViewController.swift */; };
+		563B68A825090F7D00E9B282 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A725090F7D00E9B282 /* RootTabBarController.swift */; };
 		563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A92509108200E9B282 /* NiblessTabBarController.swift */; };
+		563FB383250D398D00B03CF9 /* NewWordViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FB382250D398D00B03CF9 /* NewWordViewControllerActions.swift */; };
 		567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD817250942580073DCA5 /* NiblessNavigationController.swift */; };
-		567AD81B250A38350073DCA5 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD81A250A38350073DCA5 /* RootState.swift */; };
-		567AD827250A394C0073DCA5 /* WordListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD826250A394C0073DCA5 /* WordListState.swift */; };
-		567AD829250A395B0073DCA5 /* UserProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD828250A395B0073DCA5 /* UserProfileState.swift */; };
+		567AD81B250A38350073DCA5 /* TopViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD81A250A38350073DCA5 /* TopViewControllerState.swift */; };
+		567AD827250A394C0073DCA5 /* WordListNavigationControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD826250A394C0073DCA5 /* WordListNavigationControllerState.swift */; };
+		567AD829250A395B0073DCA5 /* UserProfileNavigationControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD828250A395B0073DCA5 /* UserProfileNavigationControllerState.swift */; };
+		56A857D7250D13AE00BB1E8B /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A857D6250D13AE00BB1E8B /* TabBarState.swift */; };
+		56A857D9250D1D0600BB1E8B /* TabBarReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A857D8250D1D0600BB1E8B /* TabBarReducer.swift */; };
+		56A857DC250D28A500BB1E8B /* UserProfileNavigationControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A857DB250D28A500BB1E8B /* UserProfileNavigationControllerActions.swift */; };
+		56A857DE250D2A9C00BB1E8B /* WordListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A857DD250D2A9C00BB1E8B /* WordListState.swift */; };
+		56B1301F250D2B5D00F48627 /* WordListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1301E250D2B5D00F48627 /* WordListReducer.swift */; };
+		56B13022250D2CB100F48627 /* UserProfileReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13021250D2CB100F48627 /* UserProfileReducer.swift */; };
+		56B13024250D2CC700F48627 /* UserProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13023250D2CC700F48627 /* UserProfileState.swift */; };
+		56B13026250D305400F48627 /* WordListViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13025250D305400F48627 /* WordListViewControllerActions.swift */; };
+		56B13028250D307700F48627 /* WordListNavigationControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13027250D307700F48627 /* WordListNavigationControllerActions.swift */; };
+		56B1302B250D31ED00F48627 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1302A250D31ED00F48627 /* Array+Utils.swift */; };
+		56B1302E250D344000F48627 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1302D250D344000F48627 /* TypeAliases.swift */; };
 		56BE8F3A2509196500140B82 /* WordListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F392509196500140B82 /* WordListNavigationController.swift */; };
 		56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F3F25091A8300140B82 /* NiblessViewController.swift */; };
 		56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4325091DA100140B82 /* UserProfileViewController.swift */; };
@@ -35,6 +70,8 @@
 		56E676CB250A493A00BCE932 /* FavoritesViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */; };
 		56E676CF250A4B5600BCE932 /* WordListViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */; };
 		56E676D3250A4E8200BCE932 /* UserProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */; };
+		56FBECB2250D385900B449CB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FBECB1250D385900B449CB /* AppState.swift */; };
+		56FBECB4250D38DC00B449CB /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FBECB3250D38DC00B449CB /* AppReducer.swift */; };
 		B27627F877AF7EFC11029216 /* Pods_iLexi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE91C439856608727DCC08 /* Pods_iLexi.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +90,29 @@
 
 /* Begin PBXFileReference section */
 		26EE91C439856608727DCC08 /* Pods_iLexi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLexi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56372156250A69E5004F616E /* UserRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRaw.swift; sourceTree = "<group>"; };
+		5637215C250A6AFA004F616E /* EntryRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRaw.swift; sourceTree = "<group>"; };
+		56372160250A7792004F616E /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		56372162250A77DB004F616E /* CancelableUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelableUseCase.swift; sourceTree = "<group>"; };
+		56372164250A78D3004F616E /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		56372167250A7A88004F616E /* TopViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewControllerReducer.swift; sourceTree = "<group>"; };
+		5637216C250A7CB9004F616E /* WordListNavigationControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationControllerReducer.swift; sourceTree = "<group>"; };
+		56372171250A82E8004F616E /* WordListViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerReducer.swift; sourceTree = "<group>"; };
+		56372175250A8390004F616E /* FavoritesViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerReducer.swift; sourceTree = "<group>"; };
+		56372178250A841C004F616E /* NewWordViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewControllerReducer.swift; sourceTree = "<group>"; };
+		5637217A250A84B7004F616E /* UserProfileNavigationControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationControllerReducer.swift; sourceTree = "<group>"; };
+		5637217E250A84D1004F616E /* UserProfileViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewControllerReducer.swift; sourceTree = "<group>"; };
+		56372180250A84E1004F616E /* LogInViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewControllerReducer.swift; sourceTree = "<group>"; };
+		5637218C250A8942004F616E /* LogInViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewControllerActions.swift; sourceTree = "<group>"; };
+		5637218E250A90B9004F616E /* UserProfileViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewControllerActions.swift; sourceTree = "<group>"; };
+		56372199250CC42C004F616E /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		5637219B250CC513004F616E /* Unowned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unowned.swift; sourceTree = "<group>"; };
+		5637219E250CC676004F616E /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		563721A0250CCB5C004F616E /* Neigboring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neigboring.swift; sourceTree = "<group>"; };
+		563721A3250CF34A004F616E /* UserFormatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormatted.swift; sourceTree = "<group>"; };
+		563721A6250CF3B2004F616E /* EntryFormatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFormatted.swift; sourceTree = "<group>"; };
+		563721AA250D017C004F616E /* FavoritesViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerActions.swift; sourceTree = "<group>"; };
+		563721AD250D0B44004F616E /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
 		563AFC9624FC316200EB6F53 /* iLexi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLexi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AFC9924FC316200EB6F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563AFCA224FC316400EB6F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,12 +123,24 @@
 		563B68A02509016700E9B282 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		563B68A12509016700E9B282 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		563B68A525090B9A00E9B282 /* RootDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDIContainer.swift; sourceTree = "<group>"; };
-		563B68A725090F7D00E9B282 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		563B68A725090F7D00E9B282 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		563B68A92509108200E9B282 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
+		563FB382250D398D00B03CF9 /* NewWordViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewControllerActions.swift; sourceTree = "<group>"; };
 		567AD817250942580073DCA5 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
-		567AD81A250A38350073DCA5 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
-		567AD826250A394C0073DCA5 /* WordListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListState.swift; sourceTree = "<group>"; };
-		567AD828250A395B0073DCA5 /* UserProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileState.swift; sourceTree = "<group>"; };
+		567AD81A250A38350073DCA5 /* TopViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewControllerState.swift; sourceTree = "<group>"; };
+		567AD826250A394C0073DCA5 /* WordListNavigationControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationControllerState.swift; sourceTree = "<group>"; };
+		567AD828250A395B0073DCA5 /* UserProfileNavigationControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationControllerState.swift; sourceTree = "<group>"; };
+		56A857D6250D13AE00BB1E8B /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
+		56A857D8250D1D0600BB1E8B /* TabBarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarReducer.swift; sourceTree = "<group>"; };
+		56A857DB250D28A500BB1E8B /* UserProfileNavigationControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationControllerActions.swift; sourceTree = "<group>"; };
+		56A857DD250D2A9C00BB1E8B /* WordListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListState.swift; sourceTree = "<group>"; };
+		56B1301E250D2B5D00F48627 /* WordListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListReducer.swift; sourceTree = "<group>"; };
+		56B13021250D2CB100F48627 /* UserProfileReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileReducer.swift; sourceTree = "<group>"; };
+		56B13023250D2CC700F48627 /* UserProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileState.swift; sourceTree = "<group>"; };
+		56B13025250D305400F48627 /* WordListViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerActions.swift; sourceTree = "<group>"; };
+		56B13027250D307700F48627 /* WordListNavigationControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationControllerActions.swift; sourceTree = "<group>"; };
+		56B1302A250D31ED00F48627 /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
+		56B1302D250D344000F48627 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		56BE8F392509196500140B82 /* WordListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationController.swift; sourceTree = "<group>"; };
 		56BE8F3F25091A8300140B82 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		56BE8F4325091DA100140B82 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +156,8 @@
 		56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerState.swift; sourceTree = "<group>"; };
 		56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerState.swift; sourceTree = "<group>"; };
 		56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationController.swift; sourceTree = "<group>"; };
+		56FBECB1250D385900B449CB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		56FBECB3250D38DC00B449CB /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		9858C321ED6D4C9A8B1D4283 /* Pods-iLexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.debug.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB1DABB4281EE6AEDDB62CC /* Pods-iLexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLexi.release.xcconfig"; path = "Target Support Files/Pods-iLexi/Pods-iLexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +192,240 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		56372155250A69CF004F616E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				563721A2250CF33B004F616E /* User */,
+				563721A5250CF392004F616E /* Entry */,
+				563721A8250CF47E004F616E /* Graph */,
+				563721B2250D0CC0004F616E /* Misc */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5637215F250A7749004F616E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				56372160250A7792004F616E /* UseCase.swift */,
+				56372162250A77DB004F616E /* CancelableUseCase.swift */,
+				56372164250A78D3004F616E /* Dispatcher.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		56372166250A7A09004F616E /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				56FBECB3250D38DC00B449CB /* AppReducer.swift */,
+				56372167250A7A88004F616E /* TopViewControllerReducer.swift */,
+				56A857D8250D1D0600BB1E8B /* TabBarReducer.swift */,
+				5637216A250A7CA2004F616E /* Tabs */,
+				56372173250A8347004F616E /* Common */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		56372169250A7AA0004F616E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				56372182250A872D004F616E /* Tabs */,
+				56372185250A87B1004F616E /* Common */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		5637216A250A7CA2004F616E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				5637216B250A7CAA004F616E /* WordList */,
+				5637216E250A7EEB004F616E /* UserProfile */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		5637216B250A7CAA004F616E /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				56B1301E250D2B5D00F48627 /* WordListReducer.swift */,
+				5637216C250A7CB9004F616E /* WordListNavigationControllerReducer.swift */,
+				5637216F250A7F5A004F616E /* Root */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		5637216E250A7EEB004F616E /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				56B13021250D2CB100F48627 /* UserProfileReducer.swift */,
+				5637217A250A84B7004F616E /* UserProfileNavigationControllerReducer.swift */,
+				5637217C250A84B8004F616E /* Root */,
+				5637217D250A84BA004F616E /* LogIn */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		5637216F250A7F5A004F616E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				56372171250A82E8004F616E /* WordListViewControllerReducer.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		56372173250A8347004F616E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56372177250A840D004F616E /* NewWord */,
+				56372174250A8382004F616E /* Favorites */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		56372174250A8382004F616E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				56372175250A8390004F616E /* FavoritesViewControllerReducer.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		56372177250A840D004F616E /* NewWord */ = {
+			isa = PBXGroup;
+			children = (
+				56372178250A841C004F616E /* NewWordViewControllerReducer.swift */,
+			);
+			path = NewWord;
+			sourceTree = "<group>";
+		};
+		5637217C250A84B8004F616E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5637217E250A84D1004F616E /* UserProfileViewControllerReducer.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5637217D250A84BA004F616E /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				56372180250A84E1004F616E /* LogInViewControllerReducer.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		56372182250A872D004F616E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				56372183250A8731004F616E /* WordList */,
+				56372184250A8736004F616E /* UserProfile */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		56372183250A8731004F616E /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				56B13027250D307700F48627 /* WordListNavigationControllerActions.swift */,
+				56372188250A881E004F616E /* Root */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		56372184250A8736004F616E /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				56A857DB250D28A500BB1E8B /* UserProfileNavigationControllerActions.swift */,
+				56372189250A8822004F616E /* Root */,
+				5637218A250A8824004F616E /* LogIn */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		56372185250A87B1004F616E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56372186250A87B8004F616E /* NewWord */,
+				56372187250A87C3004F616E /* Favorites */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		56372186250A87B8004F616E /* NewWord */ = {
+			isa = PBXGroup;
+			children = (
+				563FB382250D398D00B03CF9 /* NewWordViewControllerActions.swift */,
+			);
+			path = NewWord;
+			sourceTree = "<group>";
+		};
+		56372187250A87C3004F616E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				563721AA250D017C004F616E /* FavoritesViewControllerActions.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		56372188250A881E004F616E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				56B13025250D305400F48627 /* WordListViewControllerActions.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		56372189250A8822004F616E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5637218E250A90B9004F616E /* UserProfileViewControllerActions.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5637218A250A8824004F616E /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				5637218C250A8942004F616E /* LogInViewControllerActions.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		563721A2250CF33B004F616E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				56372156250A69E5004F616E /* UserRaw.swift */,
+				563721A3250CF34A004F616E /* UserFormatted.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		563721A5250CF392004F616E /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				5637215C250A6AFA004F616E /* EntryRaw.swift */,
+				563721A6250CF3B2004F616E /* EntryFormatted.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		563721A8250CF47E004F616E /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				5637219E250CC676004F616E /* Graph.swift */,
+				56372199250CC42C004F616E /* Vertex.swift */,
+				563721A0250CCB5C004F616E /* Neigboring.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		563721B2250D0CC0004F616E /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				5637219B250CC513004F616E /* Unowned.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		563AFC8D24FC316200EB6F53 = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +455,15 @@
 				563B68A12509016700E9B282 /* L10n.swift */,
 				563AFCA724FC316400EB6F53 /* Info.plist */,
 				563B68A425090B7500E9B282 /* DIContainers */,
+				56372155250A69CF004F616E /* Entities */,
+				56372169250A7AA0004F616E /* Actions */,
+				56372166250A7A09004F616E /* Reducers */,
 				567AD819250A38090073DCA5 /* State */,
 				56BE8F4225091AE600140B82 /* ViewControllers */,
+				5637215F250A7749004F616E /* Core */,
 				563B68AB250913B300E9B282 /* UI */,
+				56B13029250D31B000F48627 /* Extensions */,
+				56B1302C250D342F00F48627 /* Misc */,
 			);
 			path = iLexi;
 			sourceTree = "<group>";
@@ -177,7 +491,9 @@
 		567AD819250A38090073DCA5 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				567AD81A250A38350073DCA5 /* RootState.swift */,
+				56FBECB1250D385900B449CB /* AppState.swift */,
+				567AD81A250A38350073DCA5 /* TopViewControllerState.swift */,
+				56A857D6250D13AE00BB1E8B /* TabBarState.swift */,
 				567AD82A250A3B360073DCA5 /* Tabs */,
 				567AD82B250A3B500073DCA5 /* Common */,
 			);
@@ -187,7 +503,8 @@
 		567AD824250A39120073DCA5 /* WordList */ = {
 			isa = PBXGroup;
 			children = (
-				567AD826250A394C0073DCA5 /* WordListState.swift */,
+				56A857DD250D2A9C00BB1E8B /* WordListState.swift */,
+				567AD826250A394C0073DCA5 /* WordListNavigationControllerState.swift */,
 				56E676CD250A4B1C00BCE932 /* Root */,
 			);
 			path = WordList;
@@ -196,7 +513,8 @@
 		567AD825250A391B0073DCA5 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				567AD828250A395B0073DCA5 /* UserProfileState.swift */,
+				56B13023250D2CC700F48627 /* UserProfileState.swift */,
+				567AD828250A395B0073DCA5 /* UserProfileNavigationControllerState.swift */,
 				56D4415E250A50CB0049E5E1 /* Root */,
 				567AD82E250A3C6A0073DCA5 /* LogIn */,
 			);
@@ -215,6 +533,7 @@
 		567AD82B250A3B500073DCA5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				563721AD250D0B44004F616E /* AuthState.swift */,
 				567AD82D250A3B970073DCA5 /* NewWord */,
 				567AD82C250A3B860073DCA5 /* Favorites */,
 			);
@@ -245,10 +564,26 @@
 			path = LogIn;
 			sourceTree = "<group>";
 		};
+		56B13029250D31B000F48627 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56B1302A250D31ED00F48627 /* Array+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		56B1302C250D342F00F48627 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				56B1302D250D344000F48627 /* TypeAliases.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		56BE8F4225091AE600140B82 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				563B68A725090F7D00E9B282 /* RootViewController.swift */,
+				563B68A725090F7D00E9B282 /* RootTabBarController.swift */,
 				562AEFA0250934C600CC77AB /* Tabs */,
 				562AEFA1250934D700CC77AB /* Common */,
 			);
@@ -537,31 +872,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56372157250A69E5004F616E /* UserRaw.swift in Sources */,
+				5637218F250A90B9004F616E /* UserProfileViewControllerActions.swift in Sources */,
 				56E676CB250A493A00BCE932 /* FavoritesViewControllerState.swift in Sources */,
 				563B68A32509016700E9B282 /* L10n.swift in Sources */,
+				56B13026250D305400F48627 /* WordListViewControllerActions.swift in Sources */,
 				56E676C7250A481200BCE932 /* LogInViewControllerState.swift in Sources */,
-				567AD827250A394C0073DCA5 /* WordListState.swift in Sources */,
+				567AD827250A394C0073DCA5 /* WordListNavigationControllerState.swift in Sources */,
+				563721A7250CF3B2004F616E /* EntryFormatted.swift in Sources */,
 				56E676D3250A4E8200BCE932 /* UserProfileNavigationController.swift in Sources */,
+				56A857DE250D2A9C00BB1E8B /* WordListState.swift in Sources */,
 				56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */,
 				56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */,
 				56BE8F4825091DF100140B82 /* LogInViewController.swift in Sources */,
+				56372172250A82E8004F616E /* WordListViewControllerReducer.swift in Sources */,
+				56A857D9250D1D0600BB1E8B /* TabBarReducer.swift in Sources */,
+				56372181250A84E1004F616E /* LogInViewControllerReducer.swift in Sources */,
+				563721AE250D0B44004F616E /* AuthState.swift in Sources */,
 				56E676C5250A3E7400BCE932 /* WordListViewController.swift in Sources */,
 				563AFC9A24FC316200EB6F53 /* AppDelegate.swift in Sources */,
-				563B68A825090F7D00E9B282 /* RootViewController.swift in Sources */,
+				563B68A825090F7D00E9B282 /* RootTabBarController.swift in Sources */,
+				5637217F250A84D1004F616E /* UserProfileViewControllerReducer.swift in Sources */,
+				56A857DC250D28A500BB1E8B /* UserProfileNavigationControllerActions.swift in Sources */,
+				563721A4250CF34A004F616E /* UserFormatted.swift in Sources */,
+				5637217B250A84B7004F616E /* UserProfileNavigationControllerReducer.swift in Sources */,
 				567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */,
+				56FBECB2250D385900B449CB /* AppState.swift in Sources */,
+				5637219A250CC42C004F616E /* Vertex.swift in Sources */,
+				56B13024250D2CC700F48627 /* UserProfileState.swift in Sources */,
+				56A857D7250D13AE00BB1E8B /* TabBarState.swift in Sources */,
 				56BE8F3A2509196500140B82 /* WordListNavigationController.swift in Sources */,
+				56372165250A78D3004F616E /* Dispatcher.swift in Sources */,
+				56FBECB4250D38DC00B449CB /* AppReducer.swift in Sources */,
 				563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */,
-				567AD829250A395B0073DCA5 /* UserProfileState.swift in Sources */,
+				5637215D250A6AFA004F616E /* EntryRaw.swift in Sources */,
+				5637219F250CC676004F616E /* Graph.swift in Sources */,
+				5637219C250CC513004F616E /* Unowned.swift in Sources */,
+				56B1301F250D2B5D00F48627 /* WordListReducer.swift in Sources */,
+				567AD829250A395B0073DCA5 /* UserProfileNavigationControllerState.swift in Sources */,
+				56B13022250D2CB100F48627 /* UserProfileReducer.swift in Sources */,
+				5637216D250A7CB9004F616E /* WordListNavigationControllerReducer.swift in Sources */,
 				563B68A22509016700E9B282 /* Assets.swift in Sources */,
 				56E676CF250A4B5600BCE932 /* WordListViewControllerState.swift in Sources */,
+				563721A1250CCB5C004F616E /* Neigboring.swift in Sources */,
+				563721AB250D017C004F616E /* FavoritesViewControllerActions.swift in Sources */,
 				56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */,
 				56D44160250A50D90049E5E1 /* UserProfileViewControllerState.swift in Sources */,
 				56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */,
 				56E676C9250A48CF00BCE932 /* NewWordViewControllerState.swift in Sources */,
 				56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */,
+				56B1302E250D344000F48627 /* TypeAliases.swift in Sources */,
 				56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */,
+				5637218D250A8942004F616E /* LogInViewControllerActions.swift in Sources */,
+				56372163250A77DB004F616E /* CancelableUseCase.swift in Sources */,
+				56372161250A7792004F616E /* UseCase.swift in Sources */,
 				563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */,
-				567AD81B250A38350073DCA5 /* RootState.swift in Sources */,
+				563FB383250D398D00B03CF9 /* NewWordViewControllerActions.swift in Sources */,
+				56B13028250D307700F48627 /* WordListNavigationControllerActions.swift in Sources */,
+				56372176250A8390004F616E /* FavoritesViewControllerReducer.swift in Sources */,
+				56372179250A841C004F616E /* NewWordViewControllerReducer.swift in Sources */,
+				56372168250A7A88004F616E /* TopViewControllerReducer.swift in Sources */,
+				56B1302B250D31ED00F48627 /* Array+Utils.swift in Sources */,
+				567AD81B250A38350073DCA5 /* TopViewControllerState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

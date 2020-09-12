@@ -38,11 +38,11 @@ final class RootDIContainer {
 
 extension RootDIContainer {
 
-    func makeRootViewController() -> RootViewController {
+    func makeRootTabBarController() -> RootTabBarController {
         let wordListNC = makeWordListNavigationController()
         let userProfileNC = makeUserProfileNavigationController()
 
-        let rootVC = RootViewController(
+        let rootVC = RootTabBarController(
             wordListNC: wordListNC,
             userProfileNC: userProfileNC
         )

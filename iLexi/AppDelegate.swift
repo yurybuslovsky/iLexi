@@ -44,7 +44,7 @@ extension AppDelegate {
 
     private func setUpWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = diContainer.makeRootViewController()
+        window?.rootViewController = diContainer.makeRootTabBarController()
         window?.makeKeyAndVisible()
     }
 

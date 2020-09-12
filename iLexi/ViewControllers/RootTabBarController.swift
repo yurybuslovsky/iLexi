@@ -1,5 +1,5 @@
 //
-//  RootViewController.swift
+//  RootTabBarController.swift
 //  iLexi
 //
 //  Created by Yury Buslovsky on 09.09.2020.
@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Declaration
 
-final class RootViewController: NiblessTabBarController {
+final class RootTabBarController: NiblessTabBarController {
 
     // MARK: • Tabs
 
@@ -28,6 +28,8 @@ final class RootViewController: NiblessTabBarController {
 
         super.init()
 
+        self.delegate = self
+
         setUpUI()
     }
 
@@ -35,7 +37,7 @@ final class RootViewController: NiblessTabBarController {
 
 // MARK: - Private API
 
-extension RootViewController {
+extension RootTabBarController {
 
     private func setUpUI() {
         setViewControllers(
@@ -45,6 +47,23 @@ extension RootViewController {
             ],
             animated: false
         )
+    }
+
+}
+
+// MARK: - UITabBarControllerDelegate
+
+extension RootTabBarController: UITabBarControllerDelegate {
+
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        switch viewController {
+        case is WordListNavigationController:
+            #warning("Make use case")
+        case is UserProfileNavigationController:
+            #warning("Make use case")
+        default:
+            return
+        }
     }
 
 }

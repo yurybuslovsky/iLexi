@@ -6,6 +6,14 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+// MARK: - Declaration
+
 struct LogInViewControllerState: Equatable {
 
+}
+
+// MARK: - Default
+
+extension LogInViewControllerState {
+    static var `default`: LogInViewControllerState { .init() }
 }
