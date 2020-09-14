@@ -16,11 +16,6 @@ struct WordListNavigationControllerReducer {
     ) -> WordListNavigationControllerState {
         var state = state ?? .default
 
-        switch action {
-        default:
-            break
-        }
-
         switch state {
         case let .root(wordListViewControllerState):
             state = .root(WordListViewControllerReducer()(action: action, state: wordListViewControllerState))

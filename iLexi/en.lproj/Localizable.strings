@@ -20,5 +20,6 @@
 "NavBarTitle.wordList" = "Words";
 "NavBarTitle.userProfile" = "Profile";
 "NavBarTitle.logIn" = "Log In";
-"NavBarTitle.newWord" = "New Word";
+"NavBarTitle.newWord" = "Add New Word";
+"NavBarTitle.editWord" = "Edit Word";
 "NavBarTitle.favorites" = "Favorites";

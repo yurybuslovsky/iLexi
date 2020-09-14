@@ -8,7 +8,11 @@
 
 import ReSwift
 
+// MARK: - Declaration
+
 enum UserProfileNavigationControllerActions {
+
+    // MARK: • Navigation
 
     struct HandleTopVCPop: Action {}
 

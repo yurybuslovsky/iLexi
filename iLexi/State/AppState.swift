@@ -11,15 +11,12 @@ import ReSwift
 // MARK: - Declaration
 
 struct AppState: StateType, Equatable {
-    let stateStack: [TopViewControllerState]
-
-    init(stateStack: [TopViewControllerState] = [.default]) {
-        self.stateStack = stateStack
-    }
+    var topVCStateStack: [TopViewControllerState]
+    var wordGraphState: WordGraphState
 }
 
 // MARK: - Default
 
 extension AppState {
-    static var `default`: AppState { .init() }
+    static var `default`: AppState { .init(topVCStateStack: [.default], wordGraphState: .default) }
 }

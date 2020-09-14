@@ -9,15 +9,17 @@
 // MARK: - Declaration
 
 struct UserProfileState: Equatable {
-    let stateStack: [UserProfileNavigationControllerState]
-
-    init(stateStack: [UserProfileNavigationControllerState] = [.default]) {
-        self.stateStack = stateStack
-    }
+    var stateStack: [UserProfileNavigationControllerState]
+    var authState: AuthState
+    var wordGraphState: WordGraphState
 }
 
 // MARK: - Default
 
 extension UserProfileState {
-    static var `default`: UserProfileState { .init() }
+    static var `default`: UserProfileState { .init(
+        stateStack: [.default],
+        authState: .default,
+        wordGraphState: .default
+    )}
 }

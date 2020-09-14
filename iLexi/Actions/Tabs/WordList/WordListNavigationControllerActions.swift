@@ -8,7 +8,11 @@
 
 import ReSwift
 
+// MARK: - Declaration
+
 enum WordListNavigationControllerActions {
+
+    // MARK: • Navigation
 
     struct HandleTopVCPop: Action {}
 

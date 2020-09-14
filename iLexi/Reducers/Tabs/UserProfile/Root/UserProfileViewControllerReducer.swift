@@ -13,10 +13,7 @@ struct UserProfileViewControllerReducer {
     func callAsFunction(action: Action, state: UserProfileViewControllerState?) -> UserProfileViewControllerState {
         var state = state ?? .default
 
-        switch action {
-        default:
-            break
-        }
+        state.authState = AuthReducer()(action: action, state: state.authState)
 
         return state
     }

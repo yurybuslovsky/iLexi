@@ -20,5 +20,6 @@
 "NavBarTitle.wordList" = "Слова";
 "NavBarTitle.userProfile" = "Профиль";
 "NavBarTitle.logIn" = "Войти";
-"NavBarTitle.newWord" = "Новое слово";
+"NavBarTitle.newWord" = "Добавить слово";
+"NavBarTitle.editWord" = "Редактировать слово";
 "NavBarTitle.favorites" = "Избранное";

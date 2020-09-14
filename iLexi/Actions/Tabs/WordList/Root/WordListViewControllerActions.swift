@@ -8,10 +8,44 @@
 
 import ReSwift
 
+// MARK: - Declaration
+
 enum WordListViewControllerActions {
 
-    struct GoToNewWord: Action {}
+    // MARK: • Navigation
 
-    struct GoToFavorites: Action {}
+    enum Navigation: Action {
+        case goToNewWord
+        case goToEditWord(wordIndex: Int)
+        case goToFavorites
+    }
+
+    // MARK: • Sync business logic
+
+    struct Search: Action {
+        let text: String
+    }
+
+    // MARK: • Async business logic
+
+    struct FetchWords: Action {}
+
+    struct Mutation: Action {
+        let wordIndex: Int
+        let mutationType: MutationType
+
+        enum MutationType {
+            case delete
+            case addToFavorites
+            case removeFromFavorites
+        }
+    }
+
+    // MARK: • Async handlers
+
+    enum AsyncHandler: Action {
+        case handleError(Error)
+        case handleSuccess(newWordList: Graph<EntryFormatted>)
+    }
 
 }

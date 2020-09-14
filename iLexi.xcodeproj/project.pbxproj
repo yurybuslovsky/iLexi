@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56019623250E034500B675EC /* WordOperationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56019622250E034500B675EC /* WordOperationState.swift */; };
 		56372157250A69E5004F616E /* UserRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372156250A69E5004F616E /* UserRaw.swift */; };
 		5637215D250A6AFA004F616E /* EntryRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637215C250A6AFA004F616E /* EntryRaw.swift */; };
 		56372161250A7792004F616E /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372160250A7792004F616E /* UseCase.swift */; };
@@ -16,7 +17,7 @@
 		5637216D250A7CB9004F616E /* WordListNavigationControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637216C250A7CB9004F616E /* WordListNavigationControllerReducer.swift */; };
 		56372172250A82E8004F616E /* WordListViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372171250A82E8004F616E /* WordListViewControllerReducer.swift */; };
 		56372176250A8390004F616E /* FavoritesViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372175250A8390004F616E /* FavoritesViewControllerReducer.swift */; };
-		56372179250A841C004F616E /* NewWordViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372178250A841C004F616E /* NewWordViewControllerReducer.swift */; };
+		56372179250A841C004F616E /* WordViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372178250A841C004F616E /* WordViewControllerReducer.swift */; };
 		5637217B250A84B7004F616E /* UserProfileNavigationControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637217A250A84B7004F616E /* UserProfileNavigationControllerReducer.swift */; };
 		5637217F250A84D1004F616E /* UserProfileViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5637217E250A84D1004F616E /* UserProfileViewControllerReducer.swift */; };
 		56372181250A84E1004F616E /* LogInViewControllerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56372180250A84E1004F616E /* LogInViewControllerReducer.swift */; };
@@ -39,7 +40,7 @@
 		563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A525090B9A00E9B282 /* RootDIContainer.swift */; };
 		563B68A825090F7D00E9B282 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A725090F7D00E9B282 /* RootTabBarController.swift */; };
 		563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B68A92509108200E9B282 /* NiblessTabBarController.swift */; };
-		563FB383250D398D00B03CF9 /* NewWordViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FB382250D398D00B03CF9 /* NewWordViewControllerActions.swift */; };
+		563FB383250D398D00B03CF9 /* WordViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FB382250D398D00B03CF9 /* WordViewControllerActions.swift */; };
 		567AD818250942580073DCA5 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD817250942580073DCA5 /* NiblessNavigationController.swift */; };
 		567AD81B250A38350073DCA5 /* TopViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD81A250A38350073DCA5 /* TopViewControllerState.swift */; };
 		567AD827250A394C0073DCA5 /* WordListNavigationControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AD826250A394C0073DCA5 /* WordListNavigationControllerState.swift */; };
@@ -53,20 +54,25 @@
 		56B13024250D2CC700F48627 /* UserProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13023250D2CC700F48627 /* UserProfileState.swift */; };
 		56B13026250D305400F48627 /* WordListViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13025250D305400F48627 /* WordListViewControllerActions.swift */; };
 		56B13028250D307700F48627 /* WordListNavigationControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13027250D307700F48627 /* WordListNavigationControllerActions.swift */; };
-		56B1302B250D31ED00F48627 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1302A250D31ED00F48627 /* Array+Utils.swift */; };
 		56B1302E250D344000F48627 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1302D250D344000F48627 /* TypeAliases.swift */; };
 		56BE8F3A2509196500140B82 /* WordListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F392509196500140B82 /* WordListNavigationController.swift */; };
 		56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F3F25091A8300140B82 /* NiblessViewController.swift */; };
 		56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4325091DA100140B82 /* UserProfileViewController.swift */; };
-		56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4525091DD500140B82 /* NewWordViewController.swift */; };
+		56BE8F4625091DD500140B82 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4525091DD500140B82 /* WordViewController.swift */; };
 		56BE8F4825091DF100140B82 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4725091DF100140B82 /* LogInViewController.swift */; };
 		56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */; };
 		56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */; };
 		56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */; };
+		56C9E03E250F166400C23F04 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9E03D250F166400C23F04 /* AuthReducer.swift */; };
+		56C9E041250F1A9800C23F04 /* TabBarActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9E040250F1A9800C23F04 /* TabBarActions.swift */; };
+		56C9E046250F1FAA00C23F04 /* WordGraphState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9E045250F1FAA00C23F04 /* WordGraphState.swift */; };
+		56C9E048250F200C00C23F04 /* WordGraphReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9E047250F200C00C23F04 /* WordGraphReducer.swift */; };
+		56C9E04A250F4EB100C23F04 /* TabReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9E049250F4EB100C23F04 /* TabReducer.swift */; };
+		56C9E04C250F4EBC00C23F04 /* TabState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9E04B250F4EBC00C23F04 /* TabState.swift */; };
 		56D44160250A50D90049E5E1 /* UserProfileViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4415F250A50D90049E5E1 /* UserProfileViewControllerState.swift */; };
 		56E676C5250A3E7400BCE932 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C4250A3E7400BCE932 /* WordListViewController.swift */; };
 		56E676C7250A481200BCE932 /* LogInViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C6250A481200BCE932 /* LogInViewControllerState.swift */; };
-		56E676C9250A48CF00BCE932 /* NewWordViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C8250A48CF00BCE932 /* NewWordViewControllerState.swift */; };
+		56E676C9250A48CF00BCE932 /* WordViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676C8250A48CF00BCE932 /* WordViewControllerState.swift */; };
 		56E676CB250A493A00BCE932 /* FavoritesViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */; };
 		56E676CF250A4B5600BCE932 /* WordListViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */; };
 		56E676D3250A4E8200BCE932 /* UserProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */; };
@@ -90,6 +96,7 @@
 
 /* Begin PBXFileReference section */
 		26EE91C439856608727DCC08 /* Pods_iLexi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLexi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56019622250E034500B675EC /* WordOperationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOperationState.swift; sourceTree = "<group>"; };
 		56372156250A69E5004F616E /* UserRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRaw.swift; sourceTree = "<group>"; };
 		5637215C250A6AFA004F616E /* EntryRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRaw.swift; sourceTree = "<group>"; };
 		56372160250A7792004F616E /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
@@ -99,7 +106,7 @@
 		5637216C250A7CB9004F616E /* WordListNavigationControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationControllerReducer.swift; sourceTree = "<group>"; };
 		56372171250A82E8004F616E /* WordListViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerReducer.swift; sourceTree = "<group>"; };
 		56372175250A8390004F616E /* FavoritesViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerReducer.swift; sourceTree = "<group>"; };
-		56372178250A841C004F616E /* NewWordViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewControllerReducer.swift; sourceTree = "<group>"; };
+		56372178250A841C004F616E /* WordViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewControllerReducer.swift; sourceTree = "<group>"; };
 		5637217A250A84B7004F616E /* UserProfileNavigationControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationControllerReducer.swift; sourceTree = "<group>"; };
 		5637217E250A84D1004F616E /* UserProfileViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewControllerReducer.swift; sourceTree = "<group>"; };
 		56372180250A84E1004F616E /* LogInViewControllerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewControllerReducer.swift; sourceTree = "<group>"; };
@@ -125,7 +132,7 @@
 		563B68A525090B9A00E9B282 /* RootDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDIContainer.swift; sourceTree = "<group>"; };
 		563B68A725090F7D00E9B282 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		563B68A92509108200E9B282 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
-		563FB382250D398D00B03CF9 /* NewWordViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewControllerActions.swift; sourceTree = "<group>"; };
+		563FB382250D398D00B03CF9 /* WordViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewControllerActions.swift; sourceTree = "<group>"; };
 		567AD817250942580073DCA5 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		567AD81A250A38350073DCA5 /* TopViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewControllerState.swift; sourceTree = "<group>"; };
 		567AD826250A394C0073DCA5 /* WordListNavigationControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationControllerState.swift; sourceTree = "<group>"; };
@@ -139,20 +146,25 @@
 		56B13023250D2CC700F48627 /* UserProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileState.swift; sourceTree = "<group>"; };
 		56B13025250D305400F48627 /* WordListViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerActions.swift; sourceTree = "<group>"; };
 		56B13027250D307700F48627 /* WordListNavigationControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationControllerActions.swift; sourceTree = "<group>"; };
-		56B1302A250D31ED00F48627 /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 		56B1302D250D344000F48627 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		56BE8F392509196500140B82 /* WordListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNavigationController.swift; sourceTree = "<group>"; };
 		56BE8F3F25091A8300140B82 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		56BE8F4325091DA100140B82 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		56BE8F4525091DD500140B82 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
+		56BE8F4525091DD500140B82 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 		56BE8F4725091DF100140B82 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		56BE8F4925091EBF00140B82 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		56BE8F4B2509201900140B82 /* UserProfileDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDIContainer.swift; sourceTree = "<group>"; };
 		56BE8F4D2509203A00140B82 /* WordListDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListDIContainer.swift; sourceTree = "<group>"; };
+		56C9E03D250F166400C23F04 /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		56C9E040250F1A9800C23F04 /* TabBarActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarActions.swift; sourceTree = "<group>"; };
+		56C9E045250F1FAA00C23F04 /* WordGraphState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGraphState.swift; sourceTree = "<group>"; };
+		56C9E047250F200C00C23F04 /* WordGraphReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGraphReducer.swift; sourceTree = "<group>"; };
+		56C9E049250F4EB100C23F04 /* TabReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabReducer.swift; sourceTree = "<group>"; };
+		56C9E04B250F4EBC00C23F04 /* TabState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabState.swift; sourceTree = "<group>"; };
 		56D4415F250A50D90049E5E1 /* UserProfileViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewControllerState.swift; sourceTree = "<group>"; };
 		56E676C4250A3E7400BCE932 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
 		56E676C6250A481200BCE932 /* LogInViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewControllerState.swift; sourceTree = "<group>"; };
-		56E676C8250A48CF00BCE932 /* NewWordViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewControllerState.swift; sourceTree = "<group>"; };
+		56E676C8250A48CF00BCE932 /* WordViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewControllerState.swift; sourceTree = "<group>"; };
 		56E676CA250A493A00BCE932 /* FavoritesViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerState.swift; sourceTree = "<group>"; };
 		56E676CE250A4B5600BCE932 /* WordListViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewControllerState.swift; sourceTree = "<group>"; };
 		56E676D2250A4E8200BCE932 /* UserProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileNavigationController.swift; sourceTree = "<group>"; };
@@ -186,7 +198,7 @@
 		562AEFA1250934D700CC77AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				56BE8F522509213700140B82 /* NewWord */,
+				56BE8F522509213700140B82 /* Word */,
 				56BE8F542509214A00140B82 /* Favorites */,
 			);
 			path = Common;
@@ -219,6 +231,7 @@
 				56FBECB3250D38DC00B449CB /* AppReducer.swift */,
 				56372167250A7A88004F616E /* TopViewControllerReducer.swift */,
 				56A857D8250D1D0600BB1E8B /* TabBarReducer.swift */,
+				56C9E049250F4EB100C23F04 /* TabReducer.swift */,
 				5637216A250A7CA2004F616E /* Tabs */,
 				56372173250A8347004F616E /* Common */,
 			);
@@ -228,6 +241,7 @@
 		56372169250A7AA0004F616E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				56C9E040250F1A9800C23F04 /* TabBarActions.swift */,
 				56372182250A872D004F616E /* Tabs */,
 				56372185250A87B1004F616E /* Common */,
 			);
@@ -275,7 +289,9 @@
 		56372173250A8347004F616E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				56372177250A840D004F616E /* NewWord */,
+				56C9E03D250F166400C23F04 /* AuthReducer.swift */,
+				56C9E047250F200C00C23F04 /* WordGraphReducer.swift */,
+				56372177250A840D004F616E /* Word */,
 				56372174250A8382004F616E /* Favorites */,
 			);
 			path = Common;
@@ -289,12 +305,12 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
-		56372177250A840D004F616E /* NewWord */ = {
+		56372177250A840D004F616E /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				56372178250A841C004F616E /* NewWordViewControllerReducer.swift */,
+				56372178250A841C004F616E /* WordViewControllerReducer.swift */,
 			);
-			path = NewWord;
+			path = Word;
 			sourceTree = "<group>";
 		};
 		5637217C250A84B8004F616E /* Root */ = {
@@ -344,18 +360,18 @@
 		56372185250A87B1004F616E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				56372186250A87B8004F616E /* NewWord */,
+				56372186250A87B8004F616E /* Word */,
 				56372187250A87C3004F616E /* Favorites */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		56372186250A87B8004F616E /* NewWord */ = {
+		56372186250A87B8004F616E /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				563FB382250D398D00B03CF9 /* NewWordViewControllerActions.swift */,
+				563FB382250D398D00B03CF9 /* WordViewControllerActions.swift */,
 			);
-			path = NewWord;
+			path = Word;
 			sourceTree = "<group>";
 		};
 		56372187250A87C3004F616E /* Favorites */ = {
@@ -462,7 +478,6 @@
 				56BE8F4225091AE600140B82 /* ViewControllers */,
 				5637215F250A7749004F616E /* Core */,
 				563B68AB250913B300E9B282 /* UI */,
-				56B13029250D31B000F48627 /* Extensions */,
 				56B1302C250D342F00F48627 /* Misc */,
 			);
 			path = iLexi;
@@ -494,6 +509,7 @@
 				56FBECB1250D385900B449CB /* AppState.swift */,
 				567AD81A250A38350073DCA5 /* TopViewControllerState.swift */,
 				56A857D6250D13AE00BB1E8B /* TabBarState.swift */,
+				56C9E04B250F4EBC00C23F04 /* TabState.swift */,
 				567AD82A250A3B360073DCA5 /* Tabs */,
 				567AD82B250A3B500073DCA5 /* Common */,
 			);
@@ -534,7 +550,8 @@
 			isa = PBXGroup;
 			children = (
 				563721AD250D0B44004F616E /* AuthState.swift */,
-				567AD82D250A3B970073DCA5 /* NewWord */,
+				56C9E045250F1FAA00C23F04 /* WordGraphState.swift */,
+				567AD82D250A3B970073DCA5 /* Word */,
 				567AD82C250A3B860073DCA5 /* Favorites */,
 			);
 			path = Common;
@@ -548,12 +565,13 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
-		567AD82D250A3B970073DCA5 /* NewWord */ = {
+		567AD82D250A3B970073DCA5 /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				56E676C8250A48CF00BCE932 /* NewWordViewControllerState.swift */,
+				56E676C8250A48CF00BCE932 /* WordViewControllerState.swift */,
+				56019622250E034500B675EC /* WordOperationState.swift */,
 			);
-			path = NewWord;
+			path = Word;
 			sourceTree = "<group>";
 		};
 		567AD82E250A3C6A0073DCA5 /* LogIn */ = {
@@ -562,14 +580,6 @@
 				56E676C6250A481200BCE932 /* LogInViewControllerState.swift */,
 			);
 			path = LogIn;
-			sourceTree = "<group>";
-		};
-		56B13029250D31B000F48627 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				56B1302A250D31ED00F48627 /* Array+Utils.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		56B1302C250D342F00F48627 /* Misc */ = {
@@ -617,12 +627,12 @@
 			path = UserProfile;
 			sourceTree = "<group>";
 		};
-		56BE8F522509213700140B82 /* NewWord */ = {
+		56BE8F522509213700140B82 /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				56BE8F4525091DD500140B82 /* NewWordViewController.swift */,
+				56BE8F4525091DD500140B82 /* WordViewController.swift */,
 			);
-			path = NewWord;
+			path = Word;
 			sourceTree = "<group>";
 		};
 		56BE8F532509214100140B82 /* LogIn */ = {
@@ -876,6 +886,7 @@
 				5637218F250A90B9004F616E /* UserProfileViewControllerActions.swift in Sources */,
 				56E676CB250A493A00BCE932 /* FavoritesViewControllerState.swift in Sources */,
 				563B68A32509016700E9B282 /* L10n.swift in Sources */,
+				56C9E048250F200C00C23F04 /* WordGraphReducer.swift in Sources */,
 				56B13026250D305400F48627 /* WordListViewControllerActions.swift in Sources */,
 				56E676C7250A481200BCE932 /* LogInViewControllerState.swift in Sources */,
 				567AD827250A394C0073DCA5 /* WordListNavigationControllerState.swift in Sources */,
@@ -884,8 +895,11 @@
 				56A857DE250D2A9C00BB1E8B /* WordListState.swift in Sources */,
 				56BE8F4025091A8300140B82 /* NiblessViewController.swift in Sources */,
 				56BE8F4C2509201900140B82 /* UserProfileDIContainer.swift in Sources */,
+				56C9E046250F1FAA00C23F04 /* WordGraphState.swift in Sources */,
+				56C9E04C250F4EBC00C23F04 /* TabState.swift in Sources */,
 				56BE8F4825091DF100140B82 /* LogInViewController.swift in Sources */,
 				56372172250A82E8004F616E /* WordListViewControllerReducer.swift in Sources */,
+				56C9E03E250F166400C23F04 /* AuthReducer.swift in Sources */,
 				56A857D9250D1D0600BB1E8B /* TabBarReducer.swift in Sources */,
 				56372181250A84E1004F616E /* LogInViewControllerReducer.swift in Sources */,
 				563721AE250D0B44004F616E /* AuthState.swift in Sources */,
@@ -905,6 +919,8 @@
 				56372165250A78D3004F616E /* Dispatcher.swift in Sources */,
 				56FBECB4250D38DC00B449CB /* AppReducer.swift in Sources */,
 				563B68A625090B9A00E9B282 /* RootDIContainer.swift in Sources */,
+				56C9E04A250F4EB100C23F04 /* TabReducer.swift in Sources */,
+				56C9E041250F1A9800C23F04 /* TabBarActions.swift in Sources */,
 				5637215D250A6AFA004F616E /* EntryRaw.swift in Sources */,
 				5637219F250CC676004F616E /* Graph.swift in Sources */,
 				5637219C250CC513004F616E /* Unowned.swift in Sources */,
@@ -916,23 +932,23 @@
 				56E676CF250A4B5600BCE932 /* WordListViewControllerState.swift in Sources */,
 				563721A1250CCB5C004F616E /* Neigboring.swift in Sources */,
 				563721AB250D017C004F616E /* FavoritesViewControllerActions.swift in Sources */,
-				56BE8F4625091DD500140B82 /* NewWordViewController.swift in Sources */,
+				56BE8F4625091DD500140B82 /* WordViewController.swift in Sources */,
 				56D44160250A50D90049E5E1 /* UserProfileViewControllerState.swift in Sources */,
 				56BE8F4425091DA100140B82 /* UserProfileViewController.swift in Sources */,
-				56E676C9250A48CF00BCE932 /* NewWordViewControllerState.swift in Sources */,
+				56E676C9250A48CF00BCE932 /* WordViewControllerState.swift in Sources */,
 				56BE8F4A25091EBF00140B82 /* FavoritesViewController.swift in Sources */,
 				56B1302E250D344000F48627 /* TypeAliases.swift in Sources */,
 				56BE8F4E2509203A00140B82 /* WordListDIContainer.swift in Sources */,
 				5637218D250A8942004F616E /* LogInViewControllerActions.swift in Sources */,
 				56372163250A77DB004F616E /* CancelableUseCase.swift in Sources */,
+				56019623250E034500B675EC /* WordOperationState.swift in Sources */,
 				56372161250A7792004F616E /* UseCase.swift in Sources */,
 				563B68AA2509108200E9B282 /* NiblessTabBarController.swift in Sources */,
-				563FB383250D398D00B03CF9 /* NewWordViewControllerActions.swift in Sources */,
+				563FB383250D398D00B03CF9 /* WordViewControllerActions.swift in Sources */,
 				56B13028250D307700F48627 /* WordListNavigationControllerActions.swift in Sources */,
 				56372176250A8390004F616E /* FavoritesViewControllerReducer.swift in Sources */,
-				56372179250A841C004F616E /* NewWordViewControllerReducer.swift in Sources */,
+				56372179250A841C004F616E /* WordViewControllerReducer.swift in Sources */,
 				56372168250A7A88004F616E /* TopViewControllerReducer.swift in Sources */,
-				56B1302B250D31ED00F48627 /* Array+Utils.swift in Sources */,
 				567AD81B250A38350073DCA5 /* TopViewControllerState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

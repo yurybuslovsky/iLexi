@@ -9,7 +9,7 @@
 // MARK: - Declaration
 
 struct UserProfileViewControllerState: Equatable {
-    let authState: AuthState
+    var authState: AuthState
 }
 
 // MARK: - Default

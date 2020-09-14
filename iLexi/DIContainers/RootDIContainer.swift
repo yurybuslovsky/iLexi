@@ -68,13 +68,13 @@ extension RootDIContainer {
 
 }
 
-// MARK: - New Word
+// MARK: - Word
 
-extension RootDIContainer: NewWordViewControllerProducing {
+extension RootDIContainer: WordViewControllerProducing {
 
-    func makeNewWordViewController() -> NewWordViewController {
-        let newWordVC = NewWordViewController()
-        return newWordVC
+    func makeWordViewController() -> WordViewController {
+        let wordVC = WordViewController()
+        return wordVC
     }
 
 }

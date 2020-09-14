@@ -10,7 +10,7 @@
 
 enum TopViewControllerState: Equatable {
     case tabBar(TabBarState)
-    case newWord(NewWordViewControllerState)
+    case word(WordViewControllerState)
 }
 
 // MARK: - Default

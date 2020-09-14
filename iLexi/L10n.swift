@@ -12,11 +12,13 @@ import Foundation
 internal enum L10n {
 
   internal enum NavBarTitle {
+    /// Edit Word
+    internal static let editWord = L10n.tr("Localizable", "NavBarTitle.editWord")
     /// Favorites
     internal static let favorites = L10n.tr("Localizable", "NavBarTitle.favorites")
     /// Log In
     internal static let logIn = L10n.tr("Localizable", "NavBarTitle.logIn")
-    /// New Word
+    /// Add New Word
     internal static let newWord = L10n.tr("Localizable", "NavBarTitle.newWord")
     /// Profile
     internal static let userProfile = L10n.tr("Localizable", "NavBarTitle.userProfile")

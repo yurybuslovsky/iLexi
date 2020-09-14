@@ -13,10 +13,8 @@ struct WordListViewControllerReducer {
     func callAsFunction(action: Action, state: WordListViewControllerState?) -> WordListViewControllerState {
         var state = state ?? .default
 
-        switch action {
-        default:
-            break
-        }
+        state.authState = AuthReducer()(action: action, state: state.authState)
+        state.wordGraphState = WordGraphReducer()(action: action, state: state.wordGraphState)
 
         return state
     }

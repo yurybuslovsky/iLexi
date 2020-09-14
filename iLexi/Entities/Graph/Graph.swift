@@ -10,7 +10,7 @@
 
 final class Graph<Element: Neighboring>: ExpressibleByArrayLiteral {
 
-    private let vertices: [Vertex<Element>]
+    private var vertices: [Vertex<Element>]
 
     init(arrayLiteral elements: Element...) {
         let vertices = elements.map(Vertex.init)
@@ -28,6 +28,40 @@ final class Graph<Element: Neighboring>: ExpressibleByArrayLiteral {
         }
 
         self.vertices = vertices
+    }
+
+    private init(vertices: [Vertex<Element>]) {
+        self.vertices = vertices
+    }
+
+}
+
+// MARK: - Equatable
+
+extension Graph: Equatable {
+
+    static func == (lhs: Graph<Element>, rhs: Graph<Element>) -> Bool {
+        lhs.vertices == rhs.vertices
+    }
+
+}
+
+// MARK: - Public API
+
+extension Graph {
+
+    var elements: [Element] {
+        vertices.map(\.value)
+    }
+
+    subscript(_ index: Int) -> Element {
+        elements[index]
+    }
+
+    func filter(_ isIncluded: (Element) throws -> Bool) rethrows -> Graph {
+        .init(vertices: try vertices.filter { (vertex: Vertex<Element>) -> Bool in
+            try isIncluded(vertex.value)
+        })
     }
 
 }

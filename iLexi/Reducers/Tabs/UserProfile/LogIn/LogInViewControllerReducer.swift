@@ -16,15 +16,14 @@ struct LogInViewControllerReducer {
         var state = state ?? .default
 
         switch action {
-        case let action as LogInViewControllerActions.LogIn:
-            switch action {
-            case .start:
-                indicateLoggingIn(state: &state)
-            case let .handleError(error):
+        case is LogInViewControllerActions.LogIn:
+            indicateLoggingIn(state: &state)
+
+        case let action as LogInViewControllerActions.AsyncHandler:
+            if case let .handleError(error) = action {
                 handle(error: error, state: &state)
-            default:
-                break
             }
+
         default:
             break
         }

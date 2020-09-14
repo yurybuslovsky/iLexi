@@ -9,12 +9,12 @@
 // MARK: - Declaration
 
 struct WordListViewControllerState: Equatable {
-    let authState: AuthState
+    var authState: AuthState
+    var wordGraphState: WordGraphState
 }
 
 // MARK: - Default
 
 extension WordListViewControllerState {
-    static var `default`: WordListViewControllerState { .init(authState: .default) }
+    static var `default`: WordListViewControllerState { .init(authState: .default, wordGraphState: .default) }
 }
-

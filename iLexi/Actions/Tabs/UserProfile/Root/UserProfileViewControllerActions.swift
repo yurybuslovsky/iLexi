@@ -8,10 +8,19 @@
 
 import ReSwift
 
+// MARK: - Declaration
+
 enum UserProfileViewControllerActions {
 
-    struct GoToLogIn: Action {}
+    // MARK: • Navigation
 
-    struct GoToFavorites: Action {}
+    enum Navigation: Action {
+        case goToLogIn
+        case goToFavorites
+    }
+
+    // MARK: • Sync business logic
+
+    struct LogOut: Action {}
 
 }

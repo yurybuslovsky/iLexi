@@ -12,3 +12,5 @@ type_name:
     min_length: 2
     max_length: 40
 
+nesting:
+    type_level: 10

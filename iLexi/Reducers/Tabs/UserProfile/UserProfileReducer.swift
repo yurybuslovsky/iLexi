@@ -14,18 +14,19 @@ struct UserProfileReducer {
 
     func callAsFunction(action: Action, state: UserProfileState?) -> UserProfileState {
         var state = state ?? .default
-
         var stateStack = state.stateStack
 
+        stateStack = stateStack
+            .map { (userProfileNCState: UserProfileNavigationControllerState) -> UserProfileNavigationControllerState in
+                UserProfileNavigationControllerReducer()(action: action, state: userProfileNCState)
+            }
+
+        state.authState = AuthReducer()(action: action, state: state.authState)
+        state.wordGraphState = WordGraphReducer()(action: action, state: state.wordGraphState)
+
         switch action {
-        case is UserProfileViewControllerActions.GoToLogIn:
-            stateStack.append(.logIn(.default))
-
-        case is UserProfileViewControllerActions.GoToFavorites:
-            stateStack.append(.favorites(.default))
-
-        case let action as LogInViewControllerActions.LogIn:
-            apply(action: action, to: &stateStack)
+        case let action as UserProfileViewControllerActions.Navigation:
+            apply(action: action, to: &stateStack, given: state)
 
         case is UserProfileNavigationControllerActions.HandleTopVCPop:
             stateStack.removeLast()
@@ -34,12 +35,7 @@ struct UserProfileReducer {
             break
         }
 
-        stateStack = stateStack
-            .map { (userProfileNCState: UserProfileNavigationControllerState) -> UserProfileNavigationControllerState in
-                UserProfileNavigationControllerReducer()(action: action, state: userProfileNCState)
-            }
-
-        state = UserProfileState(stateStack: stateStack)
+        state.stateStack = stateStack
         return state
     }
 
@@ -50,30 +46,19 @@ struct UserProfileReducer {
 extension UserProfileReducer {
 
     private func apply(
-        action: LogInViewControllerActions.LogIn,
-        to stateStack: inout [UserProfileNavigationControllerState]
+        action: UserProfileViewControllerActions.Navigation,
+        to stateStack: inout [UserProfileNavigationControllerState],
+        given state: UserProfileState
     ) {
         switch action {
-        case let .handleSuccess(user, token):
-            stateStack.removeWhileNot(
-                { (userProfileNCState: UserProfileNavigationControllerState) -> Bool in
-                    if case .root = userProfileNCState {
-                        return true
-                    }
-                    
-                    return false
-                },
-                includingNext: true
-            )
+        case .goToLogIn:
+            stateStack.append(.logIn(.default))
 
-            let userProfileVCState = UserProfileViewControllerState(
-                authState: .authorized(user: user, token: token)
-            )
-
-            stateStack.append(.root(userProfileVCState))
-
-        default:
-            break
+        case .goToFavorites:
+            stateStack.append(.favorites(FavoritesViewControllerState(
+                authState: state.authState,
+                wordGraphState: state.wordGraphState
+            )))
         }
     }
 

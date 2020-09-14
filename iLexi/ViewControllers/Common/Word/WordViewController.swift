@@ -1,5 +1,5 @@
 //
-//  NewWordViewController.swift
+//  WordViewController.swift
 //  iLexi
 //
 //  Created by Yury Buslovsky on 09.09.2020.
@@ -8,13 +8,13 @@
 
 // MARK: - Factory Protocol
 
-protocol NewWordViewControllerProducing: class {
-    func makeNewWordViewController() -> NewWordViewController
+protocol WordViewControllerProducing: class {
+    func makeWordViewController() -> WordViewController
 }
 
 // MARK: - Declaration
 
-final class NewWordViewController: NiblessViewController {
+final class WordViewController: NiblessViewController {
 
     // MARK: • Initialization
 

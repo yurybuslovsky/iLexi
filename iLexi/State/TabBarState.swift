@@ -9,20 +9,17 @@
 // MARK: - Declaration
 
 struct TabBarState: Equatable {
-    let wordListState: WordListState
-    let userProfileState: UserProfileState
-
-    init(
-        wordListState: WordListState = .default,
-        userProfileState: UserProfileState = .default
-    ) {
-        self.wordListState = wordListState
-        self.userProfileState = userProfileState
-    }
+    var wordListTabState: TabState
+    var userProfileTabState: TabState
+    var selectedTabState: TabState
 }
 
 // MARK: - Default
 
 extension TabBarState {
-    static var `default`: TabBarState { .init() }
+    static var `default`: TabBarState { .init(
+        wordListTabState: .default,
+        userProfileTabState: .default,
+        selectedTabState: .default
+    )}
 }

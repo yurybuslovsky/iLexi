@@ -64,7 +64,7 @@ extension UserProfileNavigationController {
 // MARK: - UINavigationControllerDelegate
 
 extension UserProfileNavigationController: UINavigationControllerDelegate {
-    
+
     func navigationController(
         _ navigationController: UINavigationController,
         didShow viewController: UIViewController,

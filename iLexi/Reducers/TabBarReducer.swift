@@ -12,11 +12,22 @@ struct TabBarReducer {
 
     func callAsFunction(action: Action, state: TabBarState?) -> TabBarState {
         var state = state ?? .default
-                
-        state = TabBarState(
-            wordListState: WordListReducer()(action: action, state: state.wordListState),
-            userProfileState: UserProfileReducer()(action: action, state: state.userProfileState)
-        )
+
+        switch action {
+        case let action as TabBarActions.ChangeTab:
+            switch action.newTab {
+            case .wordList:
+                state.selectedTabState = state.wordListTabState
+            case .userProfile:
+                state.selectedTabState = state.userProfileTabState
+            }
+
+        default:
+            break
+        }
+
+        state.wordListTabState = TabReducer()(action: action, state: state.wordListTabState)
+        state.userProfileTabState = TabReducer()(action: action, state: state.userProfileTabState)
 
         return state
     }

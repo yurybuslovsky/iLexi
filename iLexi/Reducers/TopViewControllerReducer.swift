@@ -16,8 +16,8 @@ struct TopViewControllerReducer {
         switch state {
         case let .tabBar(tabBarState):
             state = .tabBar(TabBarReducer()(action: action, state: tabBarState))
-        case let .newWord(newWordViewControllerState):
-            state = .newWord(NewWordViewControllerReducer()(action: action, state: newWordViewControllerState))
+        case let .word(wordViewControllerState):
+            state = .word(WordViewControllerReducer()(action: action, state: wordViewControllerState))
         }
 
         return state

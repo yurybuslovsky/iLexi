@@ -13,10 +13,8 @@ struct FavoritesViewControllerReducer {
     func callAsFunction(action: Action, state: FavoritesViewControllerState?) -> FavoritesViewControllerState {
         var state = state ?? .default
 
-        switch action {
-        default:
-            break
-        }
+        state.authState = AuthReducer()(action: action, state: state.authState)
+        state.wordGraphState = WordGraphReducer()(action: action, state: state.wordGraphState)
 
         return state
     }

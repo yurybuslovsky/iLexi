@@ -8,10 +8,17 @@
 
 import ReSwift
 
+// MARK: - Declaration
+
 enum LogInViewControllerActions {
 
-    enum LogIn: Action {
-        case start
+    // MARK: • Async business logic
+
+    enum LogIn: Action {}
+
+    // MARK: • Async handlers
+
+    enum AsyncHandler: Action {
         case handleError(Error)
         case handleSuccess(user: UserFormatted, token: String)
     }

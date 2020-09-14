@@ -9,15 +9,17 @@
 // MARK: - Declaration
 
 struct WordListState: Equatable {
-    let stateStack: [WordListNavigationControllerState]
-
-    init(stateStack: [WordListNavigationControllerState] = [.default]) {
-        self.stateStack = stateStack
-    }
+    var ncStateStack: [WordListNavigationControllerState]
+    var authState: AuthState
+    var wordGraphState: WordGraphState
 }
 
 // MARK: - Default
 
 extension WordListState {
-    static var `default`: WordListState { .init() }
+    static var `default`: WordListState { .init(
+        ncStateStack: [.default],
+        authState: .default,
+        wordGraphState: .default
+    )}
 }
