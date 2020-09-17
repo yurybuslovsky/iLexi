@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  iLexi_iOS
+
+  Created by Yury Buslovsky on 09.09.2020.
+  Copyright © 2020 Napoleon IT. All rights reserved.
+*/
+
+// MARK: - Common
+
+"Common.niblessControllersDescription" = "Loading this view controller from a nib is unsupported in favor of initializer dependency injection";
+"Common.niblessViewsDescription" = "Loading this view from a nib is unsupported in favor of initializer dependency injection";
+
+// MARK: - Tab Bar Items
+
+"TabBar.Item.entryList" = "Entries";
+
+// MARK: - Entry List
+
+"EntryList.title" = "Entries";

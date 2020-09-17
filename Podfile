@@ -13,17 +13,12 @@ def flow_pods
   pod 'ReSwift', '= 5.0.0'
 end
 
-def sca_pods
-  pod 'SwiftLint', '= 0.40.1'
-end
-
 def iLexi_pods
   ui_pods
   flow_pods
-  sca_pods
 end
 
-target 'iLexi' do
+target 'iLexi_iOS' do
   project './iLexi.project'
   iLexi_pods
 end

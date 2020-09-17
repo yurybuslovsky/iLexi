@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-iLexi_iOS/Pods-iLexi_iOS-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

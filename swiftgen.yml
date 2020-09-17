@@ -1,12 +1,12 @@
-output_dir: iLexi/
+output_dir: Presentation/UserInterface_Common/Generated
 
 strings:
-  inputs: iLexi/en.lproj/Localizable.strings
+  inputs: Presentation/UserInterface_Common/en.lproj/Localizable.strings
   outputs:
     templateName: structured-swift5
     output: L10n.swift
 xcassets:
-  inputs: iLexi/Assets.xcassets
+  inputs: Presentation/UserInterface_Common/Assets.xcassets
   outputs:
     templateName: swift5
     output: Assets.swift

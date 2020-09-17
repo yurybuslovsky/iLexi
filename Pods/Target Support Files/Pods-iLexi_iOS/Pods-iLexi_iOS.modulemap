@@ -1,0 +1,6 @@
+framework module Pods_iLexi_iOS {
+  umbrella header "Pods-iLexi_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
