@@ -11,6 +11,11 @@
 "Common.niblessControllersDescription" = "Loading this view controller from a nib is unsupported in favor of initializer dependency injection";
 "Common.niblessViewsDescription" = "Loading this view from a nib is unsupported in favor of initializer dependency injection";
 
+"Common.Alert.title" = "Внимание";
+"Common.Alert.confirm" = "Ок";
+
+"Common.Entry.Error.alreadyExists" = "Введенное слово/фраза уже существует в словаре";
+
 // MARK: - Tab Bar Items
 
 "TabBar.Item.entryList" = "Слова";
@@ -18,3 +23,11 @@
 // MARK: - Entry List
 
 "EntryList.title" = "Слова";
+"EntryList.deleteEntry" = "Удалить";
+
+// MARK: - Entry Info
+
+"EntryInfo.Button.cancel" = "Отмена";
+"EntryInfo.Button.save" = "Сохранить";
+"EntryInfo.title" = "Добавьте новое слово";
+"EntryInfo.textFieldPlaceholder" = "Слово";

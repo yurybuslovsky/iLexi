@@ -12,8 +12,10 @@ extension Actions {
 
     enum EntryInfo {
 
-        struct AddEntry: Action {
-            let entryValue: String
+        struct HandleSuccessfulEntryAddition: Action {}
+
+        struct HandleError: Action {
+            let entryError: Entry.Error
         }
 
         struct Dismiss: Action {}

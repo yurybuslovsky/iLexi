@@ -14,9 +14,7 @@ extension Actions {
 
         struct GoToEntryInfo: Action {}
 
-        struct DeleteEntry: Action {
-            let entryIndex: Int
-        }
+        struct HandleSuccessfulEntryRemoval: Action {}
 
     }
 

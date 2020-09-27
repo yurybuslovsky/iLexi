@@ -7,7 +7,9 @@
 //
 
 extension UseCases {
+
     enum EntryInfo {
         typealias Actions = iLexi.Actions.EntryInfo
     }
+
 }

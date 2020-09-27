@@ -6,10 +6,4 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
-class BaseUseCase {
-    let dispatch: Dispatcher
-
-    init(dispatch: Dispatcher) {
-        self.dispatch = dispatch
-    }
-}
+typealias BaseUseCase = Executable & Dispatcher

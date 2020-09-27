@@ -20,11 +20,17 @@ extension UseCases.EntryList.GoToEntryInfoUseCase {
 
 extension UseCases.EntryList {
 
-    final class GoToEntryInfoUseCase: UseCase {
+    final class GoToEntryInfoUseCase: BaseUseCase {
+
+        init(dispatcher: Dispatching) {
+            super.init(dispatch: dispatcher)
+        }
+
         func execute() {
             let action = Actions.GoToEntryInfo()
             dispatch(action)
         }
+
     }
 
 }

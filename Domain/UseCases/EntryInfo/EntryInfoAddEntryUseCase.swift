@@ -6,13 +6,19 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import ReSwift
+
 // MARK: - Factory protocol
 
 protocol EntryInfoAddEntryUseCaseProducing {
-    func makeAddEntryUseCase() -> Executable
+    func makeAddEntryUseCase(entryValue: String) -> Executable
 }
 
-extension UseCases.EntryInfo.AddEntryUseCase {
+// MARK: - Namespace
+
+private typealias AddEntryUseCase = UseCases.EntryInfo.AddEntryUseCase
+
+extension AddEntryUseCase {
     typealias Producing = EntryInfoAddEntryUseCaseProducing
 }
 
@@ -20,18 +26,47 @@ extension UseCases.EntryInfo.AddEntryUseCase {
 
 extension UseCases.EntryInfo {
 
-    final class AddEntryUseCase: UseCase {
-        let entryValue: String
+    final class AddEntryUseCase: BaseUseCase {
 
-        init(entryValue: String, dispatcher: Dispatcher) {
+        private let entries: Entries
+        private let entryValue: String
+
+        init(entries: Entries, entryValue: String, dispatcher: Dispatching) {
+            self.entries = entries
             self.entryValue = entryValue
             super.init(dispatch: dispatcher)
         }
 
         func execute() {
-            let action = Actions.AddEntry(entryValue: entryValue)
+            let action: Action
+
+            do {
+                let newEntry = Entry(value: entryValue)
+                try append(uniqueEntry: newEntry)
+                action = Actions.HandleSuccessfulEntryAddition()
+            } catch let error as Entry.Error {
+                action = Actions.HandleError(entryError: error)
+            } catch {
+                fatalError()
+            }
+
             dispatch(action)
         }
+
+    }
+
+}
+
+// MARK: - Private API
+
+extension AddEntryUseCase {
+
+    private func append(uniqueEntry: Entry) throws {
+        if entries.contains(uniqueEntry) {
+            throw Entry.Error.alreadyExists
+        }
+
+        entries.append(uniqueEntry)
     }
 
 }

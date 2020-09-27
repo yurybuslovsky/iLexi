@@ -14,3 +14,6 @@ type_name:
 
 nesting:
     type_level: 10
+
+disabled_rules:
+    closure_parameter_position

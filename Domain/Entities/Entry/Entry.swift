@@ -7,5 +7,9 @@
 //
 
 extension Entities {
-    enum Entry {}
+
+    struct Entry: Equatable, Hashable {
+        let value: String
+    }
+
 }

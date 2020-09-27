@@ -14,7 +14,7 @@ import UIKit
 final class AppDelegate: UIResponder {
 
     var window: UIWindow?
-//    private let diContainer: AppDIContainer = makeAppDIContainer()
+    private let diContainer: iOSApp.DIContainer = .init()
 
 }
 
@@ -27,7 +27,6 @@ extension AppDelegate: UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         setUpWindow()
-
         return true
     }
 
@@ -38,9 +37,9 @@ extension AppDelegate: UIApplicationDelegate {
 extension AppDelegate {
 
     private func setUpWindow() {
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = diContainer.makeRootTabBarController()
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = diContainer.makeRootViewController()
+        window?.makeKeyAndVisible()
     }
 
 }

@@ -20,11 +20,13 @@ extension UseCases.EntryInfo.DismissUseCase {
 
 extension UseCases.EntryInfo {
 
-    final class DismissUseCase: UseCase {
+    final class DismissUseCase: BaseUseCase {
+
         func execute() {
             let action = Actions.Dismiss()
             dispatch(action)
         }
+
     }
 
 }
