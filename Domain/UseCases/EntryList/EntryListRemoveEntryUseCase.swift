@@ -12,6 +12,8 @@ protocol EntryListRemoveEntryUseCaseProducing {
     func makeRemoveEntryUseCase(entryIndex: Int) -> Executable
 }
 
+// MARK: - Namespace
+
 extension UseCases.EntryList.RemoveEntryUseCase {
     typealias Producing = EntryListRemoveEntryUseCaseProducing
 }

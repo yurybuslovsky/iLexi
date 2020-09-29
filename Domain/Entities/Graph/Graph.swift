@@ -6,6 +6,8 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
+
 // MARK: - Declaration
 
 final class Graph<Element: Equatable>: ExpressibleByArrayLiteral {

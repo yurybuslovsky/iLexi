@@ -33,6 +33,8 @@ extension iOSApp {
 
 }
 
+// MARK: - Entry Info Producing
+
 extension DIContainer: EntryInfo.Producing {
 
     func makeEntryInfoController() -> UIViewController {

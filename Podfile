@@ -21,9 +21,19 @@ def iLexi_pods
   flow_pods
 end
 
+def core_pods
+  ui_pods
+  flow_pods
+end
+
 target 'iLexi_iOS' do
   project './iLexi.project'
   iLexi_pods
+end
+
+target 'Core' do
+  project './Core/Core.project'
+  core_pods
 end
 
 post_install do |pi|

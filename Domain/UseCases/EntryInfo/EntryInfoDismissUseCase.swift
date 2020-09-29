@@ -12,6 +12,8 @@ protocol EntryInfoDismissUseCaseProducing {
     func makeEntryInfoDismissUseCase() -> Executable
 }
 
+// MARK: - Namespace
+
 extension UseCases.EntryInfo.DismissUseCase {
     typealias Producing = EntryInfoDismissUseCaseProducing
 }

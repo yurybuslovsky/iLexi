@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  iLexi
+
+  Created by Yury Buslovsky on 09.09.2020.
+  Copyright © 2020 Napoleon IT. All rights reserved.
+*/
+
+// MARK: - Common
+
+"Common.niblessControllersDescription" = "Loading this view controller from a nib is unsupported in favor of initializer dependency injection";
+"Common.niblessViewsDescription" = "Loading this view from a nib is unsupported in favor of initializer dependency injection";
+
+"Common.Alert.title" = "Внимание";
+"Common.Alert.confirm" = "Ок";
+
+// MARK: - Models
+
+"Models.Entry.Error.alreadyExists" = "Введенное слово/фраза уже существует в словаре";
+
+// MARK: - Entry List
+
+"EntryList.title" = "Слова";
+"EntryList.deleteEntry" = "Удалить";
+
+// MARK: - Entry Info
+
+"EntryInfo.Button.cancel" = "Отмена";
+"EntryInfo.Button.save" = "Сохранить";
+"EntryInfo.title" = "Добавьте новое слово";
+"EntryInfo.textFieldPlaceholder" = "Слово";

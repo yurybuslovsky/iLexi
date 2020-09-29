@@ -6,12 +6,17 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
 import RxSwift
 import ReSwift
+
+// MARK: - Namespace
 
 private typealias EntryInfo = iOSApp.EntryInfo
 private typealias DIContainer = EntryInfo.DIContainer
 private typealias Controller = EntryInfo.Controller
+
+// MARK: - Declaration
 
 extension EntryInfo {
 
@@ -66,6 +71,8 @@ extension EntryInfo {
 
 }
 
+// MARK: - Add Entry Use Case Producing
+
 extension DIContainer: Controller.AddEntryUseCase.Producing {
 
     func makeAddEntryUseCase(entryValue: String) -> Executable {
@@ -73,6 +80,8 @@ extension DIContainer: Controller.AddEntryUseCase.Producing {
     }
 
 }
+
+// MARK: - Dismiss Use Case Producing
 
 extension DIContainer: Controller.DismissUseCase.Producing {
 

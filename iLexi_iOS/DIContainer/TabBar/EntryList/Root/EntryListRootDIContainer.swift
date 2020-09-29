@@ -9,9 +9,13 @@
 import RxSwift
 import ReSwift
 
+// MARK: - Namespace
+
 private typealias Root = iOSApp.TabBar.EntryList.Root
 private typealias DIContainer = Root.DIContainer
 private typealias Controller = Root.Controller
+
+// MARK: - Declaration
 
 extension Root {
 
@@ -55,6 +59,8 @@ extension Root {
 
 }
 
+// MARK: - Remove Entry Use Case Producing
+
 extension DIContainer: Controller.RemoveEntryUseCase.Producing {
 
     func makeRemoveEntryUseCase(entryIndex: Int) -> Executable {
@@ -66,6 +72,8 @@ extension DIContainer: Controller.RemoveEntryUseCase.Producing {
     }
 
 }
+
+// MARK: - Go To Entry Info Use Case Producing
 
 extension DIContainer: Controller.GoToEntryInfoUseCase.Producing {
 

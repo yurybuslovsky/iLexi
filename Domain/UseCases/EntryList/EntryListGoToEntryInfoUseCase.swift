@@ -12,6 +12,8 @@ protocol EntryListGoToEntryInfoUseCaseProducing {
     func makeGoToEntryInfoUseCase() -> Executable
 }
 
+// MARK: - Namespace
+
 extension UseCases.EntryList.GoToEntryInfoUseCase {
     typealias Producing = EntryListGoToEntryInfoUseCaseProducing
 }
