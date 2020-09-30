@@ -16,6 +16,9 @@
 		566A550425231E4C000814B5 /* Store+StateObservableFactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A550325231E4C000814B5 /* Store+StateObservableFactoryMethod.swift */; };
 		566A550725231E6B000814B5 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A550625231E6B000814B5 /* TypeAliases.swift */; };
 		566A550E25231ED7000814B5 /* ScopedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A550D25231ED7000814B5 /* ScopedState.swift */; };
+		56F3F8AF25232A240042D9D0 /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F8AE25232A240042D9D0 /* Namespace.swift */; };
+		56F3F8FF252335A30042D9D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56F3F901252335A30042D9D0 /* Localizable.strings */; };
+		56F3F90C25233FED0042D9D0 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F90B25233FED0042D9D0 /* L10n.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,10 @@
 		566A550325231E4C000814B5 /* Store+StateObservableFactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+StateObservableFactoryMethod.swift"; sourceTree = "<group>"; };
 		566A550625231E6B000814B5 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		566A550D25231ED7000814B5 /* ScopedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopedState.swift; sourceTree = "<group>"; };
+		56F3F8AE25232A240042D9D0 /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
+		56F3F900252335A30042D9D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56F3F903252335A60042D9D0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56F3F90B25233FED0042D9D0 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		5F500DC208C85D2A700A2927 /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +86,9 @@
 			children = (
 				566A54DE2523167A000814B5 /* Core.h */,
 				566A54DF2523167A000814B5 /* Info.plist */,
+				56F3F901252335A30042D9D0 /* Localizable.strings */,
+				56F3F8AE25232A240042D9D0 /* Namespace.swift */,
+				56F3F8F0252333510042D9D0 /* Generated */,
 				566A54E825231757000814B5 /* Base */,
 				566A54F925231D2B000814B5 /* Extensions */,
 			);
@@ -138,6 +148,14 @@
 			path = Redux;
 			sourceTree = "<group>";
 		};
+		56F3F8F0252333510042D9D0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				56F3F90B25233FED0042D9D0 /* L10n.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		E7EB6D29FC94837415B1DA08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +188,8 @@
 				566A54D82523167A000814B5 /* Frameworks */,
 				566A54D92523167A000814B5 /* Resources */,
 				566A54E725231706000814B5 /* SwiftLint */,
+				566A55232523219D000814B5 /* CPD */,
+				56F3F8F4252334710042D9D0 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -200,6 +220,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 				Base,
 			);
 			mainGroup = 566A54D12523167A000814B5;
@@ -217,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F3F8FF252335A30042D9D0 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +262,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n      swiftlint\n    else\n      echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+		566A55232523219D000814B5 /* CPD */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = CPD;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    # Running CPD\n    pmd cpd --files ${EXECUTABLE_NAME} --minimum-tokens 50 --language swift --encoding UTF-8 --format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml --failOnViolation true\n    # Running script\n    php ../cpd_script.php -cpd-xml cpd-output.xml\nfi\n";
+		};
+		56F3F8F4252334710042D9D0 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftgen >/dev/null; then\n      swiftgen\n    else\n      echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\n    fi\nfi\n";
 		};
 		5DFD2A2AACB040294B891E5A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -272,15 +330,29 @@
 			files = (
 				566A550725231E6B000814B5 /* TypeAliases.swift in Sources */,
 				566A550425231E4C000814B5 /* Store+StateObservableFactoryMethod.swift in Sources */,
+				56F3F90C25233FED0042D9D0 /* L10n.swift in Sources */,
 				566A550E25231ED7000814B5 /* ScopedState.swift in Sources */,
 				566A54F725231866000814B5 /* ScopedStoreSubscriberRxProxy.swift in Sources */,
 				566A54EA25231768000814B5 /* StoreSubscriberRxProxy.swift in Sources */,
 				566A54FE25231D64000814B5 /* Optional+CollectionConvenience.swift in Sources */,
 				566A550125231DD2000814B5 /* Observable+OptionalUnwrapping.swift in Sources */,
+				56F3F8AF25232A240042D9D0 /* Namespace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56F3F901252335A30042D9D0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F3F900252335A30042D9D0 /* en */,
+				56F3F903252335A60042D9D0 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		566A54E12523167A000814B5 /* Debug */ = {

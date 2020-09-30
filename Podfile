@@ -26,6 +26,14 @@ def core_pods
   flow_pods
 end
 
+def actions_pods
+  pod 'ReSwift', '= 5.0.0'
+end
+
+def use_cases_pods
+  pod 'ReSwift', '= 5.0.0'
+end
+
 target 'iLexi_iOS' do
   project './iLexi.project'
   iLexi_pods
@@ -34,6 +42,16 @@ end
 target 'Core' do
   project './Core/Core.project'
   core_pods
+end
+
+target 'Actions' do
+  project './Domain/Domain.project'
+  actions_pods
+end
+
+target 'UseCases' do
+  project './Domain/Domain.project'
+  use_cases_pods
 end
 
 post_install do |pi|

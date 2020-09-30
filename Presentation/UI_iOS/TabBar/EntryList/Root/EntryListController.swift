@@ -6,6 +6,8 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
+import UseCases
 import UIKit
 import SwiftUI
 
@@ -33,7 +35,7 @@ extension Root {
 extension Controller {
     typealias RemoveEntryUseCase = UseCases.EntryList.RemoveEntryUseCase
     typealias GoToEntryInfoUseCase = UseCases.EntryList.GoToEntryInfoUseCase
-    typealias L10n = iLexi.L10n.EntryList
+    typealias L10n = Core.L10n.EntryList
 }
 
 // MARK: - Declaration

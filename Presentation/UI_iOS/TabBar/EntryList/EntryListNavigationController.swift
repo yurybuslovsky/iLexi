@@ -6,6 +6,7 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
 import UIKit
 import SwiftUI
 
@@ -16,7 +17,7 @@ private typealias Root = EntryList.Root
 private typealias NavigationController = EntryList.NavigationController
 
 extension NavigationController {
-    typealias L10n = iLexi.L10n.EntryList
+    typealias L10n = Core.L10n.EntryList
 }
 
 // MARK: - Declaration

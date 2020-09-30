@@ -1,9 +1,8 @@
 //
 //  BaseUseCase.swift
-//  iLexi_iOS
+//  UseCases
 //
-//  Created by Yury Buslovsky on 16.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 29.09.2020.
 //
 
-typealias BaseUseCase = Executable & Dispatcher
+public typealias BaseUseCase = Executable & Dispatcher

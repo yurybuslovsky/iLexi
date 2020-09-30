@@ -1,0 +1,9 @@
+output_dir: Core/Generated
+
+strings:
+  inputs: Core/en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: L10n.swift
+    params:
+        publicAccess: true

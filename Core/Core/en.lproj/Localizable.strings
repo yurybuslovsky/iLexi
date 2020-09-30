@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Core
+
+  Created by Yury Buslovsky on 29.09.2020.
+  
+*/
+
+// MARK: - Common
+
+"Common.Alert.title" = "Attention";
+"Common.Alert.confirm" = "OK";
+
+// MARK: - Actions
+
+"Actions.EntryInfo.Error.alreadyExists" = "An entry with the typed value already exists";
+
+// MARK: - Entry List
+
+"EntryList.title" = "Entries";
+"EntryList.deleteEntry" = "Delete";
+
+// MARK: - Entry Info
+
+"EntryInfo.Button.cancel" = "Cancel";
+"EntryInfo.Button.save" = "Save";
+"EntryInfo.title" = "Add New Entry";
+"EntryInfo.textFieldPlaceholder" = "A word";

@@ -1,15 +1,14 @@
 //
 //  EntryListUseCases.swift
-//  iLexi_iOS
+//  UseCases
 //
-//  Created by Yury Buslovsky on 16.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 29.09.2020.
 //
 
-extension UseCases {
+public extension UseCases {
 
     enum EntryList {
-        typealias Actions = iLexi.Actions.EntryList
+        typealias Actions = _Actions.EntryList
     }
 
 }

@@ -6,7 +6,18 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
+import Actions
 import ReSwift
+
+// MARK: - Namespace
+
+extension iOSApp.EntryInfo {
+    typealias HandleEntryAdditionError = Actions.EntryInfo.HandleEntryAdditionError
+    typealias HandleSuccessfulEntryAddition = Actions.EntryInfo.HandleSuccessfulEntryAddition
+}
+
+// MARK: - Declaration
 
 extension iOSApp.EntryInfo {
 
@@ -14,8 +25,8 @@ extension iOSApp.EntryInfo {
 
         func mutate(state: inout State, applying action: Action) {
             switch action {
-            case let action as HandleError:
-                state.entryAdditionResult = .error(action.entryError)
+            case let action as HandleEntryAdditionError:
+                state.entryAdditionResult = .error(action.error)
             case is HandleSuccessfulEntryAddition:
                 state.entryAdditionResult = .success
             default:

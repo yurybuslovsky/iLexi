@@ -7,6 +7,7 @@
 //
 
 import Core
+import Actions
 
 // MARK: - Namespace
 
@@ -19,7 +20,7 @@ extension EntryInfo {
     struct State: Equatable, Defaultable {
         static var `default`: State { .init(entryAdditionResult: .unknown) }
 
-        var entryAdditionResult: VoidResult<Entry.Error>
+        var entryAdditionResult: VoidResult<Actions.EntryInfo.Error>
     }
 
 }

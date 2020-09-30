@@ -6,6 +6,7 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
 import UIKit
 
 protocol ErrorResponder: class {

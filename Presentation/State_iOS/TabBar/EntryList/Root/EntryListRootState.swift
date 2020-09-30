@@ -6,6 +6,8 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
+
 extension iOSApp.TabBar.EntryList.Root {
 
     struct State: Equatable, Defaultable {

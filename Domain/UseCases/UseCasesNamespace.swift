@@ -1,9 +1,18 @@
 //
 //  UseCasesNamespace.swift
-//  iLexi_iOS
+//  UseCases
 //
-//  Created by Yury Buslovsky on 21.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 29.09.2020.
 //
 
-enum UseCases {}
+import Entities
+import Actions
+
+typealias Entry = Entities.Entry
+typealias Entries = Entities.Graph<Entry>
+
+// swiftlint:disable type_name
+typealias _Actions = Actions
+// swiftlint:enable type_name
+
+public enum UseCases {}

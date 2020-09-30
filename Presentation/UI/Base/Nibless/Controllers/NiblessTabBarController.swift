@@ -18,7 +18,11 @@ class NiblessTabBarController: UITabBarController {
 
     @available(*, unavailable)
     required init?(coder: NSCoder) {
-        fatalError(L10n.Common.niblessControllersDescription)
+        fatalError(
+            """
+            Loading this view controller from a nib is unsupported in favor of initializer dependency injection
+            """
+        )
     }
 
     @available(*, unavailable)

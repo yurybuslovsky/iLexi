@@ -7,6 +7,7 @@
 //
 
 import Core
+import UseCases
 import RxSwift
 import ReSwift
 
@@ -86,7 +87,7 @@ extension DIContainer: Controller.AddEntryUseCase.Producing {
 extension DIContainer: Controller.DismissUseCase.Producing {
 
     func makeEntryInfoDismissUseCase() -> Executable {
-        Controller.DismissUseCase(dispatch: store)
+        Controller.DismissUseCase(dispatcher: store)
     }
 
 }

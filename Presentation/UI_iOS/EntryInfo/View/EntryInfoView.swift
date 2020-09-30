@@ -6,6 +6,7 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
 import UIKit
 import SnapKit
 import RxSwift
@@ -19,7 +20,7 @@ private typealias EntryInfo = iOSApp.EntryInfo
 private typealias View = EntryInfo.View
 
 extension View {
-    typealias L10n = iLexi.L10n.EntryInfo
+    typealias L10n = Core.L10n.EntryInfo
 }
 
 // MARK: - Constants

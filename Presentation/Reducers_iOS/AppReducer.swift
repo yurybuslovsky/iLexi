@@ -6,7 +6,16 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
+import Actions
 import ReSwift
+
+// MARK: - Namespace
+
+extension iOSApp {
+    typealias GoToEntryInfo = Actions.EntryList.GoToEntryInfo
+    typealias DismissEntryInfo = Actions.EntryInfo.Dismiss
+}
 
 // MARK: - Declaration
 

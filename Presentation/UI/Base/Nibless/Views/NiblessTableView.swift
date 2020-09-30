@@ -23,7 +23,11 @@ class NiblessTableView: UITableView {
 
     @available(*, unavailable)
     required init?(coder: NSCoder) {
-        fatalError(L10n.Common.niblessViewsDescription)
+        fatalError(
+            """
+            Loading this view from a nib is unsupported in favor of initializer dependency injection
+            """
+        )
     }
 
 }

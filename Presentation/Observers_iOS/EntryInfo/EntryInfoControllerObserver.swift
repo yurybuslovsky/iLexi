@@ -6,6 +6,8 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+import Core
+import Actions
 import RxSwift
 
 // MARK: - Event Responder Protocol
@@ -47,7 +49,7 @@ extension Observer {
         let errorStateSubscription = entryInfoState
             .map(\.entryAdditionResult)
             .subscribe(
-                onNext: { [weak self] (result: VoidResult<Entry.Error>) in
+                onNext: { [weak self] (result: VoidResult<Actions.EntryInfo.Error>) in
                     switch result {
                     case .success:
                         self?.eventResponder?.respondToSuccessfulEntryAddition()

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Core
+
+  Created by Yury Buslovsky on 29.09.2020.
+  
+*/
+
+// MARK: - Common
+
+"Common.Alert.title" = "Внимание";
+"Common.Alert.confirm" = "Ок";
+
+// MARK: - Actions
+
+"Actions.EntryInfo.Error.alreadyExists" = "Введенное слово/фраза уже существует в словаре";
+
+// MARK: - Entry List
+
+"EntryList.title" = "Слова";
+"EntryList.deleteEntry" = "Удалить";
+
+// MARK: - Entry Info
+
+"EntryInfo.Button.cancel" = "Отмена";
+"EntryInfo.Button.save" = "Сохранить";
+"EntryInfo.title" = "Добавьте новое слово";
+"EntryInfo.textFieldPlaceholder" = "Слово";
