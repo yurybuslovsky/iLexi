@@ -1,17 +1,17 @@
 //
-//  EntryListViewControllerState.swift
-//  iLexi_iOS
+//  EntryListRootState.swift
+//  State_iOS
 //
-//  Created by Yury Buslovsky on 17.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import State
 
-extension iOSApp.TabBar.EntryList.Root {
+public extension iOSApp.TabBar.EntryList.Root {
 
     struct State: Equatable, Defaultable {
-        static var `default`: Self { .init() }
+        public static var `default`: Self { .init() }
     }
 
 }

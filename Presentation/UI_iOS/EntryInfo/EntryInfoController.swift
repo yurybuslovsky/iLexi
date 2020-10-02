@@ -1,25 +1,25 @@
 //
 //  EntryInfoController.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 22.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import Observers
+import UI
 import UseCases
 import UIKit
-import SwiftUI
 
 // MARK: - Interfaces
 
-protocol EntryInfoControllerProducing {
+public protocol EntryInfoControllerProducing {
     func makeEntryInfoController() -> UIViewController
 }
 
-protocol EntryInfoRendering: Keyboard.Rendering {}
+public protocol EntryInfoRendering: Keyboard.Rendering {}
 
-protocol EntryInfoIXResponder: class {
+public protocol EntryInfoIXResponder: class {
     func dismiss()
     func addEntry(withValue value: String)
 }
@@ -29,30 +29,30 @@ protocol EntryInfoIXResponder: class {
 private typealias EntryInfo = iOSApp.EntryInfo
 private typealias Controller = EntryInfo.Controller
 
-extension EntryInfo {
+public extension EntryInfo {
     typealias Producing = EntryInfoControllerProducing
     typealias IXResponder = EntryInfoIXResponder
     typealias Rendering = EntryInfoRendering
     typealias UI = UIView & Rendering
 }
 
-extension Controller {
+public extension Controller {
     typealias AddEntryUseCase = UseCases.EntryInfo.AddEntryUseCase
     typealias DismissUseCase = UseCases.EntryInfo.DismissUseCase
 }
 
 // MARK: - Declaration
 
-extension EntryInfo {
+public extension EntryInfo {
 
     final class Controller: BaseViewController, EventResponder, IXResponder {
 
-        let renderer: Rendering
+        public let renderer: Rendering
 
         private let addEntryUseCaseFactory: AddEntryUseCase.Producing
         private let dismissUseCaseFactory: DismissUseCase.Producing
 
-        init(
+        public init(
             observer: Observer<Controller>,
             keyboardObserver: Keyboard.Observer<Controller>,
             ui: UI,
@@ -66,7 +66,7 @@ extension EntryInfo {
             super.init(observers: [observer, keyboardObserver], uiView: ui)
         }
 
-        override func viewWasDismissed() {
+        public override func viewWasDismissed() {
             let dismissUseCase = self.dismissUseCaseFactory.makeEntryInfoDismissUseCase()
             dismissUseCase.execute()
         }
@@ -79,7 +79,7 @@ extension EntryInfo {
 
 extension Controller {
 
-    func respondToSuccessfulEntryAddition() {
+    public func respondToSuccessfulEntryAddition() {
         dismiss()
     }
 
@@ -89,11 +89,11 @@ extension Controller {
 
 extension Controller {
 
-    func dismiss() {
+    public func dismiss() {
         dismiss(animated: true)
     }
 
-    func addEntry(withValue value: String) {
+    public func addEntry(withValue value: String) {
         let addEntryUseCase = addEntryUseCaseFactory.makeAddEntryUseCase(entryValue: value)
         addEntryUseCase.execute()
     }

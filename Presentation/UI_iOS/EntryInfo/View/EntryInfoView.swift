@@ -1,12 +1,12 @@
 //
 //  EntryInfoView.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 22.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import UI
 import UIKit
 import SnapKit
 import RxSwift
@@ -34,13 +34,13 @@ extension View {
 
 // MARK: - Declaration
 
-extension EntryInfo {
+public extension EntryInfo {
 
     final class View: NiblessView, Rendering {
 
         // MARK: • Responder
 
-        weak var ixResponder: IXResponder?
+        public weak var ixResponder: IXResponder?
 
         // MARK: • Subviews
 
@@ -86,7 +86,7 @@ extension EntryInfo {
 
         // MARK: • Initialization
 
-        override init() {
+        public override init() {
             super.init()
             setUpConstaints()
             bindObservables()
@@ -151,13 +151,13 @@ extension View {
 
 extension View {
 
-    func moveContentForDismissedKeyboard(animationDuration: TimeInterval) {
+    public func moveContentForDismissedKeyboard(animationDuration: TimeInterval) {
         UIView.animate(withDuration: animationDuration) {
             self.entryTextFieldCenterConstraint.zeroOut()
         }
     }
 
-    func moveContent(forKeyboardFrame frame: CGRect, animationDuration: TimeInterval) {
+    public func moveContent(forKeyboardFrame frame: CGRect, animationDuration: TimeInterval) {
         let originalMaxY = entryTextField.frame.maxY
         let minRequiredBottomSpacing = frame.height + Self.enrtyTextFieldMinBottomSpacing
         let minRequiredMaxY = bounds.height - minRequiredBottomSpacing

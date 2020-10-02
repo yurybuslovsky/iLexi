@@ -1,14 +1,13 @@
 //
 //  UITableView+Registration.swift
-//  iLexi_iOS
+//  UI
 //
-//  Created by Yury Buslovsky on 22.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
     final func register<Cell: UITableViewCell>(_: Cell.Type) where Cell: Reusable {
         register(Cell.self, forCellReuseIdentifier: Cell.reuseID)

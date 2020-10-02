@@ -1,9 +1,8 @@
 //
-//  PresentationNamespace.swift
-//  iLexi_iOS
+//  UINamespace.swift
+//  UI
 //
-//  Created by Yury Buslovsky on 20.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import Entities

@@ -1,19 +1,18 @@
 //
 //  ErrorResponder.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 25.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
 import UIKit
 
-protocol ErrorResponder: class {
+public protocol ErrorResponder: class {
     func respondTo(error: LocalizedError)
 }
 
-extension ErrorResponder where Self: UIViewController {
+public extension ErrorResponder where Self: UIViewController {
 
     func respondTo(error: LocalizedError) {
         let alert = UIAlertController(

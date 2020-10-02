@@ -1,14 +1,14 @@
 //
 //  TabBarController.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 27.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import UI
+import Observers_iOS
 import UIKit
-import SwiftUI
 
 // MARK: - Auxiliary
 
@@ -18,7 +18,7 @@ private typealias EntryList = TabBar.EntryList
 
 // MARK: - Declaration
 
-extension TabBar {
+public extension TabBar {
 
     final class Controller: NiblessTabBarController, EventResponder {
 
@@ -26,7 +26,7 @@ extension TabBar {
         private let entryListNC: EntryList.NavigationController
         private let entryInfoVCFactory: iOSApp.EntryInfo.Producing
 
-        init(
+        public init(
             observer: Observer<Controller>,
             entryListNC: EntryList.NavigationController,
             entryInfoVCFactory: iOSApp.EntryInfo.Producing
@@ -40,12 +40,12 @@ extension TabBar {
             setUpView()
         }
 
-        override func viewWillAppear(_ animated: Bool) {
+        public override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             observer.startObserving()
         }
 
-        override func viewDidDisappear(_ animated: Bool) {
+        public override func viewDidDisappear(_ animated: Bool) {
             super.viewDidDisappear(animated)
             observer.stopObserving()
         }
@@ -73,7 +73,7 @@ extension Controller {
 
 extension Controller {
 
-    func respondToEntryInfoPresentation() {
+    public func respondToEntryInfoPresentation() {
         let entryInfoVC = entryInfoVCFactory.makeEntryInfoController()
         present(entryInfoVC, animated: true)
     }

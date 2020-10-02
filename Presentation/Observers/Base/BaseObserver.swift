@@ -1,9 +1,8 @@
 //
 //  BaseObserver.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 19.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
-typealias BaseObserver<EventResponder: AnyObject> = Observing & InterruptibleObserver<EventResponder>
+public typealias BaseObserver<EventResponder: AnyObject> = Observing & InterruptibleObserver<EventResponder>

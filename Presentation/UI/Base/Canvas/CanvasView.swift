@@ -1,9 +1,8 @@
 //
 //  CanvasView.swift
-//  iLexi
+//  UI
 //
-//  Created by Yury Buslovsky on 14.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import Core
@@ -12,11 +11,11 @@ import SwiftUI
 
 // MARK: - Base
 
-struct CanvasView<V: UIView> {
+public struct CanvasView<V: UIView> {
 
     private let wrappedView: CanvasLayoutWrapperView
 
-    init(
+    public init(
         canvasLayout: CanvasLayout = .default,
         _ factory: DefaultFactoryBlock<V>
     ) {
@@ -32,12 +31,12 @@ struct CanvasView<V: UIView> {
 
 extension CanvasView: UIViewRepresentable {
 
-    func makeUIView(context: Context) -> UIView {
+    public func makeUIView(context: Context) -> UIView {
         wrappedView.invalidateIntrinsicContentSize()
         return wrappedView
     }
 
-    func updateUIView(_ uiView: UIView, context: Context) {
+    public func updateUIView(_ uiView: UIView, context: Context) {
         uiView.setContentHuggingPriority(.defaultHigh, for: .vertical)
         uiView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
     }

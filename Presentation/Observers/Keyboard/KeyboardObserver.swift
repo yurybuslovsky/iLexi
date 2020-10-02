@@ -1,9 +1,8 @@
 //
 //  KeyboardObserver.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 24.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import UIKit
@@ -16,13 +15,15 @@ private typealias UserInfo = Keyboard.UserInfo
 
 // MARK: - Declaration
 
-extension Keyboard {
+public extension Keyboard {
 
     final class Observer<ER: EventResponder>: BaseObserver<ER> {
 
         private let notificationCenter = NotificationCenter.default
 
-        func startObserving() {
+        public override init() {}
+
+        public func startObserving() {
             guard canStartObserving else { return }
             subscribeToKeyboardWillShowNotification()
             subscribeToKeyboardDidShowNotification()

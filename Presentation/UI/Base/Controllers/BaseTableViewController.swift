@@ -1,36 +1,36 @@
 //
 //  BaseTableViewController.swift
-//  iLexi_iOS
+//  UI
 //
-//  Created by Yury Buslovsky on 21.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
+import Observers
 import UIKit
 
 // CPD-OFF
 
-class BaseTableViewController: NiblessTableViewController {
+open class BaseTableViewController: NiblessTableViewController {
 
     private let uiTableView: UITableView
     private let observers: [Observing]
 
-    init(observers: [Observing], uiTableView: UITableView) {
+    public init(observers: [Observing], uiTableView: UITableView) {
         self.observers = observers
         self.uiTableView = uiTableView
         super.init()
     }
 
-    override func loadView() {
+    public override func loadView() {
         view = uiTableView
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         observers.forEach { $0.startObserving() }
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         observers.forEach { $0.stopObserving() }
     }

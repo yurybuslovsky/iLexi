@@ -1,12 +1,13 @@
 //
 //  EntryListView.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 21.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import UI
+import Entities
 import UIKit
 import SwiftUI
 
@@ -21,11 +22,11 @@ extension View {
 
 // MARK: - Declaration
 
-extension Root {
+public  extension Root {
 
     final class View: NiblessTableView, Rendering {
 
-        weak var ixResponder: IXResponder?
+        public weak var ixResponder: IXResponder?
 
         private lazy var diffableDS: EditableTableViewDiffableDataSource<Int, Cell.PresentationModel> = {
             register(Cell.self)
@@ -43,6 +44,10 @@ extension Root {
             return diffableDS
         }()
 
+        public override init() {
+            super.init()
+        }
+
     }
 
 }
@@ -51,11 +56,11 @@ extension Root {
 
 extension View: UITableViewDelegate {
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         deselectRow(at: indexPath, animated: true)
     }
 
-    func tableView(
+    public func tableView(
         _ tableView: UITableView,
         trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath
     ) -> UISwipeActionsConfiguration? {
@@ -77,7 +82,7 @@ extension View: UITableViewDelegate {
 
 extension View {
 
-    func render(entries: [Entry]) {
+    public func render(entries: [Entities.Entry]) {
         var snapshot = NSDiffableDataSourceSnapshot<Int, Cell.PresentationModel>()
         snapshot.appendSections([.zero])
         snapshot.appendItems(entries.map(Cell.PresentationModel.init), toSection: .zero)
@@ -98,10 +103,10 @@ struct EntryListView_Previews: PreviewProvider {
                 let view = View()
 
                 view.render(entries: [
-                    Entry(value: "Disdain"),
-                    Entry(value: "Despise"),
-                    Entry(value: "Scorn"),
-                    Entry(value: "Contemn"),
+                    Entities.Entry(value: "Disdain"),
+                    Entities.Entry(value: "Despise"),
+                    Entities.Entry(value: "Scorn"),
+                    Entities.Entry(value: "Contemn"),
                 ])
 
                 return view

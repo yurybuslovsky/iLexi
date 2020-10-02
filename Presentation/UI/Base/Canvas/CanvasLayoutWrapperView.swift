@@ -1,9 +1,8 @@
 //
 //  CanvasLayoutWrapperView.swift
-//  iLexi
+//  UI
 //
-//  Created by Yury Buslovsky on 14.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import UIKit

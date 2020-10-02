@@ -7,9 +7,14 @@
 //
 
 import Core
+import State_iOS
+import UI_iOS
+import Reducers_iOS
 import ReSwift
 import RxSwift
 import UIKit
+
+// MARK: - Namespace
 
 private typealias DIContainer = iOSApp.DIContainer
 private typealias EntryInfo = iOSApp.EntryInfo

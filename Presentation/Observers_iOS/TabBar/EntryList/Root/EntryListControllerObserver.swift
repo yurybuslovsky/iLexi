@@ -1,14 +1,14 @@
 //
 //  EntryListControllerObserver.swift
-//  iLexi_iOS
+//  Observers_iOS
 //
-//  Created by Yury Buslovsky on 18.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import Observers
 
-extension iOSApp.TabBar.EntryList.Root {
+public extension iOSApp.TabBar.EntryList.Root {
     typealias Observer = EntriesObserver
     typealias EventResponder = EntriesEventResponder
 }

@@ -1,12 +1,11 @@
 //
 //  Observing.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 18.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
-protocol Observing: ObservingStopping {
+public protocol Observing: ObservingStopping {
     func startObserving()
     func stopObserving()
 }

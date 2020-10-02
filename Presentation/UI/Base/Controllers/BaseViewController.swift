@@ -1,36 +1,36 @@
 //
 //  BaseViewController.swift
-//  iLexi_iOS
+//  UI
 //
-//  Created by Yury Buslovsky on 22.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
+import Observers
 import UIKit
 
 // CPD-OFF
 
-class BaseViewController: NiblessViewController {
+open class BaseViewController: NiblessViewController {
 
     let uiView: UIView
     private let observers: [Observing]
 
-    init(observers: [Observing], uiView: UIView) {
+    public init(observers: [Observing], uiView: UIView) {
         self.observers = observers
         self.uiView = uiView
         super.init()
     }
 
-    override func loadView() {
+    public override func loadView() {
         view = uiView
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         observers.forEach { $0.startObserving() }
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         observers.forEach { $0.stopObserving() }
 
@@ -39,7 +39,7 @@ class BaseViewController: NiblessViewController {
         }
     }
 
-    func viewWasDismissed() {}
+    open func viewWasDismissed() {}
 
 }
 

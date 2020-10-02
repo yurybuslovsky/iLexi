@@ -1,12 +1,13 @@
 //
 //  EntryCell.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 22.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
-//
+//  Created by Yury Buslovsky on 02.10.2020.
+//q
 
 import Core
+import UI
+import Entities
 import SnapKit
 import SwiftUI
 
@@ -18,7 +19,7 @@ private typealias Cell = View.Cell
 extension Cell {
 
     struct PresentationModel: Hashable {
-        let entry: Entry
+        let entry: Entities.Entry
     }
 
 }
@@ -32,7 +33,7 @@ extension Cell {
 
 // MARK: - Declaration
 
-extension View {
+public extension View {
 
     final class Cell: NiblessTableViewCell, Reusable {
 
@@ -85,7 +86,7 @@ struct EntryCell_Previews: PreviewProvider {
         Group {
             CanvasView(canvasLayout: .fixedWidth()) {
                 let cell = Cell(style: .default, reuseIdentifier: "")
-                cell.setUp(presentationModel: Cell.PresentationModel(entry: Entry(value: "Disdain")))
+                cell.setUp(presentationModel: Cell.PresentationModel(entry: Entities.Entry(value: "Disdain")))
                 return cell
             }
             .previewLayout(.sizeThatFits)

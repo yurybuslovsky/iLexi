@@ -1,12 +1,12 @@
 //
-//  iOSTabBarState.swift
-//  iLexi_iOS
+//  TabBarState.swift
+//  State_iOS
 //
-//  Created by Yury Buslovsky on 17.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import State
 
 // MARK: - Namespace
 
@@ -14,12 +14,12 @@ private typealias TabBar = iOSApp.TabBar
 
 // MARK: - Auxiliary
 
-extension TabBar {
+public extension TabBar {
 
     enum TabState: Equatable, Defaultable {
-        static var `default`: Self { .entryList(.default) }
+        public static var `default`: Self { .entryList(.default) }
 
-        static func == (lhs: Self, rhs: Self) -> Bool {
+        public static func == (lhs: Self, rhs: Self) -> Bool {
             true
         }
 
@@ -30,23 +30,23 @@ extension TabBar {
 
 // MARK: - Declaration
 
-extension TabBar {
+public extension TabBar {
 
     struct State: Equatable, Defaultable {
-        static var `default`: Self { .init(
+        public static var `default`: Self { .init(
             entryListState: .entryList(.default),
             selectedTabState: .default
         )}
 
-        var entryListState: TabState
-        var selectedTabState: TabState
+        public var entryListState: TabState
+        public var selectedTabState: TabState
     }
 
 }
 
 // MARK: - Scoping
 
-extension TabBar {
+public extension TabBar {
 
     static func makeTabBarScopedState(from state: iOSApp.State) -> ScopedState<State> {
         switch state.topControllerStateStack.last {

@@ -1,0 +1,10 @@
+output_dir: UI/Generated
+
+xcassets:
+  inputs: UI/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Assets.swift
+    params:
+      enumName: Assets
+      publicAccess: true

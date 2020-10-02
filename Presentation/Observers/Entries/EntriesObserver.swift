@@ -1,27 +1,28 @@
 //
 //  EntriesObserver.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 20.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import State_iOS
+import Entities
 import RxSwift
 
 // MARK: - Event Responder Protocol
 
-protocol EntriesEventResponder: class {
-    func respondTo(newEntries: [Entry])
+public protocol EntriesEventResponder: class {
+    func respondTo(newEntries: [Entities.Entry])
 }
 
 // MARK: - Declaration
 
-final class EntriesObserver<ER: EntriesEventResponder>: BaseObserver<ER> {
+public final class EntriesObserver<ER: EntriesEventResponder>: BaseObserver<ER> {
 
     private let appState: Observable<iOSApp.State>
 
-    init(appState: Observable<iOSApp.State>) {
+    public init(appState: Observable<iOSApp.State>) {
         self.appState = appState
     }
 
@@ -36,7 +37,7 @@ extension EntriesObserver {
             .map { $0.entries.toArray() }
             .distinctUntilChanged()
             .subscribe(
-                onNext: { [weak self] (entries: [Entry]) in
+                onNext: { [weak self] (entries: [Entities.Entry]) in
                     self?.eventResponder?.respondTo(newEntries: entries)
                 }
             )
@@ -51,7 +52,7 @@ extension EntriesObserver {
 
 extension EntriesObserver {
 
-    func startObserving() {
+    public func startObserving() {
         guard canStartObserving else { return }
         subscribeToEntriesState()
     }

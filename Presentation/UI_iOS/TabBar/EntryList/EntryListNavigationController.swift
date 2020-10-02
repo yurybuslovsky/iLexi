@@ -1,14 +1,13 @@
 //
 //  EntryListNavigationController.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 27.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import UI
 import UIKit
-import SwiftUI
 
 // MARK: - Auxiliary
 
@@ -22,13 +21,13 @@ extension NavigationController {
 
 // MARK: - Declaration
 
-extension EntryList {
+public extension EntryList {
 
     final class NavigationController: NiblessNavigationController {
 
         private let rootVC: Root.Controller
 
-        init(rootVC: Root.Controller) {
+        public init(rootVC: Root.Controller) {
             self.rootVC = rootVC
             super.init()
             setUpUI()

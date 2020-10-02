@@ -1,25 +1,24 @@
 //
 //  SubscriptionContainer.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 19.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import RxSwift
 
 // MARK: - Declaration
 
-class SubscriptionContainer {
+open class SubscriptionContainer {
 
-    final let disposeBag: DisposeBag = .init()
+    public final let disposeBag: DisposeBag = .init()
     private(set) var subscriptions: [Disposable] = []
 
 }
 
 // MARK: - Public API
 
-extension SubscriptionContainer {
+public extension SubscriptionContainer {
 
     final func add(subscription: Disposable) {
         subscriptions.append(subscription)

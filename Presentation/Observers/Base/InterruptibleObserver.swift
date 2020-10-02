@@ -1,16 +1,15 @@
 //
 //  InterruptibleObserver.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 20.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 // MARK: - Declaration
 
-class InterruptibleObserver<EventResponder: AnyObject>: SubscriptionContainer, ObservingStopping {
+open class InterruptibleObserver<EventResponder: AnyObject>: SubscriptionContainer, ObservingStopping {
 
-    final weak var eventResponder: EventResponder? {
+    public final weak var eventResponder: EventResponder? {
         willSet {
             if newValue == nil {
                 stopObserving()
@@ -18,18 +17,16 @@ class InterruptibleObserver<EventResponder: AnyObject>: SubscriptionContainer, O
         }
     }
 
+    public override init() {}
+
 }
 
 // MARK: - Public API
 
 extension InterruptibleObserver {
 
-    final var isObserving: Bool {
-        !subscriptions.isEmpty
-    }
-
-    final var canStartObserving: Bool {
-        eventResponder != nil && !isObserving
+    public final var canStartObserving: Bool {
+        eventResponder != nil && subscriptions.isEmpty
     }
 
 }

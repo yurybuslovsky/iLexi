@@ -1,0 +1,6 @@
+framework module Pods_Observers_iOS {
+  umbrella header "Pods-Observers_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,12 +1,11 @@
 //
 //  KeyboardEventResponder.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 24.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
-protocol KeyboardEventResponder: class {
+public protocol KeyboardEventResponder: class {
     associatedtype Renderer
 
     var renderer: Renderer { get }
@@ -19,7 +18,7 @@ protocol KeyboardEventResponder: class {
     func keyboardDidChangeFrame(_ userInfo: Keyboard.UserInfo)
 }
 
-extension KeyboardEventResponder {
+public extension KeyboardEventResponder {
 
     private var keyboardRenderer: Keyboard.Rendering? {
         renderer as? Keyboard.Rendering

@@ -1,13 +1,14 @@
 //
-//  iOSEntryInfoState.swift
-//  iLexi_iOS
+//  EntryInfoState.swift
+//  State_iOS
 //
-//  Created by Yury Buslovsky on 17.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import State
 import Actions
+import Entities
 
 // MARK: - Namespace
 
@@ -15,19 +16,19 @@ private typealias EntryInfo = iOSApp.EntryInfo
 
 // MARK: - Declaration
 
-extension EntryInfo {
+public extension EntryInfo {
 
     struct State: Equatable, Defaultable {
-        static var `default`: State { .init(entryAdditionResult: .unknown) }
+        public static var `default`: State { .init(entryAdditionResult: .unknown) }
 
-        var entryAdditionResult: VoidResult<Actions.EntryInfo.Error>
+        public var entryAdditionResult: Entities.VoidResult<Actions.EntryInfo.Error>
     }
 
 }
 
 // MARK: - Scoping
 
-extension EntryInfo {
+public extension EntryInfo {
 
     static func makeEntryInfoScopedState(from state: iOSApp.State) -> ScopedState<State> {
         switch state.topControllerStateStack.last {

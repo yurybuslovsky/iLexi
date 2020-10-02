@@ -1,14 +1,13 @@
 //
 //  KeyboardUserInfo.swift
-//  iLexi_iOS
+//  Observers
 //
-//  Created by Yury Buslovsky on 24.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import UIKit
 
-extension Keyboard {
+public extension Keyboard {
 
     struct UserInfo {
         let animationCurve: UIView.AnimationCurve

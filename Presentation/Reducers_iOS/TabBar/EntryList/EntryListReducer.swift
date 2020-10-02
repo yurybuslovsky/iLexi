@@ -1,19 +1,20 @@
 //
-//  iOSEntryListReducer.swift
-//  iLexi_iOS
+//  EntryListReducer.swift
+//  Reducers_iOS
 //
-//  Created by Yury Buslovsky on 18.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import Reducers
+import State_iOS
 import ReSwift
 
-extension iOSApp.TabBar.EntryList {
+public extension iOSApp.TabBar.EntryList {
 
     struct Reducer: Reducing {
 
-        func mutate(state: inout State, applying action: Action) {
+        public func mutate(state: inout State, applying action: Action) {
             state.topControllerStateStack = state.topControllerStateStack
                 .map { (topControllerState: TopControllerState) -> TopControllerState in
                     var newTopControllerState = topControllerState

@@ -1,23 +1,23 @@
 //
 //  EntryListController.swift
-//  iLexi_iOS
+//  UI_iOS
 //
-//  Created by Yury Buslovsky on 17.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
 import UseCases
+import UI
+import Entities
 import UIKit
-import SwiftUI
 
 // MARK: - Interfaces
 
-protocol EntryListRendering {
-    func render(entries: [Entry])
+public protocol EntryListRendering {
+    func render(entries: [Entities.Entry])
 }
 
-protocol EntryListIXResponder: class {
+public protocol EntryListIXResponder: class {
     func removeEntry(at index: Int)
 }
 
@@ -26,21 +26,21 @@ protocol EntryListIXResponder: class {
 private typealias Root = iOSApp.TabBar.EntryList.Root
 private typealias Controller = Root.Controller
 
-extension Root {
+public extension Root {
     typealias IXResponder = EntryListIXResponder
     typealias Rendering = EntryListRendering
     typealias UI = UITableView & Rendering
 }
 
 extension Controller {
-    typealias RemoveEntryUseCase = UseCases.EntryList.RemoveEntryUseCase
-    typealias GoToEntryInfoUseCase = UseCases.EntryList.GoToEntryInfoUseCase
-    typealias L10n = Core.L10n.EntryList
+    public typealias RemoveEntryUseCase = UseCases.EntryList.RemoveEntryUseCase
+    public typealias GoToEntryInfoUseCase = UseCases.EntryList.GoToEntryInfoUseCase
+    private typealias L10n = Core.L10n.EntryList
 }
 
 // MARK: - Declaration
 
-extension Root {
+public extension Root {
 
     final class Controller: BaseTableViewController, EventResponder, IXResponder {
 
@@ -49,7 +49,7 @@ extension Root {
         private let removeEntryUseCaseFactory: RemoveEntryUseCase.Producing
         private let goToEntryInfoUseCaseFactory: GoToEntryInfoUseCase.Producing
 
-        init(
+        public init(
             observer: Observer<Controller>,
             ui: UI,
             removeEntryUseCaseFactory: RemoveEntryUseCase.Producing,
@@ -86,7 +86,7 @@ extension Controller {
 
 extension Controller {
 
-    func respondTo(newEntries: [Entry]) {
+    public func respondTo(newEntries: [Entities.Entry]) {
         renderer.render(entries: newEntries)
     }
 
@@ -101,7 +101,7 @@ extension Controller {
         goToEntryInfoUseCase.execute()
     }
 
-    func removeEntry(at index: Int) {
+    public func removeEntry(at index: Int) {
         let removeEntryUseCase = removeEntryUseCaseFactory.makeRemoveEntryUseCase(entryIndex: index)
         removeEntryUseCase.execute()
     }

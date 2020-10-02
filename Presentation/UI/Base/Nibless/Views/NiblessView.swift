@@ -1,29 +1,28 @@
 //
 //  NiblessView.swift
-//  iLexi
+//  UI
 //
-//  Created by Yury Buslovsky on 14.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import UIKit
 
 // CPD-OFF
 
-class NiblessView: UIView {
+open class NiblessView: UIView {
 
-    init() {
+    public init() {
         super.init(frame: .zero)
         backgroundColor = .systemBackground
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemBackground
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError(
             """
             Loading this view from a nib is unsupported in favor of initializer dependency injection

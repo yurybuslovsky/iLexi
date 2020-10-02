@@ -1,9 +1,8 @@
 //
 //  CanvasViewController.swift
-//  iLexi
+//  UI
 //
-//  Created by Yury Buslovsky on 14.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import Core
@@ -12,11 +11,11 @@ import SwiftUI
 
 // MARK: - Declaration
 
-struct CanvasViewController<VC: UIViewController> {
+public struct CanvasViewController<VC: UIViewController> {
 
     private let viewController: VC
 
-    init(_ factory: DefaultFactoryBlock<VC>) {
+    public init(_ factory: DefaultFactoryBlock<VC>) {
         viewController = factory()
     }
 
@@ -26,10 +25,10 @@ struct CanvasViewController<VC: UIViewController> {
 
 extension CanvasViewController: UIViewControllerRepresentable {
 
-    func makeUIViewController(context: Context) -> VC {
+    public func makeUIViewController(context: Context) -> VC {
         viewController
     }
 
-    func updateUIViewController(_ uiViewController: VC, context: Context) {}
+    public func updateUIViewController(_ uiViewController: VC, context: Context) {}
 
 }

@@ -1,17 +1,17 @@
 //
 //  TabBarObserver.swift
-//  iLexi_iOS
+//  Observers_iOS
 //
-//  Created by Yury Buslovsky on 27.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import Observers
 import RxSwift
 
 // MARK: - Event Responder Protocol
 
-protocol TabBarEventResponder: class {
+public protocol TabBarEventResponder: class {
     func respondToEntryInfoPresentation()
 }
 
@@ -20,19 +20,19 @@ protocol TabBarEventResponder: class {
 private typealias TabBar = iOSApp.TabBar
 private typealias Observer = TabBar.Observer
 
-extension TabBar {
+public extension TabBar {
     typealias EventResponder = TabBarEventResponder
 }
 
 // MARK: - Declaration
 
-extension TabBar {
+public extension TabBar {
 
     final class Observer<ER: EventResponder>: BaseObserver<ER> {
 
         private let appState: Observable<iOSApp.State>
 
-        init(appState: Observable<iOSApp.State>) {
+        public init(appState: Observable<iOSApp.State>) {
             self.appState = appState
         }
 
@@ -69,7 +69,7 @@ extension Observer {
 
 extension Observer {
 
-    func startObserving() {
+    public func startObserving() {
         guard canStartObserving else { return }
         subscribeToTopControllerState()
     }

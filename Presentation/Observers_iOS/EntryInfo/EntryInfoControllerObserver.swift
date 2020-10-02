@@ -1,18 +1,19 @@
 //
 //  EntryInfoControllerObserver.swift
-//  iLexi_iOS
+//  Observers_iOS
 //
-//  Created by Yury Buslovsky on 20.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
 import Actions
+import Observers
+import Entities
 import RxSwift
 
 // MARK: - Event Responder Protocol
 
-protocol EntryInfoControllerEventResponder: ErrorResponder {
+public protocol EntryInfoControllerEventResponder: ErrorResponder {
     func respondToSuccessfulEntryAddition()
 }
 
@@ -21,19 +22,19 @@ protocol EntryInfoControllerEventResponder: ErrorResponder {
 private typealias EntryInfo = iOSApp.EntryInfo
 private typealias Observer = EntryInfo.Observer
 
-extension EntryInfo {
+public extension EntryInfo {
     typealias EventResponder = EntryInfoControllerEventResponder & Keyboard.EventResponder
 }
 
 // MARK: - Declaration
 
-extension EntryInfo {
+public extension EntryInfo {
 
     final class Observer<ER: EventResponder>: BaseObserver<ER> {
 
         private let entryInfoState: Observable<State>
 
-        init(entryInfoState: Observable<State>) {
+        public init(entryInfoState: Observable<State>) {
             self.entryInfoState = entryInfoState
         }
 
@@ -49,7 +50,7 @@ extension Observer {
         let errorStateSubscription = entryInfoState
             .map(\.entryAdditionResult)
             .subscribe(
-                onNext: { [weak self] (result: VoidResult<Actions.EntryInfo.Error>) in
+                onNext: { [weak self] (result: Entities.VoidResult<Actions.EntryInfo.Error>) in
                     switch result {
                     case .success:
                         self?.eventResponder?.respondToSuccessfulEntryAddition()
@@ -71,7 +72,7 @@ extension Observer {
 
 extension Observer {
 
-    func startObserving() {
+    public func startObserving() {
         guard canStartObserving else { return }
         subscribeToErrorState()
     }

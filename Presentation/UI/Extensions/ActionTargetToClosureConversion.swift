@@ -1,9 +1,8 @@
 //
 //  ActionTargetToClosureConversion.swift
-//  iLexi_iOS
+//  UI
 //
-//  Created by Yury Buslovsky on 24.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import Core
@@ -23,19 +22,23 @@ private final class ClosureSleeve: NSObject {
     }
 }
 
-extension UIControl {
+public extension UIControl {
+
     func setAction(for event: Event = .touchUpInside, _ action: @escaping DefaultBlock) {
         let sleeve = ClosureSleeve(closure: action)
         addTarget(sleeve, action: #selector(sleeve.invoke), for: event)
         objc_setAssociatedObject(self, UUID().uuidString, sleeve, .OBJC_ASSOCIATION_RETAIN)
     }
+
 }
 
-extension UIBarButtonItem {
+public extension UIBarButtonItem {
+
     func setAction(_ action: @escaping DefaultBlock) {
         let sleeve = ClosureSleeve(closure: action)
         target = sleeve
         self.action = #selector(sleeve.invoke)
         objc_setAssociatedObject(self, UUID().uuidString, sleeve, .OBJC_ASSOCIATION_RETAIN)
     }
+
 }

@@ -1,14 +1,13 @@
 //
 //  Constraint+Zeroing.swift
-//  iLexi_iOS
+//  UI
 //
-//  Created by Yury Buslovsky on 24.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 30.09.2020.
 //
 
 import SnapKit
 
-extension Constraint {
+public extension Constraint {
 
     @discardableResult
     func zeroOut() -> Constraint { update(offset: 0).update(inset: 0) }

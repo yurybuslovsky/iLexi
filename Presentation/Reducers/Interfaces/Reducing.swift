@@ -1,20 +1,20 @@
 //
 //  Reducing.swift
-//  iLexi_iOS
+//  Reducers
 //
-//  Created by Yury Buslovsky on 18.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import ReSwift
+import State
 
-protocol Reducing {
+public protocol Reducing {
     associatedtype State: Defaultable
 
     func mutate(state: inout State, applying action: Action)
 }
 
-extension Reducing {
+public extension Reducing {
 
     func callAsFunction(action: Action, state: State?) -> State {
         var state = state ?? .default

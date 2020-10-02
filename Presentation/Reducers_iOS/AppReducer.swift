@@ -1,29 +1,32 @@
 //
 //  AppReducer.swift
-//  iLexi_iOS
+//  Reducers_iOS
 //
-//  Created by Yury Buslovsky on 18.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
 import Actions
+import Reducers
+import State_iOS
 import ReSwift
 
 // MARK: - Namespace
 
-extension iOSApp {
+private extension iOSApp {
     typealias GoToEntryInfo = Actions.EntryList.GoToEntryInfo
     typealias DismissEntryInfo = Actions.EntryInfo.Dismiss
 }
 
 // MARK: - Declaration
 
-extension iOSApp {
+public extension iOSApp {
 
     struct Reducer: Reducing {
 
-        func mutate(state: inout State, applying action: Action) {
+        public init() {}
+
+        public func mutate(state: inout State, applying action: Action) {
             var topControllerStateStack = state.topControllerStateStack
 
             switch action {

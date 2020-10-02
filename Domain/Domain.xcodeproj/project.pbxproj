@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		368732A8B9A914D22DE824F3 /* Pods_Actions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796A02AD8F8290E3E01F9931 /* Pods_Actions.framework */; };
-		564FEEA62523586C00EF1BF3 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566A552F252323D5000814B5 /* Entities.framework */; };
 		566A5534252323D5000814B5 /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = 566A5532252323D5000814B5 /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		566A55442523245C000814B5 /* Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 566A55422523245C000814B5 /* Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56F3F86F252325850042D9D0 /* UseCases.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F3F86D252325850042D9D0 /* UseCases.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,31 +34,16 @@
 		56F3F91A252345720042D9D0 /* EntryListUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F919252345720042D9D0 /* EntryListUseCases.swift */; };
 		56F3F91D25234BDE0042D9D0 /* EntryListGoToEntryInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F91C25234BDE0042D9D0 /* EntryListGoToEntryInfoUseCase.swift */; };
 		56F3F92025234C170042D9D0 /* EntryListRemoveEntryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F91F25234C170042D9D0 /* EntryListRemoveEntryUseCase.swift */; };
-		56F3F93C25234DD50042D9D0 /* Actions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566A55402523245C000814B5 /* Actions.framework */; };
 		9AFD4DC90CA4EBD995138FA8 /* Pods_UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6C555102766D8D019C958D /* Pods_UseCases.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		564FEEA82523586C00EF1BF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 566A5526252323D5000814B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 566A552E252323D5000814B5;
-			remoteInfo = Entities;
-		};
 		56F3F89C252328030042D9D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56F3F898252328030042D9D0 /* Core.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 566A54DB2523167A000814B5;
 			remoteInfo = Core;
-		};
-		56F3F93E25234DD50042D9D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 566A5526252323D5000814B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 566A553F2523245C000814B5;
-			remoteInfo = Actions;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -158,9 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F3F93C25234DD50042D9D0 /* Actions.framework in Frameworks */,
 				9AFD4DC90CA4EBD995138FA8 /* Pods_UseCases.framework in Frameworks */,
-				564FEEA62523586C00EF1BF3 /* Entities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,8 +481,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				56F3F93F25234DD50042D9D0 /* PBXTargetDependency */,
-				564FEEA92523586C00EF1BF3 /* PBXTargetDependency */,
 			);
 			name = UseCases;
 			productName = UseCases;
@@ -787,19 +767,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		564FEEA92523586C00EF1BF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 566A552E252323D5000814B5 /* Entities */;
-			targetProxy = 564FEEA82523586C00EF1BF3 /* PBXContainerItemProxy */;
-		};
-		56F3F93F25234DD50042D9D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 566A553F2523245C000814B5 /* Actions */;
-			targetProxy = 56F3F93E25234DD50042D9D0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		566A5535252323D5000814B5 /* Debug */ = {

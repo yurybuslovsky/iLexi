@@ -1,21 +1,21 @@
 //
-//  iOSEntryListState.swift
-//  iLexi_iOS
+//  EntryListState.swift
+//  State_iOS
 //
-//  Created by Yury Buslovsky on 17.09.2020.
-//  Copyright © 2020 Napoleon IT. All rights reserved.
+//  Created by Yury Buslovsky on 02.10.2020.
 //
 
 import Core
+import State
 
 // MARK: - Auxiliary
 
-extension iOSApp.TabBar.EntryList {
+public extension iOSApp.TabBar.EntryList {
 
     enum TopControllerState: Equatable, Defaultable {
-        static var `default`: Self { .root(.default) }
+        public static var `default`: Self { .root(.default) }
 
-        static func == (lhs: Self, rhs: Self) -> Bool {
+        public static func == (lhs: Self, rhs: Self) -> Bool {
             true
         }
 
@@ -26,12 +26,12 @@ extension iOSApp.TabBar.EntryList {
 
 // MARK: - Declaration
 
-extension iOSApp.TabBar.EntryList {
+public extension iOSApp.TabBar.EntryList {
 
     struct State: Equatable, Defaultable {
-        static var `default`: Self { .init(topControllerStateStack: [.default]) }
+        public static var `default`: Self { .init(topControllerStateStack: [.default]) }
 
-        var topControllerStateStack: [TopControllerState]
+        public var topControllerStateStack: [TopControllerState]
     }
 
 }
