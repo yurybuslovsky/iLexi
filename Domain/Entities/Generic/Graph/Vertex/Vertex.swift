@@ -5,7 +5,7 @@
 //  Created by Yury Buslovsky on 29.09.2020.
 //
 
-extension Entities.Graph {
+extension Graph {
 
     final class Vertex<T: Equatable>: Equatable {
         static func == (lhs: Vertex<T>, rhs: Vertex<T>) -> Bool {

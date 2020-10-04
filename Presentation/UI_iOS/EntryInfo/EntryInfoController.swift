@@ -5,11 +5,14 @@
 //  Created by Yury Buslovsky on 02.10.2020.
 //
 
+// MARK: - Imports
+
+import UIKit
+
 import Core
 import Observers
 import UI
 import UseCases
-import UIKit
 
 // MARK: - Interfaces
 
@@ -24,7 +27,7 @@ public protocol EntryInfoIXResponder: class {
     func addEntry(withValue value: String)
 }
 
-// MARK: - Auxiliary
+// MARK: - Namespace
 
 private typealias EntryInfo = iOSApp.EntryInfo
 private typealias Controller = EntryInfo.Controller
@@ -47,10 +50,16 @@ public extension EntryInfo {
 
     final class Controller: BaseViewController, EventResponder, IXResponder {
 
+        // MARK: • Renderer
+
         public let renderer: Rendering
+
+        // MARK: • Use case factories
 
         private let addEntryUseCaseFactory: AddEntryUseCase.Producing
         private let dismissUseCaseFactory: DismissUseCase.Producing
+
+        // MARK: • Initialization
 
         public init(
             observer: Observer<Controller>,
@@ -65,6 +74,8 @@ public extension EntryInfo {
 
             super.init(observers: [observer, keyboardObserver], uiView: ui)
         }
+
+        // MARK: • Life cycle
 
         public override func viewWasDismissed() {
             let dismissUseCase = self.dismissUseCaseFactory.makeEntryInfoDismissUseCase()

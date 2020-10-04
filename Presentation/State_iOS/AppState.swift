@@ -42,7 +42,7 @@ public extension iOSApp {
         public static var `default`: Self { .init(topControllerStateStack: [.default], entries: []) }
 
         public var topControllerStateStack: [TopControllerState]
-        public var entries: Entities.Graph<Entities.Entry>
+        public var entries: Graph<Entry>
     }
 
 }

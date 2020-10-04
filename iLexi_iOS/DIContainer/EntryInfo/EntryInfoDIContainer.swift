@@ -6,12 +6,15 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+// MARK: - Imports
+
+import RxSwift
+import ReSwift
+
 import Core
 import UseCases
 import Entities
 import Observers
-import RxSwift
-import ReSwift
 
 // MARK: - Namespace
 
@@ -25,31 +28,20 @@ extension EntryInfo {
 
     final class DIContainer {
 
+        // MARK: • Private properties
+
         private let store: Store<iOSApp.State>
 
-        private var entries: Entities.Graph<Entities.Entry> {
-            store.state.entries
-        }
+        // MARK: • Initialization
 
         init(store: Store<iOSApp.State>) {
             self.store = store
         }
 
-        func makeController() -> Controller {
-            let view = makeView()
-            let observer = makeObserver()
+        // MARK: • Private API
 
-            let controller = Controller(
-                observer: observer,
-                keyboardObserver: makeKeyboardObserver(),
-                ui: view,
-                addEntryUseCaseFactory: self,
-                dismissUseCaseFactory: self
-            )
-
-            view.ixResponder = controller
-            observer.eventResponder = controller
-            return controller
+        private var entries: Entities.Graph<Entities.Entry> {
+            store.state.entries
         }
 
         private func makeView() -> View {
@@ -68,6 +60,25 @@ extension EntryInfo {
 
         private func makeKeyboardObserver() -> Keyboard.Observer<Controller> {
             .init()
+        }
+
+        // MARK: • Internal API
+
+        func makeController() -> Controller {
+            let view = makeView()
+            let observer = makeObserver()
+
+            let controller = Controller(
+                observer: observer,
+                keyboardObserver: makeKeyboardObserver(),
+                ui: view,
+                addEntryUseCaseFactory: self,
+                dismissUseCaseFactory: self
+            )
+
+            view.ixResponder = controller
+            observer.eventResponder = controller
+            return controller
         }
 
     }

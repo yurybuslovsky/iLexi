@@ -5,28 +5,34 @@
 //  Created by Yury Buslovsky on 02.10.2020.
 //
 
+// MARK: - Imports
+
+import UIKit
+
 import Core
 import UI
 import Entities
-import UIKit
-import SwiftUI
 
-// MARK: - Auxiliary
+// MARK: - Namespace
 
 private typealias Root = iOSApp.TabBar.EntryList.Root
 private typealias View = Root.View
 
 extension View {
-    typealias L10n = Core.L10n.EntryList
+    private typealias L10n = Core.L10n.EntryList
 }
 
 // MARK: - Declaration
 
-public  extension Root {
+public extension Root {
 
     final class View: NiblessTableView, Rendering {
 
+        // MARK: • Interactions responder
+
         public weak var ixResponder: IXResponder?
+
+        // MARK: • Private properties
 
         private lazy var diffableDS: EditableTableViewDiffableDataSource<Int, Cell.PresentationModel> = {
             register(Cell.self)
@@ -44,6 +50,8 @@ public  extension Root {
             return diffableDS
         }()
 
+        // MARK: • Initialization
+
         public override init() {
             super.init()
         }
@@ -52,7 +60,7 @@ public  extension Root {
 
 }
 
-// MARK: - Rendering
+// MARK: - UITableViewDelegate
 
 extension View: UITableViewDelegate {
 
@@ -82,7 +90,7 @@ extension View: UITableViewDelegate {
 
 extension View {
 
-    public func render(entries: [Entities.Entry]) {
+    public func render(entries: [Entry]) {
         var snapshot = NSDiffableDataSourceSnapshot<Int, Cell.PresentationModel>()
         snapshot.appendSections([.zero])
         snapshot.appendItems(entries.map(Cell.PresentationModel.init), toSection: .zero)
@@ -90,31 +98,3 @@ extension View {
     }
 
 }
-
-// MARK: - Canvas
-
-#if DEBUG
-
-struct EntryListView_Previews: PreviewProvider {
-
-    static var previews: some SwiftUI.View {
-        Group {
-            CanvasView {
-                let view = View()
-
-                view.render(entries: [
-                    Entities.Entry(value: "Disdain"),
-                    Entities.Entry(value: "Despise"),
-                    Entities.Entry(value: "Scorn"),
-                    Entities.Entry(value: "Contemn"),
-                ])
-
-                return view
-            }
-            .previewLayout(.sizeThatFits)
-        }
-    }
-
-}
-
-#endif

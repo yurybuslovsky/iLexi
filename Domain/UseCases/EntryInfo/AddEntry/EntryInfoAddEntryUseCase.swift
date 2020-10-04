@@ -31,10 +31,10 @@ public extension EntryInfo {
 
     final class AddEntryUseCase: BaseUseCase {
 
-        private let entries: Entities.Graph<Entities.Entry>
+        private let entries: Graph<Entry>
         private let entryValue: String
 
-        public init(entries: Entities.Graph<Entities.Entry>, entryValue: String, dispatcher: Dispatching) {
+        public init(entries: Graph<Entry>, entryValue: String, dispatcher: Dispatching) {
             self.entries = entries
             self.entryValue = entryValue
             super.init(dispatch: dispatcher)

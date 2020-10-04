@@ -13,7 +13,7 @@ import RxSwift
 // MARK: - Event Responder Protocol
 
 public protocol EntriesEventResponder: class {
-    func respondTo(newEntries: [Entities.Entry])
+    func respondTo(newEntries: [Entry])
 }
 
 // MARK: - Declaration
@@ -37,7 +37,7 @@ extension EntriesObserver {
             .map { $0.entries.toArray() }
             .distinctUntilChanged()
             .subscribe(
-                onNext: { [weak self] (entries: [Entities.Entry]) in
+                onNext: { [weak self] (entries: [Entry]) in
                     self?.eventResponder?.respondTo(newEntries: entries)
                 }
             )

@@ -50,7 +50,7 @@ extension Observer {
         let errorStateSubscription = entryInfoState
             .map(\.entryAdditionResult)
             .subscribe(
-                onNext: { [weak self] (result: Entities.VoidResult<Actions.EntryInfo.Error>) in
+                onNext: { [weak self] (result: VoidResult<Actions.EntryInfo.Error>) in
                     switch result {
                     case .success:
                         self?.eventResponder?.respondToSuccessfulEntryAddition()

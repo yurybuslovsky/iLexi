@@ -12,7 +12,6 @@
 		566A55442523245C000814B5 /* Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 566A55422523245C000814B5 /* Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56F3F86F252325850042D9D0 /* UseCases.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F3F86D252325850042D9D0 /* UseCases.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56F3F875252325AD0042D9D0 /* UseCasesNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F874252325AD0042D9D0 /* UseCasesNamespace.swift */; };
-		56F3F87D252325EB0042D9D0 /* EntitiesNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F87C252325EB0042D9D0 /* EntitiesNamespace.swift */; };
 		56F3F8872523273A0042D9D0 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F8862523273A0042D9D0 /* Entry.swift */; };
 		56F3F88C252327C00042D9D0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F88B252327C00042D9D0 /* Graph.swift */; };
 		56F3F892252327CD0042D9D0 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3F891252327CD0042D9D0 /* Vertex.swift */; };
@@ -95,7 +94,6 @@
 		56F3F86D252325850042D9D0 /* UseCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCases.h; sourceTree = "<group>"; };
 		56F3F86E252325850042D9D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56F3F874252325AD0042D9D0 /* UseCasesNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesNamespace.swift; sourceTree = "<group>"; };
-		56F3F87C252325EB0042D9D0 /* EntitiesNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitiesNamespace.swift; sourceTree = "<group>"; };
 		56F3F8862523273A0042D9D0 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		56F3F88B252327C00042D9D0 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		56F3F891252327CD0042D9D0 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 			children = (
 				566A5532252323D5000814B5 /* Entities.h */,
 				566A5533252323D5000814B5 /* Info.plist */,
-				56F3F87C252325EB0042D9D0 /* EntitiesNamespace.swift */,
 				56F3F8832523263E0042D9D0 /* Models */,
 				56F3F8842523264D0042D9D0 /* Generic */,
 			);
@@ -733,7 +730,6 @@
 				56F3F892252327CD0042D9D0 /* Vertex.swift in Sources */,
 				56F3F8A7252329760042D9D0 /* VoidResult.swift in Sources */,
 				56F3F8872523273A0042D9D0 /* Entry.swift in Sources */,
-				56F3F87D252325EB0042D9D0 /* EntitiesNamespace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

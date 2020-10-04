@@ -6,13 +6,16 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+// MARK: - Imports
+
+import ReSwift
+import RxSwift
+import UIKit
+
 import Core
 import State_iOS
 import UI_iOS
 import Reducers_iOS
-import ReSwift
-import RxSwift
-import UIKit
 
 // MARK: - Namespace
 
@@ -25,11 +28,15 @@ extension iOSApp {
 
     final class DIContainer {
 
+        // MARK: • Private properties
+
         private let store: Store<State> = .init(
             reducer: Reducer().callAsFunction,
             state: .default,
             automaticallySkipsRepeats: false
         )
+
+        // MARK: • Internal API
 
         func makeRootViewController() -> UIViewController {
             TabBar.DIContainer(store: store, entryInfoVCFactory: self).makeController()

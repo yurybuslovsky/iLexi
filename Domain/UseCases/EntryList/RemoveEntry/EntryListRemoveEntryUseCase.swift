@@ -25,10 +25,10 @@ public extension UseCases.EntryList {
 
     final class RemoveEntryUseCase: BaseUseCase {
 
-        private let entries: Entities.Graph<Entities.Entry>
+        private let entries: Graph<Entry>
         private let entryIndex: Int
 
-        public init(entries: Entities.Graph<Entities.Entry>, entryIndex: Int, dispatcher: Dispatching) {
+        public init(entries: Graph<Entry>, entryIndex: Int, dispatcher: Dispatching) {
             self.entries = entries
             self.entryIndex = entryIndex
             super.init(dispatch: dispatcher)

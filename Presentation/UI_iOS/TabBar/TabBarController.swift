@@ -5,12 +5,15 @@
 //  Created by Yury Buslovsky on 02.10.2020.
 //
 
+// MARK: - Imports
+
+import UIKit
+
 import Core
 import UI
 import Observers_iOS
-import UIKit
 
-// MARK: - Auxiliary
+// MARK: - Namespace
 
 private typealias TabBar = iOSApp.TabBar
 private typealias Controller = TabBar.Controller
@@ -22,9 +25,19 @@ public extension TabBar {
 
     final class Controller: NiblessTabBarController, EventResponder {
 
+        // MARK: • Observer
+
         private let observer: Observer<Controller>
+
+        // MARK: • Children
+
         private let entryListNC: EntryList.NavigationController
+
+        // MARK: • Modal facroties
+
         private let entryInfoVCFactory: iOSApp.EntryInfo.Producing
+
+        // MARK: • Initialization
 
         public init(
             observer: Observer<Controller>,
@@ -39,6 +52,8 @@ public extension TabBar {
 
             setUpView()
         }
+
+        // MARK: • Life cycle
 
         public override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)

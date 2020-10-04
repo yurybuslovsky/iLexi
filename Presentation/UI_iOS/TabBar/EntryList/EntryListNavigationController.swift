@@ -5,18 +5,21 @@
 //  Created by Yury Buslovsky on 02.10.2020.
 //
 
-import Core
-import UI
+// MARK: - Imports
+
 import UIKit
 
-// MARK: - Auxiliary
+import Core
+import UI
+
+// MARK: - Namespace
 
 private typealias EntryList = iOSApp.TabBar.EntryList
 private typealias Root = EntryList.Root
 private typealias NavigationController = EntryList.NavigationController
 
 extension NavigationController {
-    typealias L10n = Core.L10n.EntryList
+    private typealias L10n = Core.L10n.EntryList
 }
 
 // MARK: - Declaration
@@ -25,7 +28,11 @@ public extension EntryList {
 
     final class NavigationController: NiblessNavigationController {
 
+        // MARK: • Children
+
         private let rootVC: Root.Controller
+
+        // MARK: • Initialization
 
         public init(rootVC: Root.Controller) {
             self.rootVC = rootVC

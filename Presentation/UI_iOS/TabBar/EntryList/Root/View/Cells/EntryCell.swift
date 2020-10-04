@@ -3,23 +3,27 @@
 //  UI_iOS
 //
 //  Created by Yury Buslovsky on 02.10.2020.
-//q
+//
+
+// MARK: - Imports
+
+import SnapKit
 
 import Core
 import UI
 import Entities
-import SnapKit
-import SwiftUI
 
-// MARK: - Auxiliary
+// MARK: - Namespace
 
 private typealias View = iOSApp.TabBar.EntryList.Root.View
 private typealias Cell = View.Cell
 
+// MARK: - Presentation Model
+
 extension Cell {
 
     struct PresentationModel: Hashable {
-        let entry: Entities.Entry
+        let entry: Entry
     }
 
 }
@@ -37,12 +41,16 @@ public extension View {
 
     final class Cell: NiblessTableViewCell, Reusable {
 
+        // MARK: • Subviews
+
         private lazy var entryValueLabel: UILabel = {
             let entryValueLabel = UILabel()
             entryValueLabel.numberOfLines = 0
             contentView.addSubview(entryValueLabel)
             return entryValueLabel
         }()
+
+        // MARK: • Initialization
 
         override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -66,7 +74,7 @@ extension Cell {
 
 }
 
-// MARK: - Public API
+// MARK: - Internal API
 
 extension Cell {
 
@@ -75,24 +83,3 @@ extension Cell {
     }
 
 }
-
-// MARK: - Canvas
-
-#if DEBUG
-
-struct EntryCell_Previews: PreviewProvider {
-
-    static var previews: some SwiftUI.View {
-        Group {
-            CanvasView(canvasLayout: .fixedWidth()) {
-                let cell = Cell(style: .default, reuseIdentifier: "")
-                cell.setUp(presentationModel: Cell.PresentationModel(entry: Entities.Entry(value: "Disdain")))
-                return cell
-            }
-            .previewLayout(.sizeThatFits)
-        }
-    }
-
-}
-
-#endif

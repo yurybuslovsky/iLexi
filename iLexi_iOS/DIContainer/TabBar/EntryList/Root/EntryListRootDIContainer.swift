@@ -6,11 +6,14 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
+// MARK: - Imports
+
+import RxSwift
+import ReSwift
+
 import Core
 import UseCases
 import Entities
-import RxSwift
-import ReSwift
 
 // MARK: - Namespace
 
@@ -24,15 +27,31 @@ extension Root {
 
     final class DIContainer {
 
+        // MARK: • Private properties
+
         private let store: Store<iOSApp.State>
+
+        // MARK: • Initialization
+
+        init(store: Store<iOSApp.State>) {
+            self.store = store
+        }
+
+        // MARK: • Private API
 
         private var entries: Entities.Graph<Entities.Entry> {
             store.state.entries
         }
 
-        init(store: Store<iOSApp.State>) {
-            self.store = store
+        private func makeView() -> View {
+            .init()
         }
+
+        private func makeObserver() -> Observer<Controller> {
+            .init(appState: store.makeObservable())
+        }
+
+        // MARK: • Internal API
 
         func makeController() -> Controller {
             let view = makeView()
@@ -48,14 +67,6 @@ extension Root {
             view.ixResponder = controller
             observer.eventResponder = controller
             return controller
-        }
-
-        private func makeView() -> View {
-            .init()
-        }
-
-        private func makeObserver() -> Observer<Controller> {
-            .init(appState: store.makeObservable())
         }
 
     }

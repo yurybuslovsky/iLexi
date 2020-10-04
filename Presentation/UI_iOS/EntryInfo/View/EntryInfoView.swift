@@ -5,22 +5,24 @@
 //  Created by Yury Buslovsky on 02.10.2020.
 //
 
-import Core
-import UI
+// MARK: - Imports
+
 import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
 import NSObject_Rx
-import SwiftUI
 
-// MARK: - Auxiliary
+import Core
+import UI
+
+// MARK: - Namespace
 
 private typealias EntryInfo = iOSApp.EntryInfo
 private typealias View = EntryInfo.View
 
 extension View {
-    typealias L10n = Core.L10n.EntryInfo
+    private typealias L10n = Core.L10n.EntryInfo
 }
 
 // MARK: - Constants
@@ -38,7 +40,7 @@ public extension EntryInfo {
 
     final class View: NiblessView, Rendering {
 
-        // MARK: • Responder
+        // MARK: • Interactions responder
 
         public weak var ixResponder: IXResponder?
 
@@ -170,23 +172,3 @@ extension View {
     }
 
 }
-
-// MARK: - Canvas
-
-#if DEBUG
-
-struct EntryInfoView_Previews: PreviewProvider {
-
-    static var previews: some SwiftUI.View {
-        Group {
-            CanvasView {
-                let view = View()
-                return view
-            }
-            .previewLayout(.sizeThatFits)
-        }
-    }
-
-}
-
-#endif

@@ -6,25 +6,38 @@
 //  Copyright © 2020 Napoleon IT. All rights reserved.
 //
 
-import Core
+// MARK: - Imports
+
 import ReSwift
+
+import Core
+
+// MARK: - Declaration
 
 extension iOSApp.TabBar.EntryList {
 
     final class DIContainer {
 
+        // MARK: • Private properties
+
         private let store: Store<iOSApp.State>
+
+        // MARK: • Initialization
 
         init(store: Store<iOSApp.State>) {
             self.store = store
         }
 
-        func makeNavigationController() -> NavigationController {
-            .init(rootVC: makeRootController())
-        }
+        // MARK: • Private API
 
         private func makeRootController() -> Root.Controller {
             Root.DIContainer(store: store).makeController()
+        }
+
+        // MARK: • Internal API
+
+        func makeNavigationController() -> NavigationController {
+            .init(rootVC: makeRootController())
         }
 
     }

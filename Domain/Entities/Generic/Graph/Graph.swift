@@ -9,23 +9,19 @@ import Core
 
 // MARK: - Declaration
 
-public extension Entities {
+public final class Graph<Element: Equatable>: ExpressibleByArrayLiteral {
 
-    final class Graph<Element: Equatable>: ExpressibleByArrayLiteral {
+    private var vertices: [Vertex<Element>]
 
-        private var vertices: [Vertex<Element>]
-
-        public init(arrayLiteral elements: Element...) {
-            self.vertices = elements.map { (element: Element) -> Vertex<Element> in .init(value: element) }
-        }
-
+    public init(arrayLiteral elements: Element...) {
+        self.vertices = elements.map { (element: Element) -> Vertex<Element> in .init(value: element) }
     }
 
 }
 
 // MARK: - Equatable
 
-extension Entities.Graph: Equatable {
+extension Graph: Equatable {
 
     public static func == (lhs: Entities.Graph<Element>, rhs: Entities.Graph<Element>) -> Bool {
         lhs.vertices == rhs.vertices
@@ -35,7 +31,7 @@ extension Entities.Graph: Equatable {
 
 // MARK: - Public API
 
-public extension Entities.Graph {
+public extension Graph {
 
     var isEmpty: Bool {
         vertices.isEmpty

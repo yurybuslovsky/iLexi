@@ -76,7 +76,6 @@
 		5672557D252472940056FF0D /* Actions.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5672555225246D220056FF0D /* Actions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5672557E252472960056FF0D /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5672555A25246D2F0056FF0D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		567255E2252482060056FF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567255E1252482060056FF0D /* Assets.xcassets */; };
-		567255E5252482430056FF0D /* UINamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567255E4252482430056FF0D /* UINamespace.swift */; };
 		567255E7252482660056FF0D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567255E6252482660056FF0D /* Assets.swift */; };
 		567255EE252488CB0056FF0D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567255ED252488CB0056FF0D /* BaseViewController.swift */; };
 		567255F0252488DE0056FF0D /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567255EF252488DE0056FF0D /* BaseTableViewController.swift */; };
@@ -87,10 +86,6 @@
 		5672561F25248AD20056FF0D /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672561E25248AD20056FF0D /* NiblessView.swift */; };
 		5672562125248B200056FF0D /* NiblessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672562025248B200056FF0D /* NiblessTableViewCell.swift */; };
 		5672562325248B2E0056FF0D /* NiblessTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672562225248B2E0056FF0D /* NiblessTableView.swift */; };
-		5672562625248B6F0056FF0D /* CanvasLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672562525248B6F0056FF0D /* CanvasLayout.swift */; };
-		5672562825248B830056FF0D /* CanvasLayoutWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672562725248B830056FF0D /* CanvasLayoutWrapperView.swift */; };
-		5672563C25248CCB0056FF0D /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672563B25248CCB0056FF0D /* CanvasView.swift */; };
-		5672564225248D6C0056FF0D /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672564125248D6C0056FF0D /* CanvasViewController.swift */; };
 		5672564525248DC20056FF0D /* EditableTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672564425248DC20056FF0D /* EditableTableViewDiffableDataSource.swift */; };
 		5672564825248E740056FF0D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672564725248E740056FF0D /* Reusable.swift */; };
 		5672564B25248E910056FF0D /* UITableView+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672564A25248E910056FF0D /* UITableView+Registration.swift */; };
@@ -310,7 +305,6 @@
 		5672554925246D220056FF0D /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = ../Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		5672555525246D2F0056FF0D /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../Core/Core.xcodeproj; sourceTree = "<group>"; };
 		567255E1252482060056FF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		567255E4252482430056FF0D /* UINamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINamespace.swift; sourceTree = "<group>"; };
 		567255E6252482660056FF0D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		567255ED252488CB0056FF0D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		567255EF252488DE0056FF0D /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
@@ -321,10 +315,6 @@
 		5672561E25248AD20056FF0D /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
 		5672562025248B200056FF0D /* NiblessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTableViewCell.swift; sourceTree = "<group>"; };
 		5672562225248B2E0056FF0D /* NiblessTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTableView.swift; sourceTree = "<group>"; };
-		5672562525248B6F0056FF0D /* CanvasLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasLayout.swift; sourceTree = "<group>"; };
-		5672562725248B830056FF0D /* CanvasLayoutWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasLayoutWrapperView.swift; sourceTree = "<group>"; };
-		5672563B25248CCB0056FF0D /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		5672564125248D6C0056FF0D /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		5672564425248DC20056FF0D /* EditableTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
 		5672564725248E740056FF0D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		5672564A25248E910056FF0D /* UITableView+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registration.swift"; sourceTree = "<group>"; };
@@ -747,7 +737,6 @@
 				5672564325248DB60056FF0D /* TableView */,
 				567255EC252488B90056FF0D /* Controllers */,
 				567255F5252489000056FF0D /* Nibless */,
-				5672562425248B620056FF0D /* Canvas */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -789,17 +778,6 @@
 				5672562225248B2E0056FF0D /* NiblessTableView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		5672562425248B620056FF0D /* Canvas */ = {
-			isa = PBXGroup;
-			children = (
-				5672562525248B6F0056FF0D /* CanvasLayout.swift */,
-				5672562725248B830056FF0D /* CanvasLayoutWrapperView.swift */,
-				5672563B25248CCB0056FF0D /* CanvasView.swift */,
-				5672564125248D6C0056FF0D /* CanvasViewController.swift */,
-			);
-			path = Canvas;
 			sourceTree = "<group>";
 		};
 		5672564325248DB60056FF0D /* TableView */ = {
@@ -886,7 +864,6 @@
 				56A2184625246A000026B328 /* UI.h */,
 				56A2184725246A000026B328 /* Info.plist */,
 				567255E1252482060056FF0D /* Assets.xcassets */,
-				567255E4252482430056FF0D /* UINamespace.swift */,
 				567255E3252482360056FF0D /* Generated */,
 				567255EA252487400056FF0D /* Base */,
 				5672564625248E4B0056FF0D /* Interfaces */,
@@ -1901,22 +1878,17 @@
 				5672561F25248AD20056FF0D /* NiblessView.swift in Sources */,
 				567255E7252482660056FF0D /* Assets.swift in Sources */,
 				567255FD252489650056FF0D /* NiblessNavigationController.swift in Sources */,
-				567255E5252482430056FF0D /* UINamespace.swift in Sources */,
-				5672562825248B830056FF0D /* CanvasLayoutWrapperView.swift in Sources */,
 				5672562125248B200056FF0D /* NiblessTableViewCell.swift in Sources */,
 				5672564D25248EA50056FF0D /* ActionTargetToClosureConversion.swift in Sources */,
 				567255F9252489420056FF0D /* NiblessViewController.swift in Sources */,
 				5672564F25248EC60056FF0D /* Constraint+Zeroing.swift in Sources */,
 				567255FF252489730056FF0D /* NiblessTableViewController.swift in Sources */,
-				5672563C25248CCB0056FF0D /* CanvasView.swift in Sources */,
 				5672564B25248E910056FF0D /* UITableView+Registration.swift in Sources */,
 				5672564525248DC20056FF0D /* EditableTableViewDiffableDataSource.swift in Sources */,
 				567255F0252488DE0056FF0D /* BaseTableViewController.swift in Sources */,
 				567255FB252489590056FF0D /* NiblessTabBarController.swift in Sources */,
 				5672562325248B2E0056FF0D /* NiblessTableView.swift in Sources */,
 				567255EE252488CB0056FF0D /* BaseViewController.swift in Sources */,
-				5672564225248D6C0056FF0D /* CanvasViewController.swift in Sources */,
-				5672562625248B6F0056FF0D /* CanvasLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
